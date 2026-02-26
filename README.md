@@ -1,12 +1,14 @@
-# 臺北大學學生會 三峽校區議事系統
+# 北大三峽議事資訊網
 
 ## 專案簡介
 
-本專案旨在為國立臺北大學學生自治會三峽校區學生議會（下稱：本會）建立一個現代化的議事服務網站。此平台提供以下主要功能：
+「北大三峽議事資訊網」專案由國立臺北大學三峽校區學生議會第 26 屆秘書處開發，旨在落實學生自治資訊公開法的要求，並嘗試實踐議事資訊學 (parliamentary informatics) 理論。
 
-* **資訊公開**：**議案查詢**整合 Google Sheets API，實現議案資料的即時查詢與瀏覽，是本系統主要功能。其他還提供**會議紀錄**連結至學生自治會共用網站，方便查閱歷次會議紀錄，以及本會直播頻道連結。
-* **議事系統**：包含第 23 屆迄今既有、熟悉的 Google Forms **議事系統**，方便議員與各單位提案，並提供提案附件範本、邀請備詢系統與預算變更系統等實用工具連結。
-* **響應式設計**：支援淺色/暗色模式自動切換與手動切換功能。
+本網站的主要功能是：
+
+1. 議案查詢：即舊網站提案公告功能。因新會網一般帳號禁止使用 iFrame 嵌入 AppSheet，爰獨立建置查詢網站。
+2. 委員會建議事項提案查詢。至於作成建議報告者，則可於會網查詢。【建置中】
+3. 秘書處議程作業系統：提供秘書處人員草擬議程與會議紀錄。
 
 ### 網站功能一覽
 
@@ -14,47 +16,43 @@
 
 ![本系統之截圖](/public/screenshot.png)
 
-* **首頁**：以區塊形式呈現主要服務連結。
-* **頭部導覽列**：包含網站標題與導覽選單，並提供夜間模式切換按鈕。
-* **議案查詢頁面 (`/bill`)**：
+* **首頁** ：以區塊形式呈現主要服務連結。
+* **頭部導覽列** ：包含網站標題與導覽選單，並提供夜間模式切換按鈕。
+* **議案查詢 (`/bill`)** ：
     * 顯示某屆所有議案的列表。
-    * 提供多種篩選條件（例如：提案類型、提案機關/議員、案由等）。
-    * 支援日期範圍篩選與分頁功能。
-    * 議案詳細頁面 (`/bill/:term/:number`)：顯示單一議案的完整資訊與附件連結。
-* **底部頁腳**：顯示單位名稱及 GitHub Repository 連結。
+    * 提供多種篩選條件（例如：提案類型、提案機關/議員、案由等）。【功能完善中】
+    * 支援日期範圍篩選與分頁功能。【功能完善中】
+    * 議案詳細頁面 (`/bill/:term/:number`)：顯示單一議案的完整資訊與附件連結，並可列印之。
+* **底部頁腳** ：顯示單位名稱及 GitHub Repository 連結。
 
 ## 技術
 
-本專案採用 **Nuxt 3** 框架開發，結合 **Tailwind CSS** 進行快速且美觀的 UI 設計，並透過 **Google Sheets API** 實現資料的動態載入。
-
-* **框架**：Nuxt 3 (Vue 3)
-* **樣式**：Tailwind CSS
-* **API 串接**：Google Sheets API (透過 `googleapis` 函式庫)
-* **圖標**：Heroicons
-* **部署**：Netlify
-* **版本控制**：Git / GitHub
+* **框架** ：Nuxt 4
+* **樣式** ：Tailwind CSS
+* **資料** ：Google Sheets API (透過 `googleapis` 函式庫)
+* **圖標** ：Heroicons
+* **部署** ：Cloudflare Pages
+* **版本控制** ：Git / GitHub
 
 本專案使用 Claude.ai, ChatGPT, Gemini 等服務生成，再由開發者微調。
 
+技術上，配合議事系統使用 Google Forms 建置，本網站未來擬每天透過 GitHub Workflow 從 Google Sheets API 擷取資料（亦提供手動觸發功能），儲存至本地，以 Nuxt Content 作為 CMS。目前當前屆次資料係直接動態查詢 Google Sheets API，已結束屆次則是查詢本地 json。
+
 ## 開發
 
-### 前置準備
-
-1.  **Node.js**: 建議使用 Node.js v18.0.0 或更高版本。
-2.  **npm**: Node.js 安裝時會一併安裝。
-3.  **VS Code**: 建議使用的程式碼編輯器。
+本專案使用 Node.js，套件管理工具為 pnpm.
 
 ### 專案啟動
 
 1.  **複製專案**：
     ```bash
-    git clone [https://github.com/ntpusu-sxcong/ntpusu-congsys.git](https://github.com/ntpusu-sxcong/ntpusu-congsys.git)
+    git clone [https://github.com/ntpuscs/ntpusu-congsys.git](https://github.com/ntpuscs/ntpusu-congsys.git)
     cd ntpusu-congsys
     ```
 
 2.  **安裝依賴**：
     ```bash
-    npm install
+    pnpm install
     ```
 
 3.  **Google Sheets API 設定**：
@@ -81,7 +79,7 @@
         GOOGLE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nYOUR_PRIVATE_KEY_HERE\n-----END PRIVATE KEY-----\n"
         GOOGLE_SHEETS_ID="your_google_sheets_spreadsheet_id_here"
         ```
-        **注意：** `GOOGLE_PRIVATE_KEY` 務必將其中的換行符號 `\n` 替換為真實的換行。在部署到 Vercel 時，直接粘貼原始的私鑰內容即可，Vercel 會自動處理換行。
+        **注意：** `GOOGLE_PRIVATE_KEY` 務必將其中的換行符號 `\n` 替換為真實的換行。在部署時，直接粘貼原始的私鑰內容即可，會自動處理換行。
 
 4.  **啟動開發伺服器**：
     ```bash
@@ -91,11 +89,11 @@
 
 ### 部署
 
-本專案建議使用 Netlify 部署，步驟如下：
+本專案建議使用 Cloudflare Pages 部署，步驟如下：
 
 1.  建立 GitHub Repository。
-2.  Netlify 部署。將 `.env` 檔案中的 `GOOGLE_SERVICE_ACCOUNT_EMAIL`、`GOOGLE_PRIVATE_KEY` 和 `GOOGLE_SHEETS_ID` 這三個變數及其值加入到 Cloudflare Pages 的環境變數中。
-3.  自訂域名設定完成後，Netlify 亦提供自動加密連線服務。
+2.  Cloudflare Pages 部署。將 `.env` 檔案中的 `GOOGLE_SERVICE_ACCOUNT_EMAIL`、`GOOGLE_PRIVATE_KEY` 和 `GOOGLE_SHEETS_ID` 這三個變數及其值加入到 Cloudflare Pages 的環境變數中。
+3.  自訂域名設定完成後， Cloudflare Pages 亦提供自動加密連線服務。
 
 ## 貢獻
 

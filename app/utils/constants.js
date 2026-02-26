@@ -1,11 +1,11 @@
 // 網站基本設定
 export const SITE_CONFIG = {
-  name: '三峽校區議事服務',
-  fullName: '國立臺北大學學生自治會 三峽校區學生議會',
-  englishName: 'Sanxia Campus Student Congress, NTPUSU',
+  name: '北大三峽議事資訊網',
+  fullName: '國立臺北大學三峽校區學生議會',
+  englishName: 'NTPU Student Congress (Sanxia)',
   domain: 'sxcongress.ntpusu.org',
   email: 'ntpuscs@gmail.com',
-  githubRepo: 'https://github.com/jenhuang-tw/ntpusu-congsys'
+  githubRepo: 'https://github.com/ntpuscs/ntpusu-congsys'
 };
 
 // 外部連結設定

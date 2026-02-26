@@ -1,5 +1,5 @@
 // server/api/bills/SpecificClassic/[id].get.ts
-import { fetchAllBillsFromGoogleSheets } from '~/server/utils/billsData';
+// import { fetchAllBillsFromGoogleSheets } from '~/server/utils/billsData';
 
 /**
  * API 路由：根據屆次和提案號碼，返回對應的 AppSheet 網址

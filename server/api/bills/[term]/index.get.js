@@ -1,4 +1,4 @@
-import { fetchAllBillsFromGoogleSheets } from '~/server/utils/billsData'; // 導入新的工具函數
+// import { fetchAllBillsFromGoogleSheets } from '~/server/utils/billsData'; // 導入新的工具函數
 
 export default defineEventHandler(async (event) => {
   try {

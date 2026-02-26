@@ -1,4 +1,4 @@
-import { fetchAllBillsFromGoogleSheets } from '~/server/utils/billsData'; // 導入工具函數
+// import { fetchAllBillsFromGoogleSheets } from '~/server/utils/billsData'; // 導入工具函數
 
 export default defineEventHandler(async (event) => {
   const { term, number } = event.context.params; // 從路由參數中獲取屆次和議案號碼

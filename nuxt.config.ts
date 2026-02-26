@@ -28,7 +28,7 @@ export default defineNuxtConfig({
   },
   ssr: true, // 確保開啟 SSR
   nitro: {
-    preset: 'netlify'
+    preset: 'cloudflare-pages'
   },
   app: {
     head: {

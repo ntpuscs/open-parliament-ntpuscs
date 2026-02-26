@@ -13,12 +13,12 @@ useHead({
   htmlAttrs: {
     lang: 'zh-Hant-TW'
   },
-  title: '三峽校區議事服務 - 國立臺北大學學生自治會',
+  title: '北大三峽議事資訊網',
   meta: [
-    { name: 'description', content: '國立臺北大學學生自治會三峽校區學生議會議事服務系統' },
-    { name: 'keywords', content: '國立臺北大學,學生自治會,三峽校區,議事服務,學生議會' },
-    { property: 'og:title', content: '三峽校區議事服務 - 國立臺北大學學生自治會' },
-    { property: 'og:description', content: '國立臺北大學學生自治會三峽校區學生議會議事服務系統' },
+    { name: 'description', content: '國立臺北大學三峽校區學生議會議事資訊網站' },
+    { name: 'keywords', content: '國立臺北大學,臺北大學,學生自治,三峽校區,學生議會,資訊公開,NTPU' },
+    { property: 'og:title', content: '北大三峽議事資訊網' },
+    { property: 'og:description', content: '國立臺北大學三峽校區學生議會議事資訊網站' },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' }
   ]

@@ -32,11 +32,11 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: '三峽校區議事服務 - 國立臺北大學學生自治會',
+      title: '北大三峽議事資訊網',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: '國立臺北大學學生自治會三峽校區學生議會議事服務系統' }
+        { name: 'description', content: '國立臺北大學學生自治會三峽校區學生議會議事資訊網站。' }
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/site-icon/favicon.ico' },

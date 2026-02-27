@@ -158,6 +158,7 @@ async function fetchReports() {
       scheduledMeeting:    raw[COLUMN.SCHEDULED_MEETING],
       committeeResolution: raw[COLUMN.COMMITTEE_RESOLUTION],
       reportLink:          raw[COLUMN.REPORT_LINK],
+      hasReport:           !!raw[COLUMN.REPORT_LINK],  // 以 reportLink 是否為空判斷
     };
 
     // 學生會回覆

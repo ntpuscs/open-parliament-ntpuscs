@@ -51,6 +51,20 @@ export function filterReportsByScheduled(reports, scheduled) {
   )
 }
 
+/**
+ * 依委員會是否已做成報告篩選。
+ * @param {Array}   reports   - JSON 檔案中 data 陣列
+ * @param {boolean} hasReport - true = 已有報告，false = 尚無報告
+ * @returns {Array}
+ */
+export function filterReportsByHasReport(reports, hasReport) {
+  return reports.filter(r =>
+    hasReport
+      ? !!r.committeeReport?.hasReport
+      : !r.committeeReport?.hasReport
+  )
+}
+
 // ─── Composable ──────────────────────────────────────────────────────────────
 
 /**
@@ -64,6 +78,7 @@ export function filterReportsByScheduled(reports, scheduled) {
  * @property {import('vue').Ref<any>}             error           - 錯誤物件
  * @property {Function}                           byCommittee     - 依委員會名稱篩選，回傳 computed ref
  * @property {Function}                           byScheduled     - 依是否排入會議篩選，回傳 computed ref
+ * @property {Function}                           byHasReport     - 依是否已做成報告篩選，回傳 computed ref
  */
 
 export async function useCommitteeReports() {
@@ -88,6 +103,11 @@ export async function useCommitteeReports() {
     return computed(() => filterReportsByScheduled(reports.value, scheduled))
   }
 
+  /** 依是否已做成報告篩選，回傳 computed ref */
+  function byHasReport(hasReport) {
+    return computed(() => filterReportsByHasReport(reports.value, hasReport))
+  }
+
   return {
     reports,
     withResponse,
@@ -98,5 +118,6 @@ export async function useCommitteeReports() {
     error,
     byCommittee,
     byScheduled,
+    byHasReport,
   }
 }

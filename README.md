@@ -1,109 +1,57 @@
-# 北大三峽議事資訊網
+# 北大三峽議事資訊網 (Open Parliament: NTPUSCS)
 
 ## 專案簡介
 
-「北大三峽議事資訊網」專案由國立臺北大學三峽校區學生議會第 26 屆秘書處開發，旨在落實學生自治資訊公開法的要求，並嘗試實踐議事資訊學 (parliamentary informatics) 理論。
+「北大三峽議事資訊網」由國立臺北大學三峽校區學生議會第 26 屆秘書處開發。本專案旨在落實《學生自治資訊公開法》之要求，為北大學生提供一個透明、易用的議政資訊查詢平台。
 
-本網站的主要功能是：
+由於新版學生會網站的一般帳號限制使用 iFrame 嵌入 AppSheet，本專案始獨立建置查詢網站，以確保議事資訊的公開與流通。
 
-1. 議案查詢：即舊網站提案公告功能。因新會網一般帳號禁止使用 iFrame 嵌入 AppSheet，爰獨立建置查詢網站。
-2. 委員會建議事項提案查詢。至於作成建議報告者，則可於會網查詢。【建置中】
-3. 秘書處議程作業系統：提供秘書處人員草擬議程與會議紀錄。
+## 系統功能狀態
 
-### 網站功能一覽
+為使使用者與開發者清楚掌握專案進度，以下區分現有已上線功能與未來規劃：
 
-`https://sxcongress.ntpusu.org/`
+### 現有功能
 
-![本系統之截圖](/public/screenshot.png)
+* **基礎介面與瀏覽體驗**
+    * 區塊化首頁設計，提供主要服務之快速連結。
+    * 具備夜間模式 (Dark Mode) 切換功能的頭部導覽列。
+    * 底部頁腳包含單位名稱及開源儲存庫連結。
+* **議案查詢系統**  (`/bill`)
+    * 屆次議案列表：可顯示特定屆次的所有議案。
+    * 單一議案顯示 (`/bill/:term/:number`)：提供單一議案的完整資訊、附件連結，並支援列印排版。
+    * 資料介接：針對當前屆次，系統會動態查詢 Google Sheets API 獲取最新資料。
+* **委員會建議事項提案查詢**  (`/committee-reports`)
+    * 委員提案後，即可於本頁查得提案資料。秘書處亦透過 Google Sheets 維護委員會審查結論、建議報告全文及學生會之回覆。
+    * 系統每隔7天自動到後台抓取一次資料，秘書處可於 GitHub 後台手動觸發工作流。
+    * 惟114學年度第1學期已完稿之建議報告，為避免表單後台錯誤，維持於會網查詢。
+* **秘書處內部作業系統**
+    * 提供秘書處人員草擬議程與撰寫會議紀錄之輔助介面。
 
-* **首頁** ：以區塊形式呈現主要服務連結。
-* **頭部導覽列** ：包含網站標題與導覽選單，並提供夜間模式切換按鈕。
-* **議案查詢 (`/bill`)** ：
-    * 顯示某屆所有議案的列表。
-    * 提供多種篩選條件（例如：提案類型、提案機關/議員、案由等）。【功能完善中】
-    * 支援日期範圍篩選與分頁功能。【功能完善中】
-    * 議案詳細頁面 (`/bill/:term/:number`)：顯示單一議案的完整資訊與附件連結，並可列印之。
-* **底部頁腳** ：顯示單位名稱及 GitHub Repository 連結。
+### 開發中 / 中長期規劃功能
 
-## 技術
+* **進階議案查詢 (開發完善中)**
+    * 提供多維度篩選條件（例如：依提案類型、提案機關、提案議員、案由進行交叉篩選）。
+    * 支援精確的日期範圍篩選功能。
+* **基礎架構升級 (規劃中)**
+    * 導入 GitHub Actions Workflow 自動化流程：規劃每日定時從 Google Sheets API 擷取資料並儲存為本地靜態檔案。針對已結束之歷史屆次，未來擬讀取本地靜態 JSON 檔案以提升效能
+    * 結合 Nuxt Content 作為內容管理系統 (CMS)，進一步降低對外部 API 即時連線的依賴。
+* **草擬系統部分**
+    * 允許秘書透過此處安排建議事項。
 
-* **框架** ：Nuxt 4
-* **樣式** ：Tailwind CSS
-* **資料** ：Google Sheets API (透過 `googleapis` 函式庫)
-* **圖標** ：Heroicons
-* **部署** ：Cloudflare Pages
-* **版本控制** ：Git / GitHub
+## 技術架構
 
-本專案使用 Claude.ai, ChatGPT, Gemini 等服務生成，再由開發者微調。
+本系統使用以下現代化的技術組合：
 
-技術上，配合議事系統使用 Google Forms 建置，本網站未來擬每天透過 GitHub Workflow 從 Google Sheets API 擷取資料（亦提供手動觸發功能），儲存至本地，以 Nuxt Content 作為 CMS。目前當前屆次資料係直接動態查詢 Google Sheets API，已結束屆次則是查詢本地 json。
+* **框架**：Nuxt 4
+* **樣式**：Tailwind CSS
+* **圖示庫**：Heroicons
+* **資料來源**：直接 fetch Google Sheets API、本地 JSON
+* **部署環境**：Cloudflare Pages [![Powered by Cloudflare Pages](https://img.shields.io/badge/Cloudflare-Pages-orange?logo=cloudflare)](https://pages.cloudflare.com/)
 
-## 開發
+* **套件管理**：pnpm (Node.js 環境)
+* **版本控制**：Git / GitHub
 
-本專案使用 Node.js，套件管理工具為 pnpm.
+## 授權與聯絡資訊
 
-### 專案啟動
-
-1.  **複製專案**：
-    ```bash
-    git clone [https://github.com/ntpuscs/ntpusu-congsys.git](https://github.com/ntpuscs/ntpusu-congsys.git)
-    cd ntpusu-congsys
-    ```
-
-2.  **安裝依賴**：
-    ```bash
-    pnpm install
-    ```
-
-3.  **Google Sheets API 設定**：
-
-    * **建立 Google Cloud Project**：
-        1.  前往 [Google Cloud Console](https://console.cloud.google.com/)。
-        2.  建立新專案或選擇現有專案。
-        3.  啟用 `Google Sheets API`。
-    * **建立服務帳戶金鑰**：
-        1.  在 Google Cloud Console 中，前往「API 和服務」>「憑證」。
-        2.  點選「建立憑證」>「服務帳戶」。
-        3.  填寫服務帳戶資訊並建立。
-        4.  下載 JSON 金鑰檔案。
-    * **設定 Google Sheets 權限**：
-        1.  開啟您的 Google Sheets。
-        2.  點選「共用」。
-        3.  新增您的服務帳戶電子郵件地址（在下載的 JSON 檔案中的 `client_email` 欄位）。
-        4.  給予「檢視者」或「編輯者」權限（依您的需求）。
-    * **設定環境變數**：
-        在專案根目錄創建一個 `.env` 檔案，並填入以下內容，這些值來自您下載的 JSON 金鑰檔案和您的 Google Sheets ID：
-        ```env
-        # .env
-        GOOGLE_SERVICE_ACCOUNT_EMAIL="your-service-account-email@your-project-id.iam.gserviceaccount.com"
-        GOOGLE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nYOUR_PRIVATE_KEY_HERE\n-----END PRIVATE KEY-----\n"
-        GOOGLE_SHEETS_ID="your_google_sheets_spreadsheet_id_here"
-        ```
-        **注意：** `GOOGLE_PRIVATE_KEY` 務必將其中的換行符號 `\n` 替換為真實的換行。在部署時，直接粘貼原始的私鑰內容即可，會自動處理換行。
-
-4.  **啟動開發伺服器**：
-    ```bash
-    npx nuxi dev
-    ```
-    應用程式將在 `http://localhost:3000` 啟動。
-
-### 部署
-
-本專案建議使用 Cloudflare Pages 部署，步驟如下：
-
-1.  建立 GitHub Repository。
-2.  Cloudflare Pages 部署。將 `.env` 檔案中的 `GOOGLE_SERVICE_ACCOUNT_EMAIL`、`GOOGLE_PRIVATE_KEY` 和 `GOOGLE_SHEETS_ID` 這三個變數及其值加入到 Cloudflare Pages 的環境變數中。
-3.  自訂域名設定完成後， Cloudflare Pages 亦提供自動加密連線服務。
-
-## 貢獻
-
-歡迎對本專案提出任何建議或貢獻。如果您發現任何問題或有改進想法，請隨時提出 Issue 或 Pull Request。
-
-## 聯絡方式
-
-國立臺北大學學生自治會 三峽校區學生議會
-Sanxia Campus Student Congress, NTPUSU
-
-## 授權
-
-本專案依據 [MIT License](LICENSE) 開源。
+* **維護單位**：國立臺北大學三峽校區學生議會， Student Congress (Sanxia)
+* **專案授權**：本開源專案依據 [MIT License](https://www.google.com/search?q=LICENSE) 條款發布。至為歡迎各學生自治組織改作。

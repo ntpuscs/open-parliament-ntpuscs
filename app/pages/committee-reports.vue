@@ -48,7 +48,7 @@
           <input
             v-model="searchQuery"
             type="text"
-            placeholder="搜尋主旨或提案人…"
+            placeholder="搜尋主旨…"
             class="w-full pl-9 pr-3 py-2 text-sm rounded-lg border border-gray-200 dark:border-gray-700
                    bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100
                    placeholder-gray-400 dark:placeholder-gray-500
@@ -263,7 +263,7 @@
                 <InfoField label="建議部門"  :value="selectedReport.proposal?.toDept" />
                 <InfoField label="提交時間"  :value="selectedReport.proposal?.timestamp" />
                 <InfoField label="排入會議"  :value="selectedReport.committeeReport?.scheduledMeeting" />
-                <InfoField label="建議報告字號" :value="selectedReport.committeeReport?.serialNumber" />
+                <InfoField label="秘書處追蹤字號" :value="selectedReport.committeeReport?.serialNumber" />
               </div>
 
               <hr class="border-gray-100 dark:border-gray-800" />
@@ -313,7 +313,7 @@
                     {{ selectedReport.governmentResponse.text }}
                   </p>
                   <p v-if="selectedReport.governmentResponse?.refNumber" class="text-xs text-emerald-700 dark:text-emerald-400 mt-2">
-                    提案字號：{{ selectedReport.governmentResponse.refNumber }}
+                    請參閱「{{ selectedReport.governmentResponse.refNumber }}」提案。
                   </p>
                 </div>
               </template>
@@ -340,30 +340,38 @@
 </template>
 
 <script setup>
+import { h } from 'vue'
+
 // ─── 子元件：InfoField ───────────────────────────────────────
 const InfoField = defineComponent({
   props: { label: String, value: String },
-  template: `
-    <div v-if="value">
-      <p class="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-0.5">{{ label }}</p>
-      <p class="text-sm text-gray-800 dark:text-gray-200">{{ value }}</p>
-    </div>
-  `,
+  setup(props) {
+    return () => {
+      if (!props.value) return null
+      return h('div', [
+        h('p', { class: 'text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-0.5' }, props.label),
+        h('p', { class: 'text-sm text-gray-800 dark:text-gray-200' }, props.value)
+      ])
+    }
+  }
 })
 
 // ─── 子元件：ModalSection ────────────────────────────────────
 const ModalSection = defineComponent({
   props: { title: String, content: String, accent: Boolean },
-  template: `
-    <div v-if="content">
-      <p class="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-2">{{ title }}</p>
-      <p
-        :class="accent
-          ? 'text-sm text-gray-800 dark:text-gray-200 whitespace-pre-line leading-relaxed bg-primary-50 dark:bg-primary-950/30 border border-primary-100 dark:border-primary-900 rounded-lg p-3'
-          : 'text-sm text-gray-700 dark:text-gray-300 whitespace-pre-line leading-relaxed'"
-      >{{ content }}</p>
-    </div>
-  `,
+  setup(props) {
+    return () => {
+      if (!props.content) return null
+      return h('div', [
+        h('p', { class: 'text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-2' }, props.title),
+        h('p', {
+          class: props.accent
+            ? 'text-sm text-gray-800 dark:text-gray-200 whitespace-pre-line leading-relaxed bg-primary-50 dark:bg-primary-950/30 border border-primary-100 dark:border-primary-900 rounded-lg p-3'
+            : 'text-sm text-gray-700 dark:text-gray-300 whitespace-pre-line leading-relaxed'
+        }, props.content)
+      ])
+    }
+  }
 })
 
 // ─── 資料（透過 composable 取得） ────────────────────────────
@@ -384,9 +392,9 @@ const responseFilters = [
 // ─── 狀態輔助函式 ────────────────────────────────────────────
 /**
  * 判斷報告目前所處的三段狀態：
- *   reviewing → hasReport false（委員會尚未做成報告）
- *   pending   → hasReport true  且 hasResponse false（等待學生會回覆）
- *   replied   → hasResponse true（學生會已回覆）
+ * reviewing → hasReport false（委員會尚未做成報告）
+ * pending   → hasReport true  且 hasResponse false（等待學生會回覆）
+ * replied   → hasResponse true（學生會已回覆）
  */
 function getStatus(report) {
   if (report?.governmentResponse?.hasResponse) return 'replied'
@@ -410,7 +418,7 @@ function statusClass(report) {
   return 'bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 ring-1 ring-gray-200 dark:ring-gray-700'
 }
 
-// 委員會下拉選項（去重）
+// 委員會下拉選項
 const committeeOptions = computed(() =>
   [...new Set(
     reports.value
@@ -425,8 +433,7 @@ const filteredReports = computed(() => {
     const q = searchQuery.value.trim().toLowerCase()
     if (q) {
       const subject  = (r.proposal?.subject   ?? '').toLowerCase()
-      const proposer = (r.proposal?.proposer  ?? '').toLowerCase()
-      if (!subject.includes(q) && !proposer.includes(q)) return false
+      if ( !subject.includes(q) ) return false
     }
     if (selectedCommittee.value && r.proposal?.committee !== selectedCommittee.value) {
       return false

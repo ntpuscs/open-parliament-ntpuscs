@@ -1,0 +1,65 @@
+# .github/workflows/fetch-committee-reports.yml
+#
+# 觸發時機：
+#   1. 每週一 UTC 00:00（台灣時間週一 08:00）自動執行
+#   2. 在 GitHub Actions 頁面手動按下 "Run workflow" 按鈕
+#   3. 【中長期】網站後台透過 GitHub API 觸發（repository_dispatch，event type: refresh-committee-reports）
+
+name: Sync Committee Reports
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'   # 每週一 UTC 00:00
+
+  workflow_dispatch:       # 允許在 GitHub web UI 手動觸發
+    inputs:
+      reason:
+        description: '觸發原因（選填，僅供紀錄）'
+        required: false
+        default: '手動更新'
+
+  repository_dispatch:     # 允許透過 GitHub API 從網站後台觸發
+    types: [refresh-committee-reports]
+
+jobs:
+  fetch-and-commit:
+    name: Fetch from Google Sheets and commit JSON
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write      # 允許 workflow 寫入（commit）到 repo
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Run fetch script
+        env:
+          COMMITTEE_REPORTS_SHEET_ID:  ${{ secrets.COMMITTEE_REPORTS_SHEET_ID }}
+          COMMITTEE_REPORTS_SHEET_GID: ${{ secrets.COMMITTEE_REPORTS_SHEET_GID }}
+        run: node scripts/fetchCommitteeReports.mjs
+
+      - name: Check for changes
+        id: diff
+        run: |
+          git diff --quiet public/data/committeeReports.json \
+            && echo "changed=false" >> "$GITHUB_OUTPUT" \
+            || echo "changed=true"  >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push if changed
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/committeeReports.json
+          git commit -m "chore(data): update committeeReports.json [skip ci]"
+          git push
+
+      - name: No changes detected
+        if: steps.diff.outputs.changed == 'false'
+        run: echo "試算表資料與現有檔案相同，不予 commit。"

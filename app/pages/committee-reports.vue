@@ -165,7 +165,7 @@
                 <svg class="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                 </svg>
-                {{ report.proposal?.proposer || '—' }}
+                {{ report.proposal?.proposer+'議員' || '—' }}
               </p>
               <p class="text-xs text-gray-500 dark:text-gray-400 flex items-center gap-1.5">
                 <svg class="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -258,7 +258,7 @@
 
               <!-- 基本資訊 grid -->
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <InfoField label="提案議員"  :value="selectedReport.proposal?.proposer" />
+                <InfoField label="提案議員"  :value="selectedReport.proposal?.proposer+'議員'" />
                 <InfoField label="委員會"    :value="selectedReport.proposal?.committee" />
                 <InfoField label="建議部門"  :value="selectedReport.proposal?.toDept" />
                 <InfoField label="提交時間"  :value="selectedReport.proposal?.timestamp" />
@@ -374,8 +374,12 @@ const ModalSection = defineComponent({
   }
 })
 
-// ─── 資料（透過 composable 取得） ────────────────────────────
-const { reports, cachedAt, pending, error } = await useCommitteeReports()
+// ─── 資料（直接讀取 /data/committeeReports.json） ──────────────────
+const { data: fetchedData, pending, error } = await useFetch('/data/committeeReports.json')
+
+// 透過 computed 取出原 composable 提供給 template 的屬性，以維持畫面與狀態正常運作
+const reports = computed(() => fetchedData.value?.data || [])
+const cachedAt = computed(() => fetchedData.value?.cachedAt || null)
 
 // ─── 篩選狀態 ────────────────────────────────────────────────
 const searchQuery       = ref('')
@@ -406,7 +410,7 @@ function statusLabel(report) {
   const s = getStatus(report)
   if (s === 'replied')   return '已回覆'
   if (s === 'pending')   return '待回覆'
-  return '提案待審'
+  return '提案待審或撰寫中'
 }
 
 function statusClass(report) {

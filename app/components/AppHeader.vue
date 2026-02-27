@@ -10,7 +10,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
               </svg>
             </div>
-            <h1 class="text-xl font-bold text-gray-900 dark:text-white">北大三峽議事資訊網</h1>
+            <h1 class="text-xl font-bold text-gray-900 dark:text-white">{{SITE_CONFIG.name}}</h1>
           </NuxtLink>
         </div>
 
@@ -22,19 +22,17 @@
           >
             議案查詢
           </NuxtLink>
-          <a 
-            :href="EXTERNAL_LINKS.meetingRecords" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-400 transition-colors"
-          >
-            會議紀錄
-          </a>
           <NuxtLink 
-            to="/more-service" 
+            to="/committee-reports" 
             class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-400 transition-colors"
           >
-            議事專區
+            委員會報告
+          </NuxtLink>
+          <NuxtLink 
+            to="/secretariat" 
+            class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-400 transition-colors"
+          >
+            草擬系統
           </NuxtLink>
           <a 
             :href="EXTERNAL_LINKS.mainWebsite" 
@@ -71,20 +69,20 @@
           >
             議案查詢
           </NuxtLink>
-          <a 
-            :href="EXTERNAL_LINKS.meetingRecords" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-400 transition-colors py-2"
-          >
-            會議紀錄
-          </a>
+          
           <NuxtLink 
-            to="/more-service" 
+            to="/committee-reports" 
             class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-400 transition-colors py-2"
             @click="closeMobileMenu"
           >
-            議事專區
+            委員會報告
+          </NuxtLink>
+          <NuxtLink 
+            to="/secretariat" 
+            class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary-400 transition-colors py-2"
+            @click="closeMobileMenu"
+          >
+            草擬系統
           </NuxtLink>
           <a 
             :href="EXTERNAL_LINKS.mainWebsite" 
@@ -101,6 +99,7 @@
 </template>
 
 <script setup>
+import { SITE_CONFIG } from '#imports'
 import { ref } from 'vue'
 import ThemeToggle from '~/components/ThemeToggle.vue'
 

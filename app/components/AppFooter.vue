@@ -28,7 +28,7 @@
             </a>
           </div>
           <p class="text-sm text-gray-500 dark:text-gray-400">
-            © {{ currentYear }} 三峽校區學生議會秘書處
+            © {{ currentYear }} {{SITE_CONFIG.fullName}}秘書處
           </p>
         </div>
       </div>

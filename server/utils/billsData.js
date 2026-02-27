@@ -1,32 +1,27 @@
 // server/utils/billsData.js
-import { google } from 'googleapis';
 
 /**
- * 從 Google Sheets 獲取所有議案資料並解析為物件陣列，同時處理缺少編號的行。
+ * 從提案系統（Google Forms）後台（Google Spreadsheets）取得所有議案資料，並解析為物件陣列。
  * - 過濾掉編號和案由都為空的「真正空行」。
- * - 為僅缺少編號但有案由的行賦予臨時編號（格式：最新屆次北大峽議字第TEMP_X號）。
+ * - 為每筆資料加上 rowIndex（對應試算表的資料列順序，從 1 開始）。
  * @returns {Promise<Array>} 返回一個解析為議案物件陣列的 Promise。
  */
 export async function fetchAllBillsFromGoogleSheets() {
   try {
-    // 設定 Google Sheets API 認證
-    const auth = new google.auth.GoogleAuth({
-      credentials: {
-        client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-        private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
-      },
-      scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
-    });
+    const spreadsheetId = process.env.BILLS_SHEET_ID;
+    // 若試算表有多個分頁，可在 .env 設定 BILLS_SHEET_GID（預設分頁 gid 通常為 0）
+    const gid = process.env.BILLS_SHEET_GID ?? '0';
 
-    const sheets = google.sheets({ version: 'v4', auth });
+    const url = `https://docs.google.com/spreadsheets/d/${spreadsheetId}/export?format=csv&gid=${gid}`;
 
-    // 從 Google Sheets 獲取資料
-    const response = await sheets.spreadsheets.values.get({
-      spreadsheetId: process.env.GOOGLE_SHEETS_ID,
-      range: 'A1:P1000', // 調整範圍以包含所有資料，確保能讀取到所有數據
-    });
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error: ${response.status} ${response.statusText}`);
+    }
 
-    const rows = response.data.values;
+    const csvText = await response.text();
+    const rows = parseCSV(csvText);
+
     if (!rows || rows.length === 0) {
       return [];
     }
@@ -36,53 +31,29 @@ export async function fetchAllBillsFromGoogleSheets() {
     const dataRows = rows.slice(1);
 
     const processedBills = [];
-    let latestTerm = 0; // 用於追蹤從現有資料中找到的最新屆次
 
-    // 第一遍遍歷：解析資料，過濾真正的空行，並找出最新屆次
-    dataRows.forEach(row => {
+    // 遍歷資料列，過濾真正的空行，並為每行加上流水編號（rowIndex）
+    dataRows.forEach((row, i) => {
       const bill = {};
       headers.forEach((header, index) => {
-        bill[header] = row[index] || '';
+        bill[header] = row[index] ?? '';
       });
 
-      // 檢查是否為「真正的空行」（編號和案由都為空）
-      // 您可以根據實際情況增加更多判斷條件，例如檢查多個關鍵欄位
+      // 過濾「真正的空行」（編號和案由都為空）
       if (!bill.編號 && !bill.案由) {
-        return; // 如果是真正的空行，則跳過此行
+        return;
       }
 
-      processedBills.push(bill); // 將有效或待處理的行加入
+      // rowIndex 從 1 開始，對應試算表的第幾個資料列（不含標題列）
+      bill.rowIndex = i + 1;
 
-      // 找出所有有效議案中的最大屆次
-      if (bill.編號) {
-        const match = bill.編號.match(/(\d+)屆/);
-        if (match && parseInt(match[1]) > latestTerm) {
-          latestTerm = parseInt(match[1]);
-        }
-      }
-    });
-
-    // 如果在整個數據集中都沒有找到任何屆次（例如，都是臨時編號的行，或者數據集為空），
-    // 則設定一個預設的「最新屆次」用於臨時編號。
-    if (latestTerm === 0) {
-        latestTerm = process.env.TERM_NOW;
-    }
-
-
-    // 第二遍遍歷：為缺少編號但有案由的行賦予臨時編號
-    let tempCounter = 1; // 臨時編號的計數器
-    processedBills.forEach(bill => {
-      if (!bill.編號 && bill.案由) { // 判斷條件：缺少編號，但有案由（表示不是真正的空行）
-        bill.編號 = `${latestTerm}屆北大峽議字第TEMP_${tempCounter}號`;
-        tempCounter++;
-      }
+      processedBills.push(bill);
     });
 
     return processedBills;
 
   } catch (error) {
     console.error('Error fetching all bills from Google Sheets:', error);
-    // 統一錯誤處理，拋出 Nuxt 的 createError 以便上層 API 路由捕獲
     throw createError({
       statusCode: 500,
       statusMessage: '無法從 Google 試算表擷取或處理議案。',
@@ -92,4 +63,66 @@ export async function fetchAllBillsFromGoogleSheets() {
       },
     });
   }
+}
+
+/**
+ * 簡易 CSV 解析器，支援以雙引號包裹且內含逗號或換行的欄位。
+ * @param {string} text - CSV 原始字串
+ * @returns {string[][]} 二維陣列
+ */
+function parseCSV(text) {
+  const rows = [];
+  let row = [];
+  let field = '';
+  let inQuotes = false;
+
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    const next = text[i + 1];
+
+    if (inQuotes) {
+      if (ch === '"' && next === '"') {
+        // 跳脫的雙引號 ""
+        field += '"';
+        i++;
+      } else if (ch === '"') {
+        inQuotes = false;
+      } else {
+        field += ch;
+      }
+    } else {
+      if (ch === '"') {
+        inQuotes = true;
+      } else if (ch === ',') {
+        row.push(field);
+        field = '';
+      } else if (ch === '\r' && next === '\n') {
+        row.push(field);
+        field = '';
+        rows.push(row);
+        row = [];
+        i++; // 跳過 \n
+      } else if (ch === '\n') {
+        row.push(field);
+        field = '';
+        rows.push(row);
+        row = [];
+      } else {
+        field += ch;
+      }
+    }
+  }
+
+  // 處理最後一行
+  if (field || row.length > 0) {
+    row.push(field);
+    rows.push(row);
+  }
+
+  // 移除最後可能的空行
+  if (rows.at(-1)?.every(f => f === '')) {
+    rows.pop();
+  }
+
+  return rows;
 }

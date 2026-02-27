@@ -1,3 +1,4 @@
+<!-- app/pages/committee-reports.vue -->
 <template>
   <div class="min-h-screen bg-gray-50 dark:bg-gray-950 transition-colors duration-300">
 
@@ -10,7 +11,6 @@
           <NuxtLink to="/" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
             首頁
           </NuxtLink>
-          <span class="text-gray-300 dark:text-gray-600">/</span>
           <span class="text-gray-300 dark:text-gray-600">/</span>
           <span class="text-gray-900 dark:text-gray-100 font-medium">委員會報告</span>
         </nav>
@@ -144,21 +144,19 @@
             <!-- 編號 + 狀態標籤 -->
             <div class="flex items-center justify-between gap-2 mb-3">
               <span class="text-xs font-mono font-semibold text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-950/50 px-2 py-0.5 rounded">
-                {{ report['秘書處手動編號'] || `#${report.rowIndex}` }}
+                {{ report.committeeReport?.serialNumber || `#${report.rowIndex}` }}
               </span>
               <span
-                :class="report.governmentResponse?.hasResponse
-                  ? 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-400 ring-1 ring-emerald-200 dark:ring-emerald-800'
-                  : 'bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-400 ring-1 ring-amber-200 dark:ring-amber-800'"
+                :class="statusClass(report)"
                 class="text-xs font-medium px-2 py-0.5 rounded-full"
               >
-                {{ report.governmentResponse?.hasResponse ? '已回覆' : '待回覆' }}
+                {{ statusLabel(report) }}
               </span>
             </div>
 
             <!-- 主旨 -->
             <h3 class="text-sm font-semibold text-gray-900 dark:text-gray-100 leading-snug line-clamp-2 mb-3 group-hover:text-primary-700 dark:group-hover:text-primary-300 transition-colors">
-              {{ report['主旨'] || '（未填主旨）' }}
+              {{ report.proposal?.subject || '（未填主旨）' }}
             </h3>
 
             <!-- meta 資訊 -->
@@ -167,19 +165,19 @@
                 <svg class="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                 </svg>
-                {{ report['議員姓名'] || '—' }}
+                {{ report.proposal?.proposer || '—' }}
               </p>
               <p class="text-xs text-gray-500 dark:text-gray-400 flex items-center gap-1.5">
                 <svg class="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-2 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
                 </svg>
-                {{ report['欲提請以哪個委員會之名義提出建議報告？'] || '—' }}
+                {{ report.proposal?.committee || '—' }}
               </p>
-              <p v-if="report['排入會議']" class="text-xs text-gray-500 dark:text-gray-400 flex items-center gap-1.5">
+              <p v-if="report.committeeReport?.scheduledMeeting" class="text-xs text-gray-500 dark:text-gray-400 flex items-center gap-1.5">
                 <svg class="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                 </svg>
-                {{ report['排入會議'] }}
+                {{ report.committeeReport.scheduledMeeting }}
               </p>
             </div>
           </div>
@@ -215,6 +213,7 @@
           appear
         >
           <div
+            v-if="selectedReport"
             class="relative z-10 w-full max-w-2xl max-h-[85vh] flex flex-col
                    bg-white dark:bg-gray-900 rounded-2xl shadow-2xl
                    border border-gray-200 dark:border-gray-700 overflow-hidden"
@@ -226,15 +225,13 @@
             <div class="flex items-start justify-between gap-4 px-6 py-5 border-b border-gray-100 dark:border-gray-800 shrink-0">
               <div class="flex items-center gap-3 min-w-0">
                 <span class="text-xs font-mono font-bold text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-950/50 px-2.5 py-1 rounded shrink-0">
-                  {{ selectedReport['秘書處手動編號'] || `#${selectedReport.rowIndex}` }}
+                  {{ selectedReport.committeeReport?.serialNumber || `#${selectedReport.rowIndex}` }}
                 </span>
                 <span
-                  :class="selectedReport.governmentResponse?.hasResponse
-                    ? 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-400 ring-1 ring-emerald-200 dark:ring-emerald-800'
-                    : 'bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-400 ring-1 ring-amber-200 dark:ring-amber-800'"
+                  :class="statusClass(selectedReport)"
                   class="text-xs font-medium px-2.5 py-1 rounded-full shrink-0"
                 >
-                  {{ selectedReport.governmentResponse?.hasResponse ? '已有學生會回覆' : '待學生會回覆' }}
+                  {{ statusLabel(selectedReport) }}
                 </span>
               </div>
               <button
@@ -255,54 +252,41 @@
               <!-- 主旨 -->
               <div>
                 <h2 class="text-lg font-bold text-gray-900 dark:text-white leading-snug">
-                  {{ selectedReport['主旨'] || '（未填主旨）' }}
+                  {{ selectedReport.proposal?.subject || '（未填主旨）' }}
                 </h2>
               </div>
 
               <!-- 基本資訊 grid -->
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <InfoField label="提案議員" :value="selectedReport['議員姓名']" />
-                <InfoField label="委員會" :value="selectedReport['欲提請以哪個委員會之名義提出建議報告？']" />
-                <InfoField label="排入會議" :value="selectedReport['排入會議']" />
-                <InfoField label="提交時間" :value="selectedReport['時間戳記']" />
-                <InfoField
-                  v-if="selectedReport['您欲提出建議之部門(文務)']"
-                  label="建議部門"
-                  :value="selectedReport['您欲提出建議之部門(文務)']"
-                />
-                <InfoField
-                  v-if="selectedReport['您欲提出建議之部門(財務)']"
-                  label="建議部門"
-                  :value="selectedReport['您欲提出建議之部門(財務)']"
-                />
-                <InfoField
-                  v-if="selectedReport['您欲提出建議之部門(法制)']"
-                  label="建議部門"
-                  :value="selectedReport['您欲提出建議之部門(法制)']"
-                />
+                <InfoField label="提案議員"  :value="selectedReport.proposal?.proposer" />
+                <InfoField label="委員會"    :value="selectedReport.proposal?.committee" />
+                <InfoField label="建議部門"  :value="selectedReport.proposal?.toDept" />
+                <InfoField label="提交時間"  :value="selectedReport.proposal?.timestamp" />
+                <InfoField label="排入會議"  :value="selectedReport.committeeReport?.scheduledMeeting" />
+                <InfoField label="建議報告字號" :value="selectedReport.committeeReport?.serialNumber" />
               </div>
 
               <hr class="border-gray-100 dark:border-gray-800" />
 
               <!-- 說明 -->
-              <ModalSection title="說明" :content="selectedReport['說明']" />
+              <ModalSection title="說明"     :content="selectedReport.proposal?.description" />
 
               <!-- 建議方案 -->
-              <ModalSection title="建議方案" :content="selectedReport['建議方案']" />
+              <ModalSection title="建議方案" :content="selectedReport.proposal?.suggestion" />
 
               <!-- 委員會決議 -->
               <ModalSection
-                v-if="selectedReport['委員會決議摘要']"
+                v-if="selectedReport.committeeReport?.committeeResolution"
                 title="委員會決議摘要"
-                :content="selectedReport['委員會決議摘要']"
+                :content="selectedReport.committeeReport.committeeResolution"
                 accent
               />
 
               <!-- 建議報告連結 -->
-              <div v-if="selectedReport['建議報告連結']">
+              <div v-if="selectedReport.committeeReport?.reportLink">
                 <p class="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-2">建議報告連結</p>
                 <a
-                  :href="selectedReport['建議報告連結']"
+                  :href="selectedReport.committeeReport.reportLink"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="inline-flex items-center gap-2 text-sm text-primary-600 dark:text-primary-400
@@ -325,11 +309,11 @@
                     </svg>
                     學生會回覆
                   </p>
-                  <p v-if="selectedReport['學生會回覆(文字)']" class="text-sm text-gray-800 dark:text-gray-200 whitespace-pre-line leading-relaxed">
-                    {{ selectedReport['學生會回覆(文字)'] }}
+                  <p v-if="selectedReport.governmentResponse?.text" class="text-sm text-gray-800 dark:text-gray-200 whitespace-pre-line leading-relaxed">
+                    {{ selectedReport.governmentResponse.text }}
                   </p>
-                  <p v-if="selectedReport['學生會回覆(提案字號)']" class="text-xs text-emerald-700 dark:text-emerald-400 mt-2">
-                    提案字號：{{ selectedReport['學生會回覆(提案字號)'] }}
+                  <p v-if="selectedReport.governmentResponse?.refNumber" class="text-xs text-emerald-700 dark:text-emerald-400 mt-2">
+                    提案字號：{{ selectedReport.governmentResponse.refNumber }}
                   </p>
                 </div>
               </template>
@@ -382,13 +366,8 @@ const ModalSection = defineComponent({
   `,
 })
 
-// ─── 資料 ────────────────────────────────────────────────────
-const { data, pending, error } = await useFetch('/data/committeeReports.json', {
-  key: 'committee-reports',
-})
-
-const allReports = computed(() => data.value?.data ?? [])
-const cachedAt   = computed(() => data.value?.cachedAt ?? null)
+// ─── 資料（透過 composable 取得） ────────────────────────────
+const { reports, cachedAt, pending, error } = await useCommitteeReports()
 
 // ─── 篩選狀態 ────────────────────────────────────────────────
 const searchQuery       = ref('')
@@ -396,34 +375,63 @@ const selectedCommittee = ref('')
 const responseFilter    = ref('all')
 
 const responseFilters = [
-  { label: '全部',   value: 'all'     },
-  { label: '已回覆', value: 'replied' },
-  { label: '待回覆', value: 'pending' },
+  { label: '全部',   value: 'all'      },
+  { label: '提案待審', value: 'reviewing' },
+  { label: '待回覆', value: 'pending'  },
+  { label: '已回覆', value: 'replied'  },
 ]
+
+// ─── 狀態輔助函式 ────────────────────────────────────────────
+/**
+ * 判斷報告目前所處的三段狀態：
+ *   reviewing → hasReport false（委員會尚未做成報告）
+ *   pending   → hasReport true  且 hasResponse false（等待學生會回覆）
+ *   replied   → hasResponse true（學生會已回覆）
+ */
+function getStatus(report) {
+  if (report?.governmentResponse?.hasResponse) return 'replied'
+  if (report?.committeeReport?.hasReport)      return 'pending'
+  return 'reviewing'
+}
+
+function statusLabel(report) {
+  const s = getStatus(report)
+  if (s === 'replied')   return '已回覆'
+  if (s === 'pending')   return '待回覆'
+  return '提案待審'
+}
+
+function statusClass(report) {
+  const s = getStatus(report)
+  if (s === 'replied')
+    return 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-400 ring-1 ring-emerald-200 dark:ring-emerald-800'
+  if (s === 'pending')
+    return 'bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-400 ring-1 ring-amber-200 dark:ring-amber-800'
+  return 'bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 ring-1 ring-gray-200 dark:ring-gray-700'
+}
 
 // 委員會下拉選項（去重）
 const committeeOptions = computed(() =>
   [...new Set(
-    allReports.value
-      .map(r => r['欲提請以哪個委員會之名義提出建議報告？'])
+    reports.value
+      .map(r => r.proposal?.committee)
       .filter(Boolean)
   )].sort()
 )
 
 // 篩選後的報告清單
 const filteredReports = computed(() => {
-  return allReports.value.filter(r => {
+  return reports.value.filter(r => {
     const q = searchQuery.value.trim().toLowerCase()
     if (q) {
-      const subject  = (r['主旨'] ?? '').toLowerCase()
-      const proposer = (r['議員姓名'] ?? '').toLowerCase()
+      const subject  = (r.proposal?.subject   ?? '').toLowerCase()
+      const proposer = (r.proposal?.proposer  ?? '').toLowerCase()
       if (!subject.includes(q) && !proposer.includes(q)) return false
     }
-    if (selectedCommittee.value && r['欲提請以哪個委員會之名義提出建議報告？'] !== selectedCommittee.value) {
+    if (selectedCommittee.value && r.proposal?.committee !== selectedCommittee.value) {
       return false
     }
-    if (responseFilter.value === 'replied' && !r.governmentResponse?.hasResponse) return false
-    if (responseFilter.value === 'pending' &&  r.governmentResponse?.hasResponse) return false
+    if (responseFilter.value !== 'all' && getStatus(r) !== responseFilter.value) return false
     return true
   })
 })

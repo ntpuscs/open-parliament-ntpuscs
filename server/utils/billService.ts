@@ -4,12 +4,12 @@ import { getCurrentTerm } from '../../shared/utils/term'; // 雖然會 auto-impo
 
 export const useBillService = () => {
   const getLatestTermBills = async (): Promise<Bill[]> => {
-    const res = await $fetch<BillResponse>('/bill-data/latest_term.json');
+    const res = await $fetch<BillResponse>('/data/bill-latestTerm.json');
     return res.data;
   };
 
   const getPastTermBills = async (): Promise<Bill[]> => {
-    const res = await $fetch<BillResponse>('/bill-data/past_term.json');
+    const res = await $fetch<BillResponse>('/data/bill-pastTerm.json');
     return res.data;
   };
 

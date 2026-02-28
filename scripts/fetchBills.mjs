@@ -118,7 +118,6 @@ async function main() {
       }
 
       // 2. 欄位重新映射與隱私資料排除 (白名單機制)
-      // 注意：處理了原始資料中「提案聯絡人姓名」可能帶有尾隨空白的問題
       const transformedRow = {
         billNumber: idStr,
         submittedAt: submittedAt,
@@ -154,8 +153,8 @@ async function main() {
     await fs.mkdir(OUTPUT_DIR, { recursive: true });
 
     // 透過比對函數處理新舊屆次檔案
-    await saveIfChanged('latest_term.json', newTermData);
-    await saveIfChanged('past_terms.json', oldTermsData);
+    await saveIfChanged('bill_latestTerm.json', newTermData);
+    await saveIfChanged('bill_pastTerms.json', oldTermsData);
 
     console.log(`議案資料同步流程執行完畢！`);
 

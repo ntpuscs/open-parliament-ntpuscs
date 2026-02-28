@@ -57,4 +57,4 @@ jobs:
         with:
           commit_message: "chore(data): 自動同步議案資料"
           commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
-          file_pattern: "public/bill-data/*.json"
+          file_pattern: "public/data/*.json"

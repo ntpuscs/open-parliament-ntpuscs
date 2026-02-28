@@ -1,0 +1,60 @@
+# .github/workflows/fetch-bills.yml
+#
+# 觸發時機：
+#   1. UTC 每日 21:00（台灣時間週一 05:00）自動執行
+#   2. 在 GitHub Actions 頁面手動按下 "Run workflow" 按鈕
+#   3. 網站後台透過 GitHub API 觸發（repository_dispatch，event type: refresh-bills）
+#   【中長期：已先預留 API 觸發，惟前端頁面尚未撰寫】
+
+name: 同步議案資料
+
+on:
+  schedule:
+    # 每天 21:00 (UTC) 執行，對應台灣時間早上 05:00
+    - cron: '0 21 * * *'
+  workflow_dispatch: # 允許從介面手動觸發
+    inputs:
+      reason:
+        description: '觸發原因（選填，僅供紀錄）'
+        required: false
+        default: '手動更新'
+
+  repository_dispatch:     # 允許透過 GitHub API 從網站後台觸發
+    types: [refresh-bills]
+
+jobs:
+  fetch-and-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 10
+          run_install: false
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Fetch and parse Google Sheets data
+        env:
+          BILLS_SHEET_ID: ${{ secrets.BILLS_SHEET_ID }}
+          BILLS_SHEET_GID: ${{ secrets.BILLS_SHEET_GID }}
+        run: node scripts/fetchBills.mjs
+
+      - name: Check for changes and Commit
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(data): 自動同步議案資料"
+          commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+          file_pattern: "public/bill-data/*.json"

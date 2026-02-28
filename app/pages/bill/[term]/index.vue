@@ -15,7 +15,7 @@
     </nav>
 
     <div v-if="isOutOfRange" class="text-center text-red-500 font-bold my-12">
-      僅有第 {{ STARTING_TERM }} ~ {{ currentTerm }} 屆資料
+      僅有第 23 ~ {{ getCurrentTerm() }} 屆資料
       <div class="mt-8 flex justify-center gap-4">
         <NuxtLink
           to="/bill"
@@ -51,9 +51,8 @@
 
       <div v-if="!pending && !error" class="mb-8">
         <BillFilter
-          :filters="filters.value"
-          :available-terms="[parseInt(route.params.term)]" :available-types="availableTypes"
-          :available-agencies="availableAgencies"
+          :filters="filters"
+          :available-terms="[parseInt(route.params.term)]" 
           @update:filters="updateFilters"
           @reset-filters="resetFilters"
         />
@@ -61,7 +60,7 @@
 
       <div v-if="!pending && !error && filteredBills.length > 0" class="space-y-6">
         <div class="text-sm text-gray-600 dark:text-gray-400">
-          共找到 {{ filteredBills.length }} 筆議案 (總計 {{ totalItems }} 筆)
+          共找到 {{ filteredBills.length }} 筆議案
         </div>
 
         <!-- 上方分頁選單 -->
@@ -75,7 +74,7 @@
         <div class="grid gap-4">
           <BillCard
             v-for="bill in paginatedBills"
-            :key="bill.編號"
+            :key="bill.billNumber"
             :bill="bill"
           />
         </div>
@@ -102,58 +101,24 @@
 import { ref, computed, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { ExclamationTriangleIcon, DocumentTextIcon } from '@heroicons/vue/24/outline'
-import { useBills } from '~/composables/useBills'
-import { useCurrentTerm } from '~/composables/useCurrentTerm'
-
-// 取得屆次範圍
-const { currentTerm, availableTermsRange } = useCurrentTerm()
-const STARTING_TERM = 23
 
 const route = useRoute()
 const term = parseInt(route.params.term)
-
-// 判斷是否超出屆次範圍
-const isOutOfRange = computed(() => {
-  return isNaN(term) || term < STARTING_TERM || term > currentTerm.value
-})
-
-// 只有在合法屆次才查詢資料
-let billsStore, bills, pending, error, totalItems, totalPages, availableTypes, availableAgencies
-if (!isOutOfRange.value) {
-  billsStore = useBills()
-  billsStore.updateFilters({ term: String(term) })
-  await billsStore.fetchBillsByTerm(term)
-  bills = billsStore.bills
-  pending = billsStore.loading
-  error = billsStore.error
-  totalItems = billsStore.totalItems
-  totalPages = billsStore.totalPages
-  availableTypes = billsStore.availableTypes
-  availableAgencies = billsStore.availableAgencies
-}
-
-// 獲取路由參數
-// const route = useRoute()
-// const term = parseInt(route.params.term)
 
 // 驗證屆次參數
 if (!term || isNaN(term)) {
   throw createError({
     statusCode: 404,
-    statusMessage: '屆次參數無效'
+    statusMessage: '屆次參數欠缺或非數值'
   })
 }
 
-// SEO 設定
-useHead({
-  title: `第${term}屆議案查詢 - 三峽校區議事服務`,
-  meta: [
-    {
-      name: 'description',
-      content: `查詢三峽校區學生議會第${term}屆議案資料`
-    }
-  ]
+// 判斷是否超出屆次範圍
+const isOutOfRange = computed(() => {
+  return typeof getValidTerms === 'function' && !getValidTerms().includes(term)
 })
+
+const { data: bills, pending, error, refresh } = await useFetch(`/api/bills?term=${term}`);
 
 // 響應式數據
 const currentPage = ref(1)
@@ -174,147 +139,54 @@ const frontendTotalPages = computed(() => {
   return Math.ceil(filteredBills.value.length / itemsPerPage)
 })
 
-// 使用 composable 獲取議案資料
-
-// const { bills, loading: pending, error, refresh, totalItems, totalPages, availableTypes, availableAgencies } = await useBills(filters)
-
-// const billsStore = useBills()
-// billsStore.updateFilters({ term: String(term) })
-// await billsStore.fetchBillsByTerm(term)
-
-// const bills = billsStore.bills
-// const pending = billsStore.loading
-// const error = billsStore.error
-// const totalItems = billsStore.totalItems
-// const totalPages = billsStore.totalPages
-// const availableTypes = billsStore.availableTypes
-// const availableAgencies = billsStore.availableAgencies
-
 // 監聽路由參數變化，當屆次改變時重設篩選條件並重新載入
 watch(() => route.params.term, async (newTerm) => {
     if (newTerm && parseInt(newTerm) !== term) {
         const newTermParsed = parseInt(newTerm);
         filters.value.term = String(newTermParsed);
         currentPage.value = 1;
-        await refresh();
+        if (typeof refresh === 'function') await refresh();
     }
 }, { immediate: true });
-
-// 輔助函數：將日期時間字串轉換為 ISO 格式 (YYYY-MM-DDTHH:mm:ss)
-const formatTimestampToISO = (timestampString) => {
-  if (!timestampString) return null;
-  try {
-    // 替換「下午」為「PM」，「上午」為「AM」
-    const normalizedString = timestampString
-      .replace('下午', 'PM')
-      .replace('上午', 'AM');
-    let date = new Date(normalizedString);
-
-    if (isNaN(date.getTime())) {
-      // 如果直接解析失敗，嘗試手動解析 'YYYY/MM/DD AM/PM HH:mm:ss' 格式
-      const parts = timestampString.match(/(\d{4})\/(\d{1,2})\/(\d{1,2}) (上午|下午) (\d{1,2}):(\d{1,2}):(\d{1,2})/);
-      if (parts) {
-        let year = parseInt(parts[1]);
-        let month = parseInt(parts[2]) - 1; // 月份是從 0 開始
-        let day = parseInt(parts[3]);
-        let hour = parseInt(parts[5]);
-        let minute = parseInt(parts[6]);
-        let second = parseInt(parts[7]);
-        const ampm = parts[4];
-
-        if (ampm === '下午' && hour < 12) {
-          hour += 12;
-        } else if (ampm === '上午' && hour === 12) {
-          hour = 0;
-        }
-        date = new Date(year, month, day, hour, minute, second);
-        if (isNaN(date.getTime())) return null;
-      } else {
-        return null;
-      }
-    }
-    // 回傳完整 ISO 字串 (不帶時區)
-    return date.toISOString().replace('Z', '');
-  } catch (e) {
-    console.error("Error formatting timestamp for comparison:", e);
-    return null;
-  }
-};
-
 
 // 計算過濾後的議案
 const filteredBills = computed(() => {
   if (!Array.isArray(bills.value)) return []
 
   return bills.value.filter(bill => {
-    // 屆次篩選
-    const billTerm = extractTermFromNumber(bill.編號)
-    if (billTerm !== term) return false
 
-    // 類型篩選（支援 type 或 提案類型）
-    if (
-      (filters.value.type && bill.提案類型 !== filters.value.type) ||
-      (filters.value.提案類型 && bill.提案類型 !== filters.value.提案類型)
-    ) return false
+    // 類型篩選 
+    if (filters.value.type && bill.billType !== filters.value.type) return false
 
-    // 機關篩選（支援 agency 或 提案機關/議員）
-    if (
-      (filters.value.agency && bill['提案機關/議員'] !== filters.value.agency) ||
-      (filters.value['提案機關/議員'] && bill['提案機關/議員'] !== filters.value['提案機關/議員'])
-    ) return false
+    // 機關篩選 
+    if (filters.value.agency && bill.proposingEntity !== filters.value.agency) return false
 
-    // 編號篩選
-    if (
-      filters.value.編號 &&
-      !String(bill.編號).includes(filters.value.編號)
-    ) return false
-
-    // 提案人篩選
-    if (
-      filters.value['提案機關主管/提案議員姓名'] &&
-      !String(bill['提案機關主管/提案議員姓名'] || '').includes(filters.value['提案機關主管/提案議員姓名'])
-    ) return false
-
-    // 案由篩選
-    if (
-      filters.value.案由 &&
-      !String(bill.案由 || '').includes(filters.value.案由)
-    ) return false
-
-    // 說明篩選
-    if (
-      filters.value.說明 &&
-      !String(bill.說明 || '').includes(filters.value.說明)
-    ) return false
-
-    // 辦法篩選
-    if (
-      filters.value.辦法 &&
-      !String(bill.辦法 || '').includes(filters.value.辦法)
-    ) return false
-
-    // 關鍵字篩選（支援 keyword）
-    if (
-      filters.value.keyword &&
-      ![bill?.案由, bill?.說明, bill?.辦法, bill?.編號]
+    // 關鍵字篩選 
+    if (filters.value.keyword) {
+      const keyword = filters.value.keyword.toLowerCase();
+      const content = [bill.subject, bill.description, bill.proposedAction, bill.billNumber]
         .filter(Boolean)
         .join(' ')
-        .toLowerCase()
-        .includes(filters.value.keyword.toLowerCase())
-    ) return false
+        .toLowerCase();
+      if (!content.includes(keyword)) return false;
+    }
 
-    // 日期範圍篩選
-    const billDateISO = formatTimestampToISO(bill.時間戳記)
-    if (!billDateISO) return false
-    if (filters.value.dateFrom && billDateISO < filters.value.dateFrom) return false
-    if (filters.value.dateTo && billDateISO > filters.value.dateTo) return false
+    // 日期範圍篩選 
+    const billDateISO = typeof formatTimestampToISO === 'function' 
+      ? formatTimestampToISO(bill.submittedAt) 
+      : bill.submittedAt;
+      
+    if (billDateISO) {
+      if (filters.value.dateFrom && billDateISO < filters.value.dateFrom) return false
+      if (filters.value.dateTo && billDateISO > filters.value.dateTo) return false
+    }
 
     return true
   }).sort((a, b) => {
-    const dateA = formatTimestampToISO(a.時間戳記)
-    const dateB = formatTimestampToISO(b.時間戳記)
-    if (!dateA || !dateB) return 0
-    return dateB.localeCompare(dateA)
+    const dateA = typeof formatTimestampToISO === 'function' ? formatTimestampToISO(a.submittedAt) : a.submittedAt;
+    const dateB = typeof formatTimestampToISO === 'function' ? formatTimestampToISO(b.submittedAt) : b.submittedAt;
+    if (!dateA || !dateB) return 0;
+    return String(dateB).localeCompare(String(dateA));
   })
 })
 
@@ -365,6 +237,17 @@ const extractNumberFromNumber = (billNumber) => {
 watch(currentPage, () => {
   // 當前頁碼改變時，不需要重新獲取數據，因為數據已經在 bills.value 中
 });
+
+// SEO 設定
+useHead({
+  title: `第${term}屆議案查詢 - 三峽校區議事服務`,
+  meta: [
+    {
+      name: 'description',
+      content: `查詢三峽校區學生議會第${term}屆議案資料`
+    }
+  ]
+})
 </script>
 
 <style scoped>

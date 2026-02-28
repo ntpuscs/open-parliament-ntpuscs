@@ -1,15 +1,25 @@
 // server/utils/billService.ts
+import { readFile } from 'node:fs/promises';
+import { resolve } from 'node:path';
 import type { Bill, BillResponse } from '../../shared/types/bill';
-import { getCurrentTerm } from '../../shared/utils/term'; // 雖然會 auto-import，但加上更明確
+import { getCurrentTerm } from '../../shared/utils/term';
 
 export const useBillService = () => {
+  // 建立一個共用的讀檔函式，負責處理路徑與 JSON 解析
+  const readJsonFile = async (filename: string): Promise<BillResponse> => {
+    // 使用 resolve 組合完整路徑，確保不同作業系統下的路徑斜線正確
+    const filePath = resolve(process.cwd(), 'public', 'data', filename);
+    const fileContent = await readFile(filePath, 'utf-8');
+    return JSON.parse(fileContent) as BillResponse;
+  };
+
   const getLatestTermBills = async (): Promise<Bill[]> => {
-    const res = await $fetch<BillResponse>('/data/bill-latestTerm.json');
+    const res = await readJsonFile('bill_latestTerm.json');
     return res.data;
   };
 
   const getPastTermBills = async (): Promise<Bill[]> => {
-    const res = await $fetch<BillResponse>('/data/bill-pastTerm.json');
+    const res = await readJsonFile('bill_pastTerms.json');
     return res.data;
   };
 

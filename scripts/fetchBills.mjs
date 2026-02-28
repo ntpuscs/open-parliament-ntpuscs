@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import Papa from 'papaparse';
 
-// 從環境變數讀取，若無設定則在後續拋出錯誤
+// 從環境變數讀取
 const SHEET_ID = process.env.BILLS_SHEET_ID;
 const GID = process.env.BILLS_SHEET_GID; 
 
@@ -103,13 +103,39 @@ async function main() {
 
     for (const row of data) {
       const idStr = row['編號']?.trim() || '';
-      const timestamp = row['時間戳記']?.trim() || '';
+      const submittedAt = row['時間戳記']?.trim() || '';
 
-      if (!timestamp) continue; // 無效列跳過
+      // 無效列跳過
+      if (!submittedAt) continue; 
 
+      // 1. 附件欄位整合與優化
+      const attachments = [];
+      for (let i = 1; i <= 5; i++) {
+        const url = row[`附件${i}`]?.trim();
+        if (url) {
+          attachments.push(url);
+        }
+      }
+
+      // 2. 欄位重新映射與隱私資料排除 (白名單機制)
+      // 注意：處理了原始資料中「提案聯絡人姓名」可能帶有尾隨空白的問題
+      const transformedRow = {
+        billNumber: idStr,
+        submittedAt: submittedAt,
+        proposingEntity: row['提案機關/議員']?.trim() || '',
+        proposerName: row['提案機關主管/提案議員姓名']?.trim() || '',
+        contactName: (row['提案聯絡人姓名 '])?.trim() || '',
+        billType: row['提案類型']?.trim() || '',
+        subject: row['案由']?.trim() || '',
+        description: row['說明']?.trim() || '',
+        proposedAction: row['辦法']?.trim() || '',
+        attachments: attachments,
+        scheduledSession: row['排入會議']?.trim() || ''
+      };
+
+      // 3. 判斷屆次並分流
       // 預設為最新屆次（這也包含了「編號為空」的狀況）
       let term = currentTerm;
-
       if (idStr) {
         const match = idStr.match(/^(\d+)屆北大峽議字第\d+號$/);
         if (match) {
@@ -118,9 +144,9 @@ async function main() {
       }
 
       if (term === currentTerm) {
-        newTermData.push(row);
+        newTermData.push(transformedRow);
       } else {
-        oldTermsData.push(row);
+        oldTermsData.push(transformedRow);
       }
     }
 

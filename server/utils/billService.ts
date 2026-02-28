@@ -27,17 +27,19 @@ export const useBillService = () => {
   };
 
   // 取得特定屆次的所有議案
-  const getBillsByTerm = async (targetTerm: number): Promise<Bill[]> => {
-    if (targetTerm === getCurrentTerm()) {
-      return await getLatestTermBills();
-    }
-    
-    const pastBills = await getPastTermBills();
-    return pastBills.filter(bill => {
-      const match = bill.billNumber.match(/^(\d+)屆/);
-      return match && match[1] && parseInt(match[1], 10) === targetTerm;
-    });
-  };
+const getBillsByTerm = async (targetTerm: number): Promise<Bill[]> => {
+  if (targetTerm === getCurrentTerm()) {
+    return await getLatestTermBills();
+  }
+  
+  const pastBills = await getPastTermBills();
+  return pastBills.filter(bill => {
+    // 先確認 billNumber 是字串，再呼叫 .match()
+    if (typeof bill.billNumber !== 'string') return false;
+    const match = bill.billNumber.match(/^(\d+)屆/);
+    return match && match[1] && parseInt(match[1], 10) === targetTerm;
+  });
+};
 
   // 取得單一特定議案
   const getBillById = async (targetTerm: number, targetNum: number): Promise<Bill | undefined> => {

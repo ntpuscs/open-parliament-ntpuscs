@@ -1,15 +1,16 @@
 # .github/workflows/fetch-committee-reports.yml
 #
 # 觸發時機：
-#   1. 每週一 UTC 00:00（台灣時間週一 08:00）自動執行
+#   1. UTC 每週日 21:30（台灣時間週一 05:30）自動執行
 #   2. 在 GitHub Actions 頁面手動按下 "Run workflow" 按鈕
-#   3. 【中長期】網站後台透過 GitHub API 觸發（repository_dispatch，event type: refresh-committee-reports）
+#   3. 網站後台透過 GitHub API 觸發（repository_dispatch，event type: refresh-committee-reports）
+#   【中長期：已先預留 API 觸發，惟前端頁面尚未撰寫】
 
-name: Sync Committee Reports
+name: 同步委員會報告資料
 
 on:
   schedule:
-    - cron: '0 0 * * 1'   # 每週一 UTC 00:00
+    - cron: '30 21 * * SUN'   # 每週日 UTC 21:30 (對應台灣時間週一 05:30)
 
   workflow_dispatch:       # 允許在 GitHub web UI 手動觸發
     inputs:
@@ -71,7 +72,7 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add public/data/committeeReports.json
-          git commit -m "chore(data): update committeeReports.json"
+          git commit -m "chore(data): 自動同步委員會報告資料"
           git push
 
       - name: No changes detected

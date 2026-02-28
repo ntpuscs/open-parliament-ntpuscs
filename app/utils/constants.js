@@ -257,7 +257,6 @@ export const validateField = (field, value) => {
 export default {
   SITE_CONFIG,
   EXTERNAL_LINKS,
-  TEMPLATE_LINKS,
   BILL_TYPES,
   PROPOSER_ORGANS,
   PAGINATION_CONFIG,

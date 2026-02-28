@@ -10,24 +10,7 @@ export const SITE_CONFIG = {
 
 // 外部連結設定
 export const EXTERNAL_LINKS = {
-  proposalSystem: 'https://forms.gle/WYSBv4zoXR8VnA6i9',
-  meetingRecords: 'https://ntpusu.org/conference/legi-sanxia/minute-sx',
   mainWebsite: 'https://ntpusu.org/',
-  inviteSystem: 'https://forms.gle/5w2BfVCTQTpXxyfd7',
-  motionSystem: 'https://forms.gle/zLcLsJpZGNL2viYK9',
-  budgetSystem: 'https://forms.gle/hGQSzzAZcEdSHWBdA',
-  yiShiGuiZe: 'https://ntpusu.org/regulation-index/rule-list-sanxia',
-  liveStream: 'https://www.youtube.com/@ntpusu-sanxia-student-congress'
-};
-
-// 提案附件範本連結
-export const TEMPLATE_LINKS = {
-  regulationAmendment: 'https://docs.google.com/document/d/1lhLoCy2CnXbiklRLFWBeqj_KL4tHKphz/edit?usp=sharing&ouid=111956381691113417844&rtpof=true&sd=true',
-  budgetForm: 'https://docs.google.com/spreadsheets/d/1TieOJ6umnl5VxDpS22a49HgYh4v4Ax2J/edit?usp=sharing&ouid=111956381691113417844&rtpof=true&sd=true',
-  budgetZhuijia: 'https://docs.google.com/spreadsheets/d/1MrDxKWyRveljA1N2anLXBQH7qwyNx-vc/edit?usp=sharing&ouid=111956381691113417844&rtpof=true&sd=true',
-  priceComparison: 'https://docs.google.com/document/d/1x3IeeIK_276Z-j5klBmnNuKSIj8jPFB5/edit?usp=share_link&ouid=111956381691113417844&rtpof=true&sd=true',
-  juesuan: 'https://docs.google.com/spreadsheets/d/19gAvW9p-7t8gvnISfWJu3H6RZXVlSi6E/edit?usp=sharing&ouid=111956381691113417844&rtpof=true&sd=true',
-  personalResume: 'https://docs.google.com/document/d/1DbLz9sb0GfWZuPXfw96a_Fzp9zlHd00x/edit?usp=share_link&ouid=111956381691113417844&rtpof=true&sd=true'
 };
 
 // 議案類型選項
@@ -142,18 +125,6 @@ export const NAVIGATION_ITEMS = [
     newTab: false
   },
   {
-    name: '會議紀錄',
-    href: EXTERNAL_LINKS.meetingRecords,
-    external: true,
-    newTab: true
-  },
-  {
-    name: '其他服務',
-    href: '/more-service',
-    external: false,
-    newTab: false
-  },
-  {
     name: '回到會網',
     href: EXTERNAL_LINKS.mainWebsite,
     external: true,
@@ -164,16 +135,6 @@ export const NAVIGATION_ITEMS = [
 // 首頁服務區塊
 export const HOME_SERVICES = [
   {
-    id: 'proposal-system',
-    title: '提案系統',
-    description: '提交議案到學生議會',
-    icon: '📝',
-    href: EXTERNAL_LINKS.proposalSystem,
-    external: true,
-    newTab: true,
-    color: 'blue'
-  },
-  {
     id: 'bill-query',
     title: '議案查詢',
     description: '查詢歷屆議案資料',
@@ -183,26 +144,6 @@ export const HOME_SERVICES = [
     newTab: false,
     color: 'green'
   },
-  {
-    id: 'meeting-records',
-    title: '會議紀錄',
-    description: '查看議會會議記錄',
-    icon: '📋',
-    href: EXTERNAL_LINKS.meetingRecords,
-    external: true,
-    newTab: true,
-    color: 'purple'
-  },
-  {
-    id: 'more-services',
-    title: '其他服務',
-    description: '更多議事相關服務',
-    icon: '⚙️',
-    href: '/more-service',
-    external: false,
-    newTab: false,
-    color: 'orange'
-  }
 ];
 
 // 錯誤訊息

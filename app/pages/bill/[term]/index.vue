@@ -7,7 +7,7 @@
         </li>
         <li>/</li>
         <li>
-          <NuxtLink to="/bill/new-list" class="hover:text-primary">議案查詢</NuxtLink>
+          <NuxtLink to="/bill" class="hover:text-primary">議案查詢</NuxtLink>
         </li>
         <li>/</li>
         <li class="text-gray-900 dark:text-white">第{{ term }}屆</li>

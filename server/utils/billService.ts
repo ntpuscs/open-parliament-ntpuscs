@@ -22,7 +22,7 @@ export const useBillService = () => {
   };
 
   const getPastTermBills = async (): Promise<Bill[]> => {
-    const res = await readJsonFile('bill_pastTerm.json');
+    const res = await readJsonFile('bill_pastTerms.json');
     return res.data;
   };
 

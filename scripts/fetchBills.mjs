@@ -12,7 +12,7 @@ if (!SHEET_ID || !GID) {
 }
 
 const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=${GID}`;
-const OUTPUT_DIR = path.resolve(process.cwd(), 'public/bill-data');
+const OUTPUT_DIR = path.resolve(process.cwd(), 'server/assets/data');
 
 /**
  * 負責比對資料並決定是否寫入檔案
@@ -48,7 +48,7 @@ async function saveIfChanged(filename, newDataArray) {
     };
 
     await fs.writeFile(filePath, JSON.stringify(outputData, null, 2), 'utf-8');
-    console.log(`[${filename}] 資料已更新寫入！包含 ${newDataArray.length} 筆紀錄。`);
+    console.log(`[${filename}] 已更新，現總計寫入 ${newDataArray.length} 筆議案。`);
   }
 }
 

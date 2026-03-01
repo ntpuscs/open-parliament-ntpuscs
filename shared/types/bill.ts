@@ -2,6 +2,8 @@
 
 export interface Bill {
   billNumber: string;
+  term: number | null;
+  serialNumber: number | null;
   submittedAt: string;
   proposingEntity: string;
   proposerName: string;

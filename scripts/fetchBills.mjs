@@ -15,6 +15,34 @@ const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?forma
 const OUTPUT_DIR = path.resolve(process.cwd(), 'server/assets/data');
 
 /**
+ * 解析 billNumber 字串，提取屆次（term）與議案流水號（serialNumber）。
+ * 若 billNumber 為空字串（代表尚未配發編號的最新議案），
+ * term 將由外部傳入的 currentTerm 決定，serialNumber 為 null。
+ *
+ * @param {string} billNumber - 格式為「X屆北大峽議字第Y號」的字串，或空字串
+ * @param {number} currentTerm - 動態偵測到的最新屆次，作為空白編號的 term 預設值
+ * @returns {{ term: number, serialNumber: number | null }}
+ */
+function parseBillNumber(billNumber, currentTerm) {
+  if (!billNumber) {
+    // 空字串：尚未配發編號，依理必然屬於最新屆次
+    return { term: currentTerm, serialNumber: null };
+  }
+
+  const match = billNumber.match(/^(\d+)屆北大峽議字第(\d+)號$/);
+  if (!match) {
+    // 有值但格式不符：記錄警告並回傳 null
+    console.warn(`[parseBillNumber] 無法解析編號格式：「${billNumber}」。`);
+    return { term: null, serialNumber: null };
+  }
+
+  return {
+    term: parseInt(match[1], 10),
+    serialNumber: parseInt(match[2], 10),
+  };
+}
+
+/**
  * 負責比對資料並決定是否寫入檔案
  * string filename - 檔案名稱
  * Array newDataArray - 解析後的新資料陣列
@@ -117,9 +145,14 @@ async function main() {
         }
       }
 
-      // 2. 欄位重新映射與隱私資料排除 (白名單機制)
+      // 2. 解析 billNumber 取得 term 與 serialNumber
+      const { term, serialNumber } = parseBillNumber(idStr, currentTerm);
+
+      // 3. 欄位重新映射與隱私資料排除 (白名單機制)
       const transformedRow = {
         billNumber: idStr,
+        term,
+        serialNumber,
         submittedAt: submittedAt,
         proposingEntity: row['提案機關/議員']?.trim() || '',
         proposerName: row['提案機關主管/提案議員姓名']?.trim() || '',
@@ -132,16 +165,7 @@ async function main() {
         scheduledSession: row['排入會議']?.trim() || ''
       };
 
-      // 3. 判斷屆次並分流
-      // 預設為最新屆次（這也包含了「編號為空」的狀況）
-      let term = currentTerm;
-      if (idStr) {
-        const match = idStr.match(/^(\d+)屆北大峽議字第\d+號$/);
-        if (match) {
-          term = parseInt(match[1], 10);
-        }
-      }
-
+      // 4. 判斷屆次並分流
       if (term === currentTerm) {
         newTermData.push(transformedRow);
       } else {

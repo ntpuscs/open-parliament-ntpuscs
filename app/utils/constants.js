@@ -1,8 +1,8 @@
 // 網站基本設定
 export const SITE_CONFIG = {
-  name: '北大三峽議事資訊網',
+  name: '北大三峽議事資訊',
   fullName: '國立臺北大學三峽校區學生議會',
-  englishName: 'NTPU Student Congress (Sanxia)',
+  englishName: 'NTPU Student Congress (Sanxia Campus)',
   domain: 'sxcongress.ntpusu.org',
   email: 'ntpuscs@gmail.com',
   githubRepo: 'https://github.com/ntpuscs/open-parliament-ntpuscs'
@@ -12,82 +12,6 @@ export const SITE_CONFIG = {
 export const EXTERNAL_LINKS = {
   mainWebsite: 'https://ntpusu.org/',
 };
-
-// 議案類型選項
-export const BILL_TYPES = [
-  '法律案',
-  '預算案',
-  '決算案',
-  '人事案',
-  '備查案',
-  '施政報告',
-  '專案報告',
-  '外部組織提案、加入聲明案'
-];
-
-// 提案機關選項
-export const PROPOSER_ORGANS = [
-  '本會議員',
-  '本會議長',
-  '本會秘書處',
-  '總會 秘書處',
-  '學生法庭 書記處',
-  '三峽校區學生會 會長副會長',
-  '三峽校區學生會 秘書處',
-  '三峽校區學生會 活動部',
-  '三峽校區學生會 學生權益部',
-  '三峽校區學生會 財務部',
-  '三峽校區學生會 公關部',
-  '三峽校區學生會 新聞部',
-  '三峽校區學生會 國際事務部',
-  '三峽校區學生會 資訊部',
-  '三峽校區學生會 選舉委員會'
-];
-
-// 分頁設定
-export const PAGINATION_CONFIG = {
-  itemsPerPage: 10,
-  maxVisiblePages: 5
-};
-
-// 議案欄位設定
-export const BILL_FIELDS = {
-  id: '編號',
-  timestamp: '提案時間',
-  proposerOrgan: '提案機關/議員',
-  proposerName: '提案機關主管/提案議員姓名',
-  contactName: '提案聯絡人姓名',
-  contactEmail: '提案聯絡人公務電子郵件',
-  type: '提案類型',
-  subject: '案由',
-  description: '說明',
-  method: '辦法',
-  attachment1: '附件1',
-  attachment2: '附件2',
-  attachment3: '附件3',
-  attachment4: '附件4',
-  attachment5: '附件5',
-  arrangeMeet: '排入會議'
-};
-
-// 隱藏欄位（在詳細頁面不顯示）
-export const HIDDEN_FIELDS = [
-  'contactEmail' // 提案聯絡人公務電子郵件
-];
-
-// 附件欄位
-export const ATTACHMENT_FIELDS = [
-  'attachment1',
-  'attachment2',
-  'attachment3',
-  'attachment4',
-  'attachment5'
-];
-
-// 篩選欄位（除了附件以外的所有欄位）
-export const FILTER_FIELDS = Object.keys(BILL_FIELDS).filter(
-  field => !ATTACHMENT_FIELDS.includes(field)
-);
 
 // 主視覺顏色
 export const THEME_COLORS = {
@@ -109,42 +33,6 @@ export const BREAKPOINTS = {
   xl: '1280px',
   '2xl': '1536px'
 };
-
-// 導航選單項目
-export const NAVIGATION_ITEMS = [
-  {
-    name: '提案系統',
-    href: EXTERNAL_LINKS.proposalSystem,
-    external: true,
-    newTab: true
-  },
-  {
-    name: '議案查詢',
-    href: '/bill',
-    external: false,
-    newTab: false
-  },
-  {
-    name: '回到會網',
-    href: EXTERNAL_LINKS.mainWebsite,
-    external: true,
-    newTab: false
-  }
-];
-
-// 首頁服務區塊
-export const HOME_SERVICES = [
-  {
-    id: 'bill-query',
-    title: '議案查詢',
-    description: '查詢歷屆議案資料',
-    icon: '🔍',
-    href: '/bill',
-    external: false,
-    newTab: false,
-    color: 'green'
-  },
-];
 
 // 錯誤訊息
 export const ERROR_MESSAGES = {
@@ -237,37 +125,12 @@ export const convertGoogleDriveLink = (url) => {
   return url;
 };
 
-// 驗證表單欄位
-export const validateField = (field, value) => {
-  if (!value || value.trim() === '') {
-    return `${BILL_FIELDS[field]} 不能為空`;
-  }
-  
-  if (field === 'contactEmail') {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(value)) {
-      return '請輸入有效的電子郵件地址';
-    }
-  }
-  
-  return null;
-};
-
 // 預設匯出
 export default {
   SITE_CONFIG,
   EXTERNAL_LINKS,
-  BILL_TYPES,
-  PROPOSER_ORGANS,
-  PAGINATION_CONFIG,
-  BILL_FIELDS,
-  HIDDEN_FIELDS,
-  ATTACHMENT_FIELDS,
-  FILTER_FIELDS,
   THEME_COLORS,
   BREAKPOINTS,
-  NAVIGATION_ITEMS,
-  HOME_SERVICES,
   ERROR_MESSAGES,
   SUCCESS_MESSAGES,
   LOADING_MESSAGES,
@@ -277,6 +140,5 @@ export default {
   formatBillNumber,
   formatDate,
   isValidGoogleDriveLink,
-  convertGoogleDriveLink,
-  validateField
+  convertGoogleDriveLink
 };

@@ -1,3 +1,5 @@
+import { SITE_CONFIG } from "#imports";
+
 export default defineNuxtConfig({
   compatibilityDate: '2026-02-26',
   devtools: {
@@ -19,9 +21,6 @@ export default defineNuxtConfig({
     storageKey: 'nuxt-color-mode'
   },
   runtimeConfig: {
-    googleSheetsId: process.env.GOOGLE_SHEETS_ID,
-    googleServiceAccountEmail: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-    googlePrivateKey: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
     public: {
       baseUrl: 'https://sxcongress.ntpusu.org/'
     }
@@ -32,7 +31,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: '北大三峽議事資訊網',
+      title: '北大三峽議事資訊',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },

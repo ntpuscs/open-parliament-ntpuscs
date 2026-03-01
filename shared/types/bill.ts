@@ -21,3 +21,7 @@ export interface BillResponse {
   cachedAt: string;
   data: Bill[];
 }
+
+export interface BillApiResponse {
+  bills: Bill[];
+}

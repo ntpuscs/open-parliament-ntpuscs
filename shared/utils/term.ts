@@ -32,3 +32,8 @@ export const getValidTerms = (): number[] => {
   // 習慣上會將最新屆次排在最前面 (降冪)
   return validTerms.reverse();
 };
+
+// 取得最早有效屆次
+export const getEarliestTerm = (): number => {
+  return 23;
+};

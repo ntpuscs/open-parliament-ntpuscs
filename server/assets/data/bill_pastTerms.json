@@ -1,8 +1,11 @@
 {
-  "cachedAt": "2026-02-28T14:44:40.898Z",
+  "cachedAt": "2026-03-01T12:32:50.209Z",
   "data": [
     {
+      "rowIndex": 2,
       "billNumber": "23屆北大峽議字第1號",
+      "term": 23,
+      "serialNumber": 1,
       "submittedAt": "2022/8/2 下午 9:29:00",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "李芝玉",
@@ -17,7 +20,10 @@
       "scheduledSession": "23屆第1次臨時會，活動部部長陳偉翰部分延至23屆第2次臨時會審議。"
     },
     {
+      "rowIndex": 3,
       "billNumber": "23屆北大峽議字第2號",
+      "term": 23,
+      "serialNumber": 2,
       "submittedAt": "2022/8/2 下午 9:43:11",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "李芝玉",
@@ -32,7 +38,10 @@
       "scheduledSession": "23屆第1次臨時會"
     },
     {
+      "rowIndex": 4,
       "billNumber": "23屆北大峽議字第3號",
+      "term": 23,
+      "serialNumber": 3,
       "submittedAt": "2022/8/2 下午 9:46:34",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "李芝玉",
@@ -47,7 +56,10 @@
       "scheduledSession": "23屆第1次臨時會"
     },
     {
+      "rowIndex": 5,
       "billNumber": "23屆北大峽議字第4號",
+      "term": 23,
+      "serialNumber": 4,
       "submittedAt": "2022/8/7 下午 3:21:06",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳佳昕",
@@ -62,7 +74,10 @@
       "scheduledSession": "23屆第3次臨時會"
     },
     {
+      "rowIndex": 6,
       "billNumber": "23屆北大峽議字第5號",
+      "term": 23,
+      "serialNumber": 5,
       "submittedAt": "2022/8/9 上午 12:58:08",
       "proposingEntity": "本會議員, 本會秘書處",
       "proposerName": "黃聖恩 潘慈",
@@ -77,7 +92,10 @@
       "scheduledSession": "23屆第2次臨時會"
     },
     {
+      "rowIndex": 7,
       "billNumber": "23屆北大峽議字第6號",
+      "term": 23,
+      "serialNumber": 6,
       "submittedAt": "2022/8/11 下午 2:15:46",
       "proposingEntity": "本會議員",
       "proposerName": "黃聖恩",
@@ -92,7 +110,10 @@
       "scheduledSession": "撤案"
     },
     {
+      "rowIndex": 8,
       "billNumber": "23屆北大峽議字第7號",
+      "term": 23,
+      "serialNumber": 7,
       "submittedAt": "2022/8/11 下午 2:18:20",
       "proposingEntity": "本會議員",
       "proposerName": "黃聖恩",
@@ -107,7 +128,10 @@
       "scheduledSession": "撤案"
     },
     {
+      "rowIndex": 9,
       "billNumber": "23屆北大峽議字第8號",
+      "term": 23,
+      "serialNumber": 8,
       "submittedAt": "2022/8/11 下午 2:23:16",
       "proposingEntity": "本會議員",
       "proposerName": "黃聖恩",
@@ -122,7 +146,10 @@
       "scheduledSession": "撤案"
     },
     {
+      "rowIndex": 10,
       "billNumber": "23屆北大峽議字第9號",
+      "term": 23,
+      "serialNumber": 9,
       "submittedAt": "2022/8/12 上午 1:33:44",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳佳昕",
@@ -138,7 +165,10 @@
       "scheduledSession": "23屆第2次臨時會"
     },
     {
+      "rowIndex": 11,
       "billNumber": "23屆北大峽議字第10號",
+      "term": 23,
+      "serialNumber": 10,
       "submittedAt": "2022/8/13 下午 9:09:43",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳佳昕",
@@ -151,7 +181,10 @@
       "scheduledSession": "23屆第2次臨時會"
     },
     {
+      "rowIndex": 12,
       "billNumber": "23屆北大峽議字第11號",
+      "term": 23,
+      "serialNumber": 11,
       "submittedAt": "2022/8/13 下午 9:22:16",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳佳昕",
@@ -166,7 +199,10 @@
       "scheduledSession": "23屆第2次常會"
     },
     {
+      "rowIndex": 13,
       "billNumber": "23屆北大峽議字第12號",
+      "term": 23,
+      "serialNumber": 12,
       "submittedAt": "2022/8/22 上午 12:42:27",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "李芝玉",
@@ -181,7 +217,10 @@
       "scheduledSession": "23屆第2次臨時會"
     },
     {
+      "rowIndex": 14,
       "billNumber": "23屆北大峽議字第13號",
+      "term": 23,
+      "serialNumber": 13,
       "submittedAt": "2022/8/26 下午 3:57:24",
       "proposingEntity": "三峽校區學生會  秘書處",
       "proposerName": "李芝玉",
@@ -196,7 +235,10 @@
       "scheduledSession": "23屆第2次臨時會"
     },
     {
+      "rowIndex": 15,
       "billNumber": "23屆北大峽議字第14號",
+      "term": 23,
+      "serialNumber": 14,
       "submittedAt": "2022/8/27 上午 11:33:27",
       "proposingEntity": "三峽校區學生會 國際事務部",
       "proposerName": "楊佳翰",
@@ -211,7 +253,10 @@
       "scheduledSession": "23屆第2次臨時會"
     },
     {
+      "rowIndex": 16,
       "billNumber": "23屆北大峽議字第15號",
+      "term": 23,
+      "serialNumber": 15,
       "submittedAt": "2022/8/27 上午 11:54:17",
       "proposingEntity": "三峽校區學生會 新聞部",
       "proposerName": "林碩槿",
@@ -226,7 +271,10 @@
       "scheduledSession": "23屆第2次臨時會"
     },
     {
+      "rowIndex": 17,
       "billNumber": "23屆北大峽議字第16號",
+      "term": 23,
+      "serialNumber": 16,
       "submittedAt": "2022/8/27 下午 2:14:25",
       "proposingEntity": "三峽校區學生會 活動部",
       "proposerName": "陳偉翰",
@@ -241,7 +289,10 @@
       "scheduledSession": "23屆第2次臨時會"
     },
     {
+      "rowIndex": 18,
       "billNumber": "23屆北大峽議字第17號",
+      "term": 23,
+      "serialNumber": 17,
       "submittedAt": "2022/8/27 下午 11:35:16",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "李芝玉",
@@ -256,7 +307,10 @@
       "scheduledSession": "23屆第2次臨時會"
     },
     {
+      "rowIndex": 19,
       "billNumber": "23屆北大峽議字第18號",
+      "term": 23,
+      "serialNumber": 18,
       "submittedAt": "2022/8/27 下午 11:41:53",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "李芝玉",
@@ -271,7 +325,10 @@
       "scheduledSession": "23屆第2次臨時會"
     },
     {
+      "rowIndex": 20,
       "billNumber": "23屆北大峽議字第19號",
+      "term": 23,
+      "serialNumber": 19,
       "submittedAt": "2022/9/1 下午 4:13:06",
       "proposingEntity": "本會議員",
       "proposerName": "陳致勳",
@@ -284,7 +341,10 @@
       "scheduledSession": "23屆第3次臨時會"
     },
     {
+      "rowIndex": 21,
       "billNumber": "23屆北大峽議字第20號",
+      "term": 23,
+      "serialNumber": 20,
       "submittedAt": "2022/9/3 上午 2:17:54",
       "proposingEntity": "三峽校區學生會 選舉委員會",
       "proposerName": "三峽校區選舉委員會",
@@ -299,7 +359,10 @@
       "scheduledSession": "23屆第3次臨時會"
     },
     {
+      "rowIndex": 22,
       "billNumber": "23屆北大峽議字第21號",
+      "term": 23,
+      "serialNumber": 21,
       "submittedAt": "2022/9/3 上午 2:27:34",
       "proposingEntity": "三峽校區學生會 選舉委員會",
       "proposerName": "三峽校區選舉委員會",
@@ -315,7 +378,10 @@
       "scheduledSession": "撤案"
     },
     {
+      "rowIndex": 23,
       "billNumber": "23屆北大峽議字第22號",
+      "term": 23,
+      "serialNumber": 22,
       "submittedAt": "2022/9/6 下午 8:38:23",
       "proposingEntity": "本會議員",
       "proposerName": "許栢睿",
@@ -330,7 +396,10 @@
       "scheduledSession": "23屆第3次臨時會"
     },
     {
+      "rowIndex": 24,
       "billNumber": "23屆北大峽議字第23號",
+      "term": 23,
+      "serialNumber": 23,
       "submittedAt": "2022/9/9 上午 12:03:48",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "李芝玉",
@@ -343,7 +412,10 @@
       "scheduledSession": "23屆第3次臨時會"
     },
     {
+      "rowIndex": 25,
       "billNumber": "23屆北大峽議字第24號",
+      "term": 23,
+      "serialNumber": 24,
       "submittedAt": "2022/9/9 上午 12:07:30",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "李芝玉",
@@ -356,7 +428,10 @@
       "scheduledSession": "23屆第1次常會"
     },
     {
+      "rowIndex": 26,
       "billNumber": "23屆北大峽議字第25號",
+      "term": 23,
+      "serialNumber": 25,
       "submittedAt": "2022/9/9 上午 12:07:55",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "李芝玉",
@@ -369,7 +444,10 @@
       "scheduledSession": "23屆第3次臨時會"
     },
     {
+      "rowIndex": 27,
       "billNumber": "23屆北大峽議字第26號",
+      "term": 23,
+      "serialNumber": 26,
       "submittedAt": "2022/9/11 上午 2:01:30",
       "proposingEntity": "三峽校區學生會 公關部",
       "proposerName": "方建崴",
@@ -384,7 +462,10 @@
       "scheduledSession": "23屆第3次臨時會"
     },
     {
+      "rowIndex": 28,
       "billNumber": "23屆北大峽議字第27號",
+      "term": 23,
+      "serialNumber": 27,
       "submittedAt": "2022/9/11 下午 4:26:38",
       "proposingEntity": "三峽校區學生會 公關部",
       "proposerName": "方建崴",
@@ -397,7 +478,10 @@
       "scheduledSession": "撤案"
     },
     {
+      "rowIndex": 29,
       "billNumber": "23屆北大峽議字第28號",
+      "term": 23,
+      "serialNumber": 28,
       "submittedAt": "2022/9/11 下午 4:28:46",
       "proposingEntity": "三峽校區學生會 公關部",
       "proposerName": "方建崴",
@@ -410,7 +494,10 @@
       "scheduledSession": "撤案"
     },
     {
+      "rowIndex": 30,
       "billNumber": "23屆北大峽議字第29號",
+      "term": 23,
+      "serialNumber": 29,
       "submittedAt": "2022/9/13 下午 6:00:22",
       "proposingEntity": "三峽校區學生會 學生權益部",
       "proposerName": "蔚婷",
@@ -425,7 +512,10 @@
       "scheduledSession": "23屆第1次常會"
     },
     {
+      "rowIndex": 31,
       "billNumber": "23屆北大峽議字第30號",
+      "term": 23,
+      "serialNumber": 30,
       "submittedAt": "2022/9/13 下午 6:30:58",
       "proposingEntity": "三峽校區學生會 公關部",
       "proposerName": "方建崴",
@@ -440,7 +530,10 @@
       "scheduledSession": "23屆第1次常會"
     },
     {
+      "rowIndex": 32,
       "billNumber": "23屆北大峽議字第31號",
+      "term": 23,
+      "serialNumber": 31,
       "submittedAt": "2022/9/13 下午 10:33:35",
       "proposingEntity": "三峽校區學生會 選舉委員會",
       "proposerName": "選舉委員會",
@@ -456,7 +549,10 @@
       "scheduledSession": "23屆第1次常會"
     },
     {
+      "rowIndex": 33,
       "billNumber": "23屆北大峽議字第32號",
+      "term": 23,
+      "serialNumber": 32,
       "submittedAt": "2022/9/17 上午 12:01:14",
       "proposingEntity": "三峽校區學生會 財務部",
       "proposerName": "李芝玉",
@@ -471,7 +567,10 @@
       "scheduledSession": "23屆第1次常會"
     },
     {
+      "rowIndex": 34,
       "billNumber": "23屆北大峽議字第33號",
+      "term": 23,
+      "serialNumber": 33,
       "submittedAt": "2022/9/20 上午 1:25:11",
       "proposingEntity": "三峽校區學生會 資訊部",
       "proposerName": "黃冠穎",
@@ -486,7 +585,10 @@
       "scheduledSession": "23屆第1次常會"
     },
     {
+      "rowIndex": 35,
       "billNumber": "23屆北大峽議字第34號",
+      "term": 23,
+      "serialNumber": 34,
       "submittedAt": "2022/9/29 下午 6:14:06",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "李芝玉",
@@ -501,7 +603,10 @@
       "scheduledSession": "23屆第2次常會"
     },
     {
+      "rowIndex": 36,
       "billNumber": "23屆北大峽議字第35號",
+      "term": 23,
+      "serialNumber": 35,
       "submittedAt": "2022/9/30 下午 11:04:44",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "吳立欣",
@@ -517,7 +622,10 @@
       "scheduledSession": "23屆第2次常會"
     },
     {
+      "rowIndex": 37,
       "billNumber": "23屆北大峽議字第36號",
+      "term": 23,
+      "serialNumber": 36,
       "submittedAt": "2022/10/14 上午 10:44:47",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "李芝玉",
@@ -534,7 +642,10 @@
       "scheduledSession": "23屆第2次常會"
     },
     {
+      "rowIndex": 38,
       "billNumber": "23屆北大峽議字第37號",
+      "term": 23,
+      "serialNumber": 37,
       "submittedAt": "2022/10/14 上午 11:18:34",
       "proposingEntity": "學生自治會 總會",
       "proposerName": "邱煜軒",
@@ -549,7 +660,10 @@
       "scheduledSession": "23屆第2次常會"
     },
     {
+      "rowIndex": 39,
       "billNumber": "23屆北大峽議字第38號",
+      "term": 23,
+      "serialNumber": 38,
       "submittedAt": "2022/10/14 上午 11:22:48",
       "proposingEntity": "學生自治會 總會",
       "proposerName": "邱煜軒",
@@ -564,7 +678,10 @@
       "scheduledSession": "23屆第2次常會"
     },
     {
+      "rowIndex": 40,
       "billNumber": "23屆北大峽議字第39號",
+      "term": 23,
+      "serialNumber": 39,
       "submittedAt": "2022/10/14 上午 11:25:49",
       "proposingEntity": "學生自治會 總會",
       "proposerName": "邱煜軒",
@@ -579,7 +696,10 @@
       "scheduledSession": "23屆第2次常會"
     },
     {
+      "rowIndex": 41,
       "billNumber": "23屆北大峽議字第40號",
+      "term": 23,
+      "serialNumber": 40,
       "submittedAt": "2022/10/16 下午 11:10:11",
       "proposingEntity": "學生自治會 總會",
       "proposerName": "邱煜軒",
@@ -594,7 +714,10 @@
       "scheduledSession": "23屆第2次常會"
     },
     {
+      "rowIndex": 42,
       "billNumber": "23屆北大峽議字第41號",
+      "term": 23,
+      "serialNumber": 41,
       "submittedAt": "2022/10/19 下午 9:56:24",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "李芝玉",
@@ -607,7 +730,10 @@
       "scheduledSession": "23屆第3次常會"
     },
     {
+      "rowIndex": 43,
       "billNumber": "23屆北大峽議字第42號",
+      "term": 23,
+      "serialNumber": 42,
       "submittedAt": "2022/10/31 上午 4:26:25",
       "proposingEntity": "三峽校區學生會 財務部",
       "proposerName": "李芝玉",
@@ -622,7 +748,10 @@
       "scheduledSession": "23屆第3次常會"
     },
     {
+      "rowIndex": 44,
       "billNumber": "23屆北大峽議字第43號",
+      "term": 23,
+      "serialNumber": 43,
       "submittedAt": "2022/11/2 上午 2:24:43",
       "proposingEntity": "學生法庭",
       "proposerName": "陳泓霖",
@@ -635,7 +764,10 @@
       "scheduledSession": "撤案"
     },
     {
+      "rowIndex": 45,
       "billNumber": "23屆北大峽議字第44號",
+      "term": 23,
+      "serialNumber": 44,
       "submittedAt": "2022/11/10 下午 10:50:14",
       "proposingEntity": "學生法庭",
       "proposerName": "陳泓霖",
@@ -648,7 +780,10 @@
       "scheduledSession": "撤案"
     },
     {
+      "rowIndex": 46,
       "billNumber": "23屆北大峽議字第45號",
+      "term": 23,
+      "serialNumber": 45,
       "submittedAt": "2022/11/14 上午 3:04:18",
       "proposingEntity": "學生法庭",
       "proposerName": "陳泓霖",
@@ -664,7 +799,10 @@
       "scheduledSession": "撤案"
     },
     {
+      "rowIndex": 47,
       "billNumber": "23屆北大峽議字第46號",
+      "term": 23,
+      "serialNumber": 46,
       "submittedAt": "2022/11/15 上午 2:03:57",
       "proposingEntity": "學生法庭",
       "proposerName": "陳泓霖",
@@ -680,7 +818,10 @@
       "scheduledSession": "23屆第3次常會"
     },
     {
+      "rowIndex": 48,
       "billNumber": "23屆北大峽議字第47號",
+      "term": 23,
+      "serialNumber": 47,
       "submittedAt": "2022/11/16 上午 1:23:34",
       "proposingEntity": "本會議員",
       "proposerName": "黃聖恩",
@@ -695,7 +836,10 @@
       "scheduledSession": "23屆第3次常會"
     },
     {
+      "rowIndex": 49,
       "billNumber": "23屆北大峽議字第48號",
+      "term": 23,
+      "serialNumber": 48,
       "submittedAt": "2022/11/18 上午 3:57:21",
       "proposingEntity": "學生法庭",
       "proposerName": "陳泓霖",
@@ -710,7 +854,10 @@
       "scheduledSession": "23屆第3次常會"
     },
     {
+      "rowIndex": 50,
       "billNumber": "23屆北大峽議字第49號",
+      "term": 23,
+      "serialNumber": 49,
       "submittedAt": "2022/11/18 下午 5:01:42",
       "proposingEntity": "三峽校區學生會 學生權益部",
       "proposerName": "簡蔚婷",
@@ -725,7 +872,10 @@
       "scheduledSession": "23屆第3次常會"
     },
     {
+      "rowIndex": 51,
       "billNumber": "23屆北大峽議字第50號",
+      "term": 23,
+      "serialNumber": 50,
       "submittedAt": "2022/11/18 下午 7:37:21",
       "proposingEntity": "三峽校區學生會 財務部",
       "proposerName": "李芝玉",
@@ -740,7 +890,10 @@
       "scheduledSession": "23屆第3次常會"
     },
     {
+      "rowIndex": 52,
       "billNumber": "23屆北大峽議字第51號",
+      "term": 23,
+      "serialNumber": 51,
       "submittedAt": "2022/12/9 上午 11:08:18",
       "proposingEntity": "三峽校區學生會 公關部",
       "proposerName": "陳佳昕",
@@ -756,7 +909,10 @@
       "scheduledSession": "23屆第4次常會"
     },
     {
+      "rowIndex": 53,
       "billNumber": "23屆北大峽議字第52號",
+      "term": 23,
+      "serialNumber": 52,
       "submittedAt": "2022/12/9 上午 11:44:29",
       "proposingEntity": "本會議員",
       "proposerName": "黃聖恩",
@@ -771,7 +927,10 @@
       "scheduledSession": "23屆第4次常會"
     },
     {
+      "rowIndex": 54,
       "billNumber": "23屆北大峽議字第53號",
+      "term": 23,
+      "serialNumber": 53,
       "submittedAt": "2022/12/9 下午 11:50:08",
       "proposingEntity": "本會秘書處",
       "proposerName": "潘慈",
@@ -787,7 +946,10 @@
       "scheduledSession": "23屆第4次常會"
     },
     {
+      "rowIndex": 55,
       "billNumber": "23屆北大峽議字第54號",
+      "term": 23,
+      "serialNumber": 54,
       "submittedAt": "2022/12/10 上午 11:22:59",
       "proposingEntity": "本會秘書處",
       "proposerName": "潘慈",
@@ -802,7 +964,10 @@
       "scheduledSession": "23屆第4次常會"
     },
     {
+      "rowIndex": 56,
       "billNumber": "23屆北大峽議字第55號",
+      "term": 23,
+      "serialNumber": 55,
       "submittedAt": "2022/12/13 上午 10:33:00",
       "proposingEntity": "學生法庭",
       "proposerName": "陳泓霖",
@@ -817,7 +982,10 @@
       "scheduledSession": "23屆第5次常會"
     },
     {
+      "rowIndex": 57,
       "billNumber": "23屆北大峽議字第56號",
+      "term": 23,
+      "serialNumber": 56,
       "submittedAt": "2022/12/13 上午 10:47:58",
       "proposingEntity": "學生法庭",
       "proposerName": "陳泓霖",
@@ -833,7 +1001,10 @@
       "scheduledSession": "23屆第5次常會"
     },
     {
+      "rowIndex": 58,
       "billNumber": "23屆北大峽議字第57號",
+      "term": 23,
+      "serialNumber": 57,
       "submittedAt": "2022/12/13 上午 11:07:58",
       "proposingEntity": "學生法庭",
       "proposerName": "陳泓霖",
@@ -848,7 +1019,10 @@
       "scheduledSession": "23屆第5次常會"
     },
     {
+      "rowIndex": 59,
       "billNumber": "23屆北大峽議字第58號",
+      "term": 23,
+      "serialNumber": 58,
       "submittedAt": "2023/1/3 下午 10:23:32",
       "proposingEntity": "三峽校區學生會 活動部",
       "proposerName": "陳偉翰、林采萱",
@@ -861,7 +1035,10 @@
       "scheduledSession": "撤案"
     },
     {
+      "rowIndex": 60,
       "billNumber": "23屆北大峽議字第59號",
+      "term": 23,
+      "serialNumber": 59,
       "submittedAt": "2023/1/6 下午 1:24:29",
       "proposingEntity": "三峽校區學生會 活動部",
       "proposerName": "活動部部長陳偉翰、活動部副部長林采萱",
@@ -879,7 +1056,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 61,
       "billNumber": "23屆北大峽議字第60號",
+      "term": 23,
+      "serialNumber": 60,
       "submittedAt": "2023/1/6 下午 11:28:48",
       "proposingEntity": "三峽校區學生會 財務部",
       "proposerName": "李芝玉",
@@ -894,7 +1074,10 @@
       "scheduledSession": "23屆第6次常會"
     },
     {
+      "rowIndex": 62,
       "billNumber": "23屆北大峽議字第61號",
+      "term": 23,
+      "serialNumber": 61,
       "submittedAt": "2023/1/20 下午 9:12:19",
       "proposingEntity": "本會秘書處",
       "proposerName": "潘慈",
@@ -907,7 +1090,10 @@
       "scheduledSession": "23屆第4次臨時會"
     },
     {
+      "rowIndex": 63,
       "billNumber": "23屆北大峽議字第62號",
+      "term": 23,
+      "serialNumber": 62,
       "submittedAt": "2023/2/19 下午 4:37:28",
       "proposingEntity": "三峽校區學生會 公關部",
       "proposerName": "吳立欣",
@@ -923,7 +1109,10 @@
       "scheduledSession": "23屆第6次常會"
     },
     {
+      "rowIndex": 64,
       "billNumber": "23屆北大峽議字第63號",
+      "term": 23,
+      "serialNumber": 63,
       "submittedAt": "2023/3/3 下午 2:26:56",
       "proposingEntity": "三峽校區學生會 選舉委員會",
       "proposerName": "褚宏品",
@@ -938,7 +1127,10 @@
       "scheduledSession": "23屆第6次常會"
     },
     {
+      "rowIndex": 65,
       "billNumber": "23屆北大峽議字第64號",
+      "term": 23,
+      "serialNumber": 64,
       "submittedAt": "2023/3/6 下午 1:21:43",
       "proposingEntity": "三峽校區學生會 資訊部",
       "proposerName": "黃冠穎",
@@ -953,7 +1145,10 @@
       "scheduledSession": "23屆第6次常會"
     },
     {
+      "rowIndex": 66,
       "billNumber": "23屆北大峽議字第65號",
+      "term": 23,
+      "serialNumber": 65,
       "submittedAt": "2023/3/6 下午 5:34:18",
       "proposingEntity": "三峽校區學生會 活動部",
       "proposerName": "吳立欣",
@@ -968,7 +1163,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 67,
       "billNumber": "23屆北大峽議字第66號",
+      "term": 23,
+      "serialNumber": 66,
       "submittedAt": "2023/3/7 下午 7:47:04",
       "proposingEntity": "三峽校區學生會  秘書處",
       "proposerName": "廖柔綺",
@@ -983,7 +1181,10 @@
       "scheduledSession": "23屆第6次常會"
     },
     {
+      "rowIndex": 68,
       "billNumber": "23屆北大峽議字第67號",
+      "term": 23,
+      "serialNumber": 67,
       "submittedAt": "2023/3/7 下午 7:49:49",
       "proposingEntity": "三峽校區學生會 新聞部",
       "proposerName": "林碩槿",
@@ -999,7 +1200,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 69,
       "billNumber": "23屆北大峽議字第68號",
+      "term": 23,
+      "serialNumber": 68,
       "submittedAt": "2023/3/8 上午 1:02:36",
       "proposingEntity": "三峽校區學生會 活動部",
       "proposerName": "吳立欣",
@@ -1015,7 +1219,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 70,
       "billNumber": "23屆北大峽議字第69號",
+      "term": 23,
+      "serialNumber": 69,
       "submittedAt": "2023/3/9 上午 2:22:56",
       "proposingEntity": "三峽校區學生會 學生權益部",
       "proposerName": "簡蔚婷",
@@ -1030,7 +1237,10 @@
       "scheduledSession": "23屆第6次常會"
     },
     {
+      "rowIndex": 71,
       "billNumber": "23屆北大峽議字第70號",
+      "term": 23,
+      "serialNumber": 70,
       "submittedAt": "2023/3/9 上午 10:48:27",
       "proposingEntity": "三峽校區學生會 活動部",
       "proposerName": "吳立欣",
@@ -1046,7 +1256,10 @@
       "scheduledSession": "23屆第6次常會"
     },
     {
+      "rowIndex": 72,
       "billNumber": "23屆北大峽議字第71號",
+      "term": 23,
+      "serialNumber": 71,
       "submittedAt": "2023/3/9 下午 8:25:47",
       "proposingEntity": "本會議員",
       "proposerName": "黃聖恩",
@@ -1061,7 +1274,10 @@
       "scheduledSession": "23屆第6次常會"
     },
     {
+      "rowIndex": 73,
       "billNumber": "23屆北大峽議字第72號",
+      "term": 23,
+      "serialNumber": 72,
       "submittedAt": "2023/3/9 下午 8:32:29",
       "proposingEntity": "學生自治會 總會",
       "proposerName": "黃聖恩",
@@ -1076,7 +1292,10 @@
       "scheduledSession": "23屆第6次常會"
     },
     {
+      "rowIndex": 74,
       "billNumber": "23屆北大峽議字第73號",
+      "term": 23,
+      "serialNumber": 73,
       "submittedAt": "2023/3/10 下午 2:52:42",
       "proposingEntity": "三峽校區學生會 國際事務部",
       "proposerName": "楊佳翰、陳皇嘉",
@@ -1091,7 +1310,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 75,
       "billNumber": "23屆北大峽議字第74號",
+      "term": 23,
+      "serialNumber": 74,
       "submittedAt": "2023/3/10 下午 8:04:58",
       "proposingEntity": "三峽校區學生會 國際事務部",
       "proposerName": "楊佳翰、陳皇嘉",
@@ -1106,7 +1328,10 @@
       "scheduledSession": "23屆第6次常會"
     },
     {
+      "rowIndex": 76,
       "billNumber": "23屆北大峽議字第75號",
+      "term": 23,
+      "serialNumber": 75,
       "submittedAt": "2023/3/11 上午 1:21:12",
       "proposingEntity": "三峽校區學生會 財務部",
       "proposerName": "李芝玉",
@@ -1121,7 +1346,10 @@
       "scheduledSession": "23屆第6次常會"
     },
     {
+      "rowIndex": 77,
       "billNumber": "23屆北大峽議字第76號",
+      "term": 23,
+      "serialNumber": 76,
       "submittedAt": "2023/3/11 下午 6:10:03",
       "proposingEntity": "三峽校區學生會 公關部",
       "proposerName": "吳立欣",
@@ -1136,7 +1364,10 @@
       "scheduledSession": "23屆第6次常會"
     },
     {
+      "rowIndex": 78,
       "billNumber": "23屆北大峽議字第77號",
+      "term": 23,
+      "serialNumber": 77,
       "submittedAt": "2023/3/12 上午 6:46:56",
       "proposingEntity": "三峽校區學生會 財務部",
       "proposerName": "李芝玉",
@@ -1151,7 +1382,10 @@
       "scheduledSession": "23屆第6次常會"
     },
     {
+      "rowIndex": 79,
       "billNumber": "23屆北大峽議字第78號",
+      "term": 23,
+      "serialNumber": 78,
       "submittedAt": "2023/3/12 下午 2:25:00",
       "proposingEntity": "三峽校區學生會 學生權益部",
       "proposerName": "簡蔚婷",
@@ -1167,7 +1401,10 @@
       "scheduledSession": "23屆第6次常會"
     },
     {
+      "rowIndex": 80,
       "billNumber": "23屆北大峽議字第79號",
+      "term": 23,
+      "serialNumber": 79,
       "submittedAt": "2023/3/12 下午 6:38:33",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳佳昕",
@@ -1182,7 +1419,10 @@
       "scheduledSession": "23屆第6次常會"
     },
     {
+      "rowIndex": 81,
       "billNumber": "23屆北大峽議字第80號",
+      "term": 23,
+      "serialNumber": 80,
       "submittedAt": "2023/3/13 下午 11:11:51",
       "proposingEntity": "本會秘書處",
       "proposerName": "潘慈",
@@ -1195,7 +1435,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 82,
       "billNumber": "23屆北大峽議字第81號",
+      "term": 23,
+      "serialNumber": 81,
       "submittedAt": "2023/4/12 下午 10:47:19",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "李芝玉",
@@ -1210,7 +1453,10 @@
       "scheduledSession": "23屆第5次臨時會"
     },
     {
+      "rowIndex": 83,
       "billNumber": "23屆北大峽議字第82號",
+      "term": 23,
+      "serialNumber": 82,
       "submittedAt": "2023/4/12 下午 11:06:34",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "李芝玉",
@@ -1226,7 +1472,10 @@
       "scheduledSession": "23屆第5次臨時會"
     },
     {
+      "rowIndex": 84,
       "billNumber": "23屆北大峽議字第83號",
+      "term": 23,
+      "serialNumber": 83,
       "submittedAt": "2023/4/13 上午 11:14:58",
       "proposingEntity": "學生自治會 總會",
       "proposerName": "邱煜軒",
@@ -1241,7 +1490,10 @@
       "scheduledSession": "23屆第5次臨時會"
     },
     {
+      "rowIndex": 85,
       "billNumber": "23屆北大峽議字第84號",
+      "term": 23,
+      "serialNumber": 84,
       "submittedAt": "2023/4/13 上午 11:26:09",
       "proposingEntity": "本會議員",
       "proposerName": "許栢睿",
@@ -1256,7 +1508,10 @@
       "scheduledSession": "23屆第5次臨時會"
     },
     {
+      "rowIndex": 86,
       "billNumber": "23屆北大峽議字第85號",
+      "term": 23,
+      "serialNumber": 85,
       "submittedAt": "2023/4/15 下午 10:10:57",
       "proposingEntity": "本會秘書處",
       "proposerName": "潘慈",
@@ -1271,7 +1526,10 @@
       "scheduledSession": "23屆第5次臨時會"
     },
     {
+      "rowIndex": 87,
       "billNumber": "23屆北大峽議字第86號",
+      "term": 23,
+      "serialNumber": 86,
       "submittedAt": "2023/4/20 下午 10:25:27",
       "proposingEntity": "三峽校區學生會 活動部",
       "proposerName": "吳立欣",
@@ -1284,7 +1542,10 @@
       "scheduledSession": "23屆第7次常會"
     },
     {
+      "rowIndex": 88,
       "billNumber": "23屆北大峽議字第87號",
+      "term": 23,
+      "serialNumber": 87,
       "submittedAt": "2023/4/20 下午 10:56:10",
       "proposingEntity": "三峽校區學生會 公關部",
       "proposerName": "林孟潔",
@@ -1300,7 +1561,10 @@
       "scheduledSession": "23屆第7次常會"
     },
     {
+      "rowIndex": 89,
       "billNumber": "23屆北大峽議字第88號",
+      "term": 23,
+      "serialNumber": 88,
       "submittedAt": "2023/4/20 下午 10:56:38",
       "proposingEntity": "三峽校區學生會 公關部",
       "proposerName": "林孟潔",
@@ -1315,7 +1579,10 @@
       "scheduledSession": "23屆第7次常會"
     },
     {
+      "rowIndex": 90,
       "billNumber": "23屆北大峽議字第89號",
+      "term": 23,
+      "serialNumber": 89,
       "submittedAt": "2023/4/21 下午 8:49:21",
       "proposingEntity": "三峽校區學生會 選舉委員會",
       "proposerName": "褚宏品",
@@ -1330,7 +1597,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 91,
       "billNumber": "23屆北大峽議字第90號",
+      "term": 23,
+      "serialNumber": 90,
       "submittedAt": "2023/4/21 下午 8:56:53",
       "proposingEntity": "三峽校區學生會 選舉委員會",
       "proposerName": "褚宏品",
@@ -1345,7 +1615,10 @@
       "scheduledSession": "23屆第7次常會"
     },
     {
+      "rowIndex": 92,
       "billNumber": "23屆北大峽議字第91號",
+      "term": 23,
+      "serialNumber": 91,
       "submittedAt": "2023/4/22 下午 7:00:41",
       "proposingEntity": "本會議員",
       "proposerName": "張紹倫",
@@ -1361,7 +1634,10 @@
       "scheduledSession": "23屆第7次常會"
     },
     {
+      "rowIndex": 93,
       "billNumber": "23屆北大峽議字第92號",
+      "term": 23,
+      "serialNumber": 92,
       "submittedAt": "2023/4/23 下午 10:17:35",
       "proposingEntity": "三峽校區學生會 國際事務部, 楊佳翰",
       "proposerName": "楊佳翰",
@@ -1376,7 +1652,10 @@
       "scheduledSession": "23屆第7次常會"
     },
     {
+      "rowIndex": 94,
       "billNumber": "23屆北大峽議字第93號",
+      "term": 23,
+      "serialNumber": 93,
       "submittedAt": "2023/4/29 上午 12:47:18",
       "proposingEntity": "本會議員",
       "proposerName": "徐鉉捷",
@@ -1391,7 +1670,10 @@
       "scheduledSession": "23屆第8次常會"
     },
     {
+      "rowIndex": 95,
       "billNumber": "23屆北大峽議字第94號",
+      "term": 23,
+      "serialNumber": 94,
       "submittedAt": "2023/5/11 下午 9:13:04",
       "proposingEntity": "三峽校區學生會 活動部",
       "proposerName": "吳立欣",
@@ -1406,7 +1688,10 @@
       "scheduledSession": "23屆第8次常會"
     },
     {
+      "rowIndex": 96,
       "billNumber": "23屆北大峽議字第95號",
+      "term": 23,
+      "serialNumber": 95,
       "submittedAt": "2023/5/16 上午 9:51:38",
       "proposingEntity": "本會議員",
       "proposerName": "黃聖恩",
@@ -1421,7 +1706,10 @@
       "scheduledSession": "23屆第8次常會"
     },
     {
+      "rowIndex": 97,
       "billNumber": "23屆北大峽議字第96號",
+      "term": 23,
+      "serialNumber": 96,
       "submittedAt": "2023/5/19 下午 6:22:39",
       "proposingEntity": "本會秘書處",
       "proposerName": "潘慈",
@@ -1437,7 +1725,10 @@
       "scheduledSession": "23屆第8次常會"
     },
     {
+      "rowIndex": 98,
       "billNumber": "23屆北大峽議字第97號",
+      "term": 23,
+      "serialNumber": 97,
       "submittedAt": "2023/6/2 上午 4:36:18",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "李芝玉",
@@ -1452,7 +1743,10 @@
       "scheduledSession": "23屆第9次常會"
     },
     {
+      "rowIndex": 99,
       "billNumber": "23屆北大峽議字第98號",
+      "term": 23,
+      "serialNumber": 98,
       "submittedAt": "2023/6/2 上午 4:37:41",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "李芝玉",
@@ -1467,7 +1761,10 @@
       "scheduledSession": "23屆第9次常會"
     },
     {
+      "rowIndex": 100,
       "billNumber": "23屆北大峽議字第99號",
+      "term": 23,
+      "serialNumber": 99,
       "submittedAt": "2023/6/9 上午 10:46:55",
       "proposingEntity": "本會議員",
       "proposerName": "徐鉉捷",
@@ -1480,7 +1777,10 @@
       "scheduledSession": "23屆第9次常會"
     },
     {
+      "rowIndex": 101,
       "billNumber": "23屆北大峽議字第100號",
+      "term": 23,
+      "serialNumber": 100,
       "submittedAt": "2023/6/9 下午 11:26:49",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "李芝玉",
@@ -1493,7 +1793,10 @@
       "scheduledSession": "23屆第9次常會"
     },
     {
+      "rowIndex": 102,
       "billNumber": "23屆北大峽議字第101號",
+      "term": 23,
+      "serialNumber": 101,
       "submittedAt": "2023/6/9 下午 11:28:01",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "李芝玉",
@@ -1506,7 +1809,10 @@
       "scheduledSession": "23屆第9次常會"
     },
     {
+      "rowIndex": 103,
       "billNumber": "23屆北大峽議字第102號",
+      "term": 23,
+      "serialNumber": 102,
       "submittedAt": "2023/6/9 下午 11:29:03",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "李芝玉",
@@ -1519,7 +1825,10 @@
       "scheduledSession": "23屆第9次常會"
     },
     {
+      "rowIndex": 104,
       "billNumber": "23屆北大峽議字第103號",
+      "term": 23,
+      "serialNumber": 103,
       "submittedAt": "2023/6/10 下午 10:40:50",
       "proposingEntity": "三峽校區學生會 財務部",
       "proposerName": "李芝玉",
@@ -1534,7 +1843,10 @@
       "scheduledSession": "23屆第9次常會"
     },
     {
+      "rowIndex": 105,
       "billNumber": "23屆北大峽議字第104號",
+      "term": 23,
+      "serialNumber": 104,
       "submittedAt": "2023/6/12 下午 1:12:10",
       "proposingEntity": "本會議員",
       "proposerName": "黃聖恩",
@@ -1549,7 +1861,10 @@
       "scheduledSession": "23屆第9次常會"
     },
     {
+      "rowIndex": 106,
       "billNumber": "23屆北大峽議字第105號",
+      "term": 23,
+      "serialNumber": 105,
       "submittedAt": "2023/6/12 下午 3:05:22",
       "proposingEntity": "本會秘書處",
       "proposerName": "潘慈",
@@ -1565,7 +1880,10 @@
       "scheduledSession": "23屆第9次常會"
     },
     {
+      "rowIndex": 107,
       "billNumber": "23屆北大峽議字第106號",
+      "term": 23,
+      "serialNumber": 106,
       "submittedAt": "2023/6/12 下午 3:07:15",
       "proposingEntity": "本會秘書處",
       "proposerName": "潘慈",
@@ -1581,7 +1899,10 @@
       "scheduledSession": "23屆第9次常會"
     },
     {
+      "rowIndex": 108,
       "billNumber": "23屆北大峽議字第107號",
+      "term": 23,
+      "serialNumber": 107,
       "submittedAt": "2023/6/12 下午 3:09:12",
       "proposingEntity": "本會秘書處",
       "proposerName": "潘慈",
@@ -1597,7 +1918,10 @@
       "scheduledSession": "23屆第9次常會"
     },
     {
+      "rowIndex": 109,
       "billNumber": "23屆北大峽議字第108號",
+      "term": 23,
+      "serialNumber": 108,
       "submittedAt": "2023/6/12 下午 3:10:47",
       "proposingEntity": "本會秘書處",
       "proposerName": "潘慈",
@@ -1613,7 +1937,10 @@
       "scheduledSession": "23屆第9次常會"
     },
     {
+      "rowIndex": 110,
       "billNumber": "23屆北大峽議字第109號",
+      "term": 23,
+      "serialNumber": 109,
       "submittedAt": "2023/6/14 下午 11:31:38",
       "proposingEntity": "本會議員",
       "proposerName": "許栢睿",
@@ -1629,7 +1956,10 @@
       "scheduledSession": "23屆第9次常會"
     },
     {
+      "rowIndex": 111,
       "billNumber": "23屆北大峽議字第110號",
+      "term": 23,
+      "serialNumber": 110,
       "submittedAt": "2023/6/20 下午 3:50:00",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "李芝玉",
@@ -1644,7 +1974,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 112,
       "billNumber": "23屆北大峽議字第111號",
+      "term": 23,
+      "serialNumber": 111,
       "submittedAt": "2023/6/20 下午 3:57:39",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "李芝玉",
@@ -1659,7 +1992,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 113,
       "billNumber": "23屆北大峽議字第112號",
+      "term": 23,
+      "serialNumber": 112,
       "submittedAt": "2023/6/25 上午 1:49:35",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "李芝玉",
@@ -1674,7 +2010,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 114,
       "billNumber": "24屆北大峽議字第1號",
+      "term": 24,
+      "serialNumber": 1,
       "submittedAt": "2023/7/5 下午 11:15:46",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -1690,7 +2029,10 @@
       "scheduledSession": "24屆第1次臨時會"
     },
     {
+      "rowIndex": 115,
       "billNumber": "24屆北大峽議字第2號",
+      "term": 24,
+      "serialNumber": 2,
       "submittedAt": "2023/7/6 上午 12:25:03",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -1705,7 +2047,10 @@
       "scheduledSession": "24屆第1次臨時會"
     },
     {
+      "rowIndex": 116,
       "billNumber": "24屆北大峽議字第3號",
+      "term": 24,
+      "serialNumber": 3,
       "submittedAt": "2023/7/6 上午 1:29:31",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -1720,7 +2065,10 @@
       "scheduledSession": "24屆第1次臨時會"
     },
     {
+      "rowIndex": 117,
       "billNumber": "24屆北大峽議字第4號",
+      "term": 24,
+      "serialNumber": 4,
       "submittedAt": "2023/7/11 下午 3:27:56",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -1735,7 +2083,10 @@
       "scheduledSession": "24屆第1次臨時會"
     },
     {
+      "rowIndex": 118,
       "billNumber": "24屆北大峽議字第5號",
+      "term": 24,
+      "serialNumber": 5,
       "submittedAt": "2023/7/18 下午 9:29:27",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳怡瑾",
@@ -1750,7 +2101,10 @@
       "scheduledSession": "24屆第2次臨時會"
     },
     {
+      "rowIndex": 119,
       "billNumber": "24屆北大峽議字第6號",
+      "term": 24,
+      "serialNumber": 6,
       "submittedAt": "2023/7/20 下午 11:01:34",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -1765,7 +2119,10 @@
       "scheduledSession": "24屆第2次臨時會"
     },
     {
+      "rowIndex": 120,
       "billNumber": "24屆北大峽議字第7號",
+      "term": 24,
+      "serialNumber": 7,
       "submittedAt": "2023/7/22 上午 11:52:02",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -1782,7 +2139,10 @@
       "scheduledSession": "24屆第2次臨時會"
     },
     {
+      "rowIndex": 121,
       "billNumber": "24屆北大峽議字第8號",
+      "term": 24,
+      "serialNumber": 8,
       "submittedAt": "2023/7/22 下午 9:54:42",
       "proposingEntity": "本會議員",
       "proposerName": "徐鉉捷",
@@ -1797,7 +2157,10 @@
       "scheduledSession": "24屆第2次臨時會"
     },
     {
+      "rowIndex": 122,
       "billNumber": "24屆北大峽議字第9號",
+      "term": 24,
+      "serialNumber": 9,
       "submittedAt": "2023/8/22 下午 8:56:01",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -1812,7 +2175,10 @@
       "scheduledSession": "24屆第3次臨時會"
     },
     {
+      "rowIndex": 123,
       "billNumber": "24屆北大峽議字第10號",
+      "term": 24,
+      "serialNumber": 10,
       "submittedAt": "2023/8/22 下午 9:08:05",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -1827,7 +2193,10 @@
       "scheduledSession": "24屆第3次臨時會"
     },
     {
+      "rowIndex": 124,
       "billNumber": "24屆北大峽議字第11號",
+      "term": 24,
+      "serialNumber": 11,
       "submittedAt": "2023/8/22 下午 9:25:30",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -1843,7 +2212,10 @@
       "scheduledSession": "24屆第3次臨時會"
     },
     {
+      "rowIndex": 125,
       "billNumber": "24屆北大峽議字第12號",
+      "term": 24,
+      "serialNumber": 12,
       "submittedAt": "2023/8/22 下午 9:36:30",
       "proposingEntity": "學生自治會 總會",
       "proposerName": "邱奕翔",
@@ -1858,7 +2230,10 @@
       "scheduledSession": "24屆第3次臨時會"
     },
     {
+      "rowIndex": 126,
       "billNumber": "24屆北大峽議字第13號",
+      "term": 24,
+      "serialNumber": 13,
       "submittedAt": "2023/9/5 下午 4:10:40",
       "proposingEntity": "學生自治會 總會",
       "proposerName": "徐鉉捷",
@@ -1873,7 +2248,10 @@
       "scheduledSession": "24屆第1次常會"
     },
     {
+      "rowIndex": 127,
       "billNumber": "24屆北大峽議字第14號",
+      "term": 24,
+      "serialNumber": 14,
       "submittedAt": "2023/9/7 下午 8:08:15",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -1888,7 +2266,10 @@
       "scheduledSession": "24屆第1次常會"
     },
     {
+      "rowIndex": 128,
       "billNumber": "24屆北大峽議字第15號",
+      "term": 24,
+      "serialNumber": 15,
       "submittedAt": "2023/9/7 下午 9:02:25",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -1903,7 +2284,10 @@
       "scheduledSession": "24屆第1次常會"
     },
     {
+      "rowIndex": 129,
       "billNumber": "24屆北大峽議字第16號",
+      "term": 24,
+      "serialNumber": 16,
       "submittedAt": "2023/9/7 下午 9:08:48",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -1918,7 +2302,10 @@
       "scheduledSession": "24屆第1次常會"
     },
     {
+      "rowIndex": 130,
       "billNumber": "24屆北大峽議字第17號",
+      "term": 24,
+      "serialNumber": 17,
       "submittedAt": "2023/9/7 下午 9:20:08",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -1933,7 +2320,10 @@
       "scheduledSession": "24屆第1次常會"
     },
     {
+      "rowIndex": 131,
       "billNumber": "24屆北大峽議字第18號",
+      "term": 24,
+      "serialNumber": 18,
       "submittedAt": "2023/9/7 下午 9:29:42",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -1948,7 +2338,10 @@
       "scheduledSession": "24屆第1次常會"
     },
     {
+      "rowIndex": 132,
       "billNumber": "24屆北大峽議字第19號",
+      "term": 24,
+      "serialNumber": 19,
       "submittedAt": "2023/9/10 下午 9:23:55",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -1963,7 +2356,10 @@
       "scheduledSession": "24屆第1次常會"
     },
     {
+      "rowIndex": 133,
       "billNumber": "24屆北大峽議字第20號",
+      "term": 24,
+      "serialNumber": 20,
       "submittedAt": "2023/9/13 下午 11:43:26",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -1978,7 +2374,10 @@
       "scheduledSession": "24屆第1次常會"
     },
     {
+      "rowIndex": 134,
       "billNumber": "24屆北大峽議字第21號",
+      "term": 24,
+      "serialNumber": 21,
       "submittedAt": "2023/9/17 下午 4:00:24",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳怡瑾",
@@ -1993,7 +2392,10 @@
       "scheduledSession": "24屆第2次常會"
     },
     {
+      "rowIndex": 135,
       "billNumber": "24屆北大峽議字第22號",
+      "term": 24,
+      "serialNumber": 22,
       "submittedAt": "2023/9/24 下午 8:06:41",
       "proposingEntity": "學生法庭",
       "proposerName": "陳泓霖霖",
@@ -2008,7 +2410,10 @@
       "scheduledSession": "24屆第2次常會"
     },
     {
+      "rowIndex": 136,
       "billNumber": "24屆北大峽議字第23號",
+      "term": 24,
+      "serialNumber": 23,
       "submittedAt": "2023/9/25 下午 4:21:53",
       "proposingEntity": "本會議員",
       "proposerName": "曾宣凱",
@@ -2021,7 +2426,10 @@
       "scheduledSession": "24屆第2次常會"
     },
     {
+      "rowIndex": 137,
       "billNumber": "24屆北大峽議字第24號",
+      "term": 24,
+      "serialNumber": 24,
       "submittedAt": "2023/10/2 下午 8:32:57",
       "proposingEntity": "本會議員",
       "proposerName": "曾宣凱、周瑜芳",
@@ -2036,7 +2444,10 @@
       "scheduledSession": "24屆第2次常會"
     },
     {
+      "rowIndex": 138,
       "billNumber": "24屆北大峽議字第25號",
+      "term": 24,
+      "serialNumber": 25,
       "submittedAt": "2023/10/5 下午 9:32:35",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2054,7 +2465,10 @@
       "scheduledSession": "24屆第2次常會"
     },
     {
+      "rowIndex": 139,
       "billNumber": "24屆北大峽議字第26號",
+      "term": 24,
+      "serialNumber": 26,
       "submittedAt": "2023/10/5 下午 9:39:15",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2069,7 +2483,10 @@
       "scheduledSession": "24屆第3次常會"
     },
     {
+      "rowIndex": 140,
       "billNumber": "24屆北大峽議字第27號",
+      "term": 24,
+      "serialNumber": 27,
       "submittedAt": "2023/10/5 下午 9:44:01",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2084,7 +2501,10 @@
       "scheduledSession": "24屆第3次常會"
     },
     {
+      "rowIndex": 141,
       "billNumber": "24屆北大峽議字第28號",
+      "term": 24,
+      "serialNumber": 28,
       "submittedAt": "2023/10/10 下午 8:16:15",
       "proposingEntity": "學生法庭",
       "proposerName": "陳泓霖",
@@ -2099,7 +2519,10 @@
       "scheduledSession": "撤案"
     },
     {
+      "rowIndex": 142,
       "billNumber": "24屆北大峽議字第29號",
+      "term": 24,
+      "serialNumber": 29,
       "submittedAt": "2023/10/10 下午 8:22:25",
       "proposingEntity": "學生法庭",
       "proposerName": "陳泓霖",
@@ -2114,7 +2537,10 @@
       "scheduledSession": "撤案"
     },
     {
+      "rowIndex": 143,
       "billNumber": "24屆北大峽議字第30號",
+      "term": 24,
+      "serialNumber": 30,
       "submittedAt": "2023/10/12 上午 11:34:16",
       "proposingEntity": "本會議員",
       "proposerName": "曾宣凱",
@@ -2127,7 +2553,10 @@
       "scheduledSession": "24屆第2次常會"
     },
     {
+      "rowIndex": 144,
       "billNumber": "24屆北大峽議字第31號",
+      "term": 24,
+      "serialNumber": 31,
       "submittedAt": "2023/11/8 下午 5:36:24",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2142,7 +2571,10 @@
       "scheduledSession": "24屆第3次常會"
     },
     {
+      "rowIndex": 145,
       "billNumber": "24屆北大峽議字第32號",
+      "term": 24,
+      "serialNumber": 32,
       "submittedAt": "2023/11/8 下午 5:38:28",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2157,7 +2589,10 @@
       "scheduledSession": "24屆第3次常會"
     },
     {
+      "rowIndex": 146,
       "billNumber": "24屆北大峽議字第33號",
+      "term": 24,
+      "serialNumber": 33,
       "submittedAt": "2023/11/8 下午 6:04:44",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2172,7 +2607,10 @@
       "scheduledSession": "24屆第3次常會"
     },
     {
+      "rowIndex": 147,
       "billNumber": "24屆北大峽議字第34號",
+      "term": 24,
+      "serialNumber": 34,
       "submittedAt": "2023/11/8 下午 6:11:16",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2187,7 +2625,10 @@
       "scheduledSession": "24屆第3次常會"
     },
     {
+      "rowIndex": 148,
       "billNumber": "24屆北大峽議字第35號",
+      "term": 24,
+      "serialNumber": 35,
       "submittedAt": "2023/11/9 上午 1:18:59",
       "proposingEntity": "本會議員",
       "proposerName": "曾宣凱",
@@ -2203,7 +2644,10 @@
       "scheduledSession": "24屆第3次常會"
     },
     {
+      "rowIndex": 149,
       "billNumber": "24屆北大峽議字第36號",
+      "term": 24,
+      "serialNumber": 36,
       "submittedAt": "2023/11/9 上午 1:25:36",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2218,7 +2662,10 @@
       "scheduledSession": "24屆第3次常會"
     },
     {
+      "rowIndex": 150,
       "billNumber": "24屆北大峽議字第37號",
+      "term": 24,
+      "serialNumber": 37,
       "submittedAt": "2023/11/9 上午 1:30:14",
       "proposingEntity": "本會議員",
       "proposerName": "曾宣凱",
@@ -2233,7 +2680,10 @@
       "scheduledSession": "24屆第3次常會"
     },
     {
+      "rowIndex": 151,
       "billNumber": "24屆北大峽議字第38號",
+      "term": 24,
+      "serialNumber": 38,
       "submittedAt": "2023/11/9 下午 9:15:21",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2248,7 +2698,10 @@
       "scheduledSession": "24屆第3次常會"
     },
     {
+      "rowIndex": 152,
       "billNumber": "24屆北大峽議字第39號",
+      "term": 24,
+      "serialNumber": 39,
       "submittedAt": "2023/11/9 下午 10:40:04",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2263,7 +2716,10 @@
       "scheduledSession": "24屆第3次常會"
     },
     {
+      "rowIndex": 153,
       "billNumber": "24屆北大峽議字第40號",
+      "term": 24,
+      "serialNumber": 40,
       "submittedAt": "2023/11/9 下午 11:37:13",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2278,7 +2734,10 @@
       "scheduledSession": "24屆第3次常會"
     },
     {
+      "rowIndex": 154,
       "billNumber": "24屆北大峽議字第41號",
+      "term": 24,
+      "serialNumber": 41,
       "submittedAt": "2023/11/27 下午 4:11:58",
       "proposingEntity": "本會秘書處",
       "proposerName": "林采頤",
@@ -2293,7 +2752,10 @@
       "scheduledSession": "24屆第4次常會"
     },
     {
+      "rowIndex": 155,
       "billNumber": "24屆北大峽議字第42號",
+      "term": 24,
+      "serialNumber": 42,
       "submittedAt": "2023/11/27 下午 4:43:13",
       "proposingEntity": "學生法庭",
       "proposerName": "張景程",
@@ -2308,7 +2770,10 @@
       "scheduledSession": "24屆第4次常會"
     },
     {
+      "rowIndex": 156,
       "billNumber": "24屆北大峽議字第43號",
+      "term": 24,
+      "serialNumber": 43,
       "submittedAt": "2023/11/28 下午 3:55:58",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2323,7 +2788,10 @@
       "scheduledSession": "24屆第4次常會"
     },
     {
+      "rowIndex": 157,
       "billNumber": "24屆北大峽議字第44號",
+      "term": 24,
+      "serialNumber": 44,
       "submittedAt": "2023/11/28 下午 11:36:10",
       "proposingEntity": "本會議員, 本會秘書處",
       "proposerName": "徐鉉捷",
@@ -2338,7 +2806,10 @@
       "scheduledSession": "24屆第4次常會"
     },
     {
+      "rowIndex": 158,
       "billNumber": "24屆北大峽議字第45號",
+      "term": 24,
+      "serialNumber": 45,
       "submittedAt": "2023/11/29 上午 1:42:32",
       "proposingEntity": "學生法庭",
       "proposerName": "黃振",
@@ -2353,7 +2824,10 @@
       "scheduledSession": "24屆第4次常會"
     },
     {
+      "rowIndex": 159,
       "billNumber": "24屆北大峽議字第46號",
+      "term": 24,
+      "serialNumber": 46,
       "submittedAt": "2023/11/29 上午 1:52:32",
       "proposingEntity": "學生法庭",
       "proposerName": "黃振",
@@ -2368,7 +2842,10 @@
       "scheduledSession": "24屆第4次常會"
     },
     {
+      "rowIndex": 160,
       "billNumber": "24屆北大峽議字第47號",
+      "term": 24,
+      "serialNumber": 47,
       "submittedAt": "2023/11/30 下午 7:43:50",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2383,7 +2860,10 @@
       "scheduledSession": "24屆第4次常會"
     },
     {
+      "rowIndex": 161,
       "billNumber": "24屆北大峽議字第48號",
+      "term": 24,
+      "serialNumber": 48,
       "submittedAt": "2023/12/7 上午 12:36:32",
       "proposingEntity": "學生法庭",
       "proposerName": "黃振",
@@ -2398,7 +2878,10 @@
       "scheduledSession": "24屆第4次常會"
     },
     {
+      "rowIndex": 162,
       "billNumber": "24屆北大峽議字第49號",
+      "term": 24,
+      "serialNumber": 49,
       "submittedAt": "2023/12/7 上午 7:58:09",
       "proposingEntity": "學生法庭",
       "proposerName": "黃振",
@@ -2414,7 +2897,10 @@
       "scheduledSession": "24屆第4次常會"
     },
     {
+      "rowIndex": 163,
       "billNumber": "24屆北大峽議字第50號",
+      "term": 24,
+      "serialNumber": 50,
       "submittedAt": "2023/12/10 下午 10:47:25",
       "proposingEntity": "本會議員",
       "proposerName": "曾宣凱、李孟叡、陳語佳、王冠人、周瑜芳、潘慈",
@@ -2429,7 +2915,10 @@
       "scheduledSession": "24屆第5次常會"
     },
     {
+      "rowIndex": 164,
       "billNumber": "24屆北大峽議字第51號",
+      "term": 24,
+      "serialNumber": 51,
       "submittedAt": "2023/12/11 上午 10:08:47",
       "proposingEntity": "學生法庭 書記處",
       "proposerName": "黃振",
@@ -2444,7 +2933,10 @@
       "scheduledSession": "24屆第5次常會"
     },
     {
+      "rowIndex": 165,
       "billNumber": "24屆北大峽議字第52號",
+      "term": 24,
+      "serialNumber": 52,
       "submittedAt": "2023/12/18 下午 5:26:35",
       "proposingEntity": "本會議員",
       "proposerName": "曾宣凱、涂筱萱、王冠人",
@@ -2460,7 +2952,10 @@
       "scheduledSession": "24屆第5次常會"
     },
     {
+      "rowIndex": 166,
       "billNumber": "24屆北大峽議字第53號",
+      "term": 24,
+      "serialNumber": 53,
       "submittedAt": "2023/12/27 下午 11:05:07",
       "proposingEntity": "總會 秘書處",
       "proposerName": "徐鉉捷",
@@ -2475,7 +2970,10 @@
       "scheduledSession": "24屆第5次常會"
     },
     {
+      "rowIndex": 167,
       "billNumber": "24屆北大峽議字第54號",
+      "term": 24,
+      "serialNumber": 54,
       "submittedAt": "2023/12/28 下午 11:50:15",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2490,7 +2988,10 @@
       "scheduledSession": "24屆第5次常會"
     },
     {
+      "rowIndex": 168,
       "billNumber": "24屆北大峽議字第55號",
+      "term": 24,
+      "serialNumber": 55,
       "submittedAt": "2023/12/29 下午 9:14:57",
       "proposingEntity": "學生法庭 書記處",
       "proposerName": "黃振",
@@ -2505,7 +3006,10 @@
       "scheduledSession": "24屆第5次常會"
     },
     {
+      "rowIndex": 169,
       "billNumber": "24屆北大峽議字第56號",
+      "term": 24,
+      "serialNumber": 56,
       "submittedAt": "2024/1/10 下午 4:47:01",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2520,7 +3024,10 @@
       "scheduledSession": "24屆第8次常會"
     },
     {
+      "rowIndex": 170,
       "billNumber": "24屆北大峽議字第57號",
+      "term": 24,
+      "serialNumber": 57,
       "submittedAt": "2024/2/12 下午 1:31:04",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2535,7 +3042,10 @@
       "scheduledSession": "撤案"
     },
     {
+      "rowIndex": 171,
       "billNumber": "24屆北大峽議字第58號",
+      "term": 24,
+      "serialNumber": 58,
       "submittedAt": "2024/2/21 下午 4:38:06",
       "proposingEntity": "學生法庭 書記處",
       "proposerName": "黃振",
@@ -2550,7 +3060,10 @@
       "scheduledSession": "24屆第6次常會"
     },
     {
+      "rowIndex": 172,
       "billNumber": "24屆北大峽議字第59號",
+      "term": 24,
+      "serialNumber": 59,
       "submittedAt": "2024/2/22 下午 9:29:23",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2565,7 +3078,10 @@
       "scheduledSession": "24屆第6次常會"
     },
     {
+      "rowIndex": 173,
       "billNumber": "24屆北大峽議字第60號",
+      "term": 24,
+      "serialNumber": 60,
       "submittedAt": "2024/2/22 下午 10:31:59",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2580,7 +3096,10 @@
       "scheduledSession": "24屆第6次常會"
     },
     {
+      "rowIndex": 174,
       "billNumber": "24屆北大峽議字第61號",
+      "term": 24,
+      "serialNumber": 61,
       "submittedAt": "2024/2/22 下午 10:38:05",
       "proposingEntity": "總會 秘書處",
       "proposerName": "徐鉉捷",
@@ -2595,7 +3114,10 @@
       "scheduledSession": "24屆第6次常會"
     },
     {
+      "rowIndex": 175,
       "billNumber": "24屆北大峽議字第62號",
+      "term": 24,
+      "serialNumber": 62,
       "submittedAt": "2024/2/22 下午 10:50:27",
       "proposingEntity": "三峽校區學生會 會長副會長, 三峽校區學生會 新聞部",
       "proposerName": "邱奕翔",
@@ -2610,7 +3132,10 @@
       "scheduledSession": "24屆第6次常會"
     },
     {
+      "rowIndex": 176,
       "billNumber": "24屆北大峽議字第63號",
+      "term": 24,
+      "serialNumber": 63,
       "submittedAt": "2024/2/22 下午 11:31:41",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2625,7 +3150,10 @@
       "scheduledSession": "24屆第6次常會"
     },
     {
+      "rowIndex": 177,
       "billNumber": "24屆北大峽議字第64號",
+      "term": 24,
+      "serialNumber": 64,
       "submittedAt": "2024/2/22 下午 11:35:23",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2640,7 +3168,10 @@
       "scheduledSession": "24屆第6次常會"
     },
     {
+      "rowIndex": 178,
       "billNumber": "24屆北大峽議字第65號",
+      "term": 24,
+      "serialNumber": 65,
       "submittedAt": "2024/2/26 下午 11:55:00",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2655,7 +3186,10 @@
       "scheduledSession": "24屆第7次常會"
     },
     {
+      "rowIndex": 179,
       "billNumber": "24屆北大峽議字第66號",
+      "term": 24,
+      "serialNumber": 66,
       "submittedAt": "2024/2/27 下午 2:41:08",
       "proposingEntity": "本會秘書處",
       "proposerName": "林采頤",
@@ -2670,7 +3204,10 @@
       "scheduledSession": "24屆第6次常會"
     },
     {
+      "rowIndex": 180,
       "billNumber": "24屆北大峽議字第67號",
+      "term": 24,
+      "serialNumber": 67,
       "submittedAt": "2024/3/10 下午 4:36:25",
       "proposingEntity": "本會議員",
       "proposerName": "曾宣凱",
@@ -2686,7 +3223,10 @@
       "scheduledSession": "24屆第7次常會"
     },
     {
+      "rowIndex": 181,
       "billNumber": "24屆北大峽議字第68號",
+      "term": 24,
+      "serialNumber": 68,
       "submittedAt": "2024/3/10 下午 5:05:26",
       "proposingEntity": "本會議員",
       "proposerName": "曾宣凱",
@@ -2702,7 +3242,10 @@
       "scheduledSession": "24屆第7次常會"
     },
     {
+      "rowIndex": 182,
       "billNumber": "24屆北大峽議字第69號",
+      "term": 24,
+      "serialNumber": 69,
       "submittedAt": "2024/3/10 下午 5:17:58",
       "proposingEntity": "本會議員",
       "proposerName": "曾宣凱",
@@ -2718,7 +3261,10 @@
       "scheduledSession": "24屆第7次常會"
     },
     {
+      "rowIndex": 183,
       "billNumber": "24屆北大峽議字第70號",
+      "term": 24,
+      "serialNumber": 70,
       "submittedAt": "2024/3/10 下午 5:31:37",
       "proposingEntity": "本會議員",
       "proposerName": "曾宣凱",
@@ -2734,7 +3280,10 @@
       "scheduledSession": "24屆第7次常會"
     },
     {
+      "rowIndex": 184,
       "billNumber": "24屆北大峽議字第71號",
+      "term": 24,
+      "serialNumber": 71,
       "submittedAt": "2024/3/10 下午 5:38:48",
       "proposingEntity": "本會議員",
       "proposerName": "曾宣凱",
@@ -2750,7 +3299,10 @@
       "scheduledSession": "24屆第7次常會"
     },
     {
+      "rowIndex": 185,
       "billNumber": "24屆北大峽議字第72號",
+      "term": 24,
+      "serialNumber": 72,
       "submittedAt": "2024/3/10 下午 5:47:56",
       "proposingEntity": "本會議員",
       "proposerName": "曾宣凱",
@@ -2766,7 +3318,10 @@
       "scheduledSession": "24屆第7次常會"
     },
     {
+      "rowIndex": 186,
       "billNumber": "24屆北大峽議字第73號",
+      "term": 24,
+      "serialNumber": 73,
       "submittedAt": "2024/3/10 下午 5:55:45",
       "proposingEntity": "本會議員",
       "proposerName": "曾宣凱",
@@ -2782,7 +3337,10 @@
       "scheduledSession": "24屆第7次常會"
     },
     {
+      "rowIndex": 187,
       "billNumber": "24屆北大峽議字第74號",
+      "term": 24,
+      "serialNumber": 74,
       "submittedAt": "2024/3/10 下午 6:03:48",
       "proposingEntity": "本會議員",
       "proposerName": "曾宣凱",
@@ -2798,7 +3356,10 @@
       "scheduledSession": "24屆第7次常會"
     },
     {
+      "rowIndex": 188,
       "billNumber": "24屆北大峽議字第75號",
+      "term": 24,
+      "serialNumber": 75,
       "submittedAt": "2024/3/10 下午 6:07:41",
       "proposingEntity": "本會議員",
       "proposerName": "曾宣凱",
@@ -2814,7 +3375,10 @@
       "scheduledSession": "24屆第7次常會"
     },
     {
+      "rowIndex": 189,
       "billNumber": "24屆北大峽議字第76號",
+      "term": 24,
+      "serialNumber": 76,
       "submittedAt": "2024/3/10 下午 6:11:50",
       "proposingEntity": "本會議員",
       "proposerName": "曾宣凱",
@@ -2830,7 +3394,10 @@
       "scheduledSession": "24屆第7次常會"
     },
     {
+      "rowIndex": 190,
       "billNumber": "24屆北大峽議字第77號",
+      "term": 24,
+      "serialNumber": 77,
       "submittedAt": "2024/3/13 下午 5:23:59",
       "proposingEntity": "學生法庭 書記處",
       "proposerName": "黃振",
@@ -2847,7 +3414,10 @@
       "scheduledSession": "24屆第7次常會"
     },
     {
+      "rowIndex": 191,
       "billNumber": "24屆北大峽議字第78號",
+      "term": 24,
+      "serialNumber": 78,
       "submittedAt": "2024/3/13 下午 5:26:06",
       "proposingEntity": "學生法庭 書記處",
       "proposerName": "黃振",
@@ -2864,7 +3434,10 @@
       "scheduledSession": "24屆第7次常會"
     },
     {
+      "rowIndex": 192,
       "billNumber": "24屆北大峽議字第79號",
+      "term": 24,
+      "serialNumber": 79,
       "submittedAt": "2024/3/13 下午 5:28:59",
       "proposingEntity": "學生法庭 書記處",
       "proposerName": "黃振",
@@ -2881,7 +3454,10 @@
       "scheduledSession": "24屆第7次常會"
     },
     {
+      "rowIndex": 193,
       "billNumber": "24屆北大峽議字第80號",
+      "term": 24,
+      "serialNumber": 80,
       "submittedAt": "2024/3/13 下午 5:31:46",
       "proposingEntity": "學生法庭 書記處",
       "proposerName": "游子萱",
@@ -2896,7 +3472,10 @@
       "scheduledSession": "24屆第7次常會"
     },
     {
+      "rowIndex": 194,
       "billNumber": "24屆北大峽議字第81號",
+      "term": 24,
+      "serialNumber": 81,
       "submittedAt": "2024/3/14 上午 11:39:03",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2911,7 +3490,10 @@
       "scheduledSession": "24屆第8次常會"
     },
     {
+      "rowIndex": 195,
       "billNumber": "24屆北大峽議字第82號",
+      "term": 24,
+      "serialNumber": 82,
       "submittedAt": "2024/3/14 下午 6:59:27",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2926,7 +3508,10 @@
       "scheduledSession": "24屆第8次常會"
     },
     {
+      "rowIndex": 196,
       "billNumber": "24屆北大峽議字第83號",
+      "term": 24,
+      "serialNumber": 83,
       "submittedAt": "2024/3/21 上午 2:33:43",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2941,7 +3526,10 @@
       "scheduledSession": "24屆第7次常會"
     },
     {
+      "rowIndex": 197,
       "billNumber": "24屆北大峽議字第84號",
+      "term": 24,
+      "serialNumber": 84,
       "submittedAt": "2024/3/21 上午 11:12:32",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -2956,7 +3544,10 @@
       "scheduledSession": "24屆第7次常會"
     },
     {
+      "rowIndex": 198,
       "billNumber": "24屆北大峽議字第85號",
+      "term": 24,
+      "serialNumber": 85,
       "submittedAt": "2024/4/1 下午 11:11:15",
       "proposingEntity": "總會 秘書處",
       "proposerName": "徐鉉捷",
@@ -2973,7 +3564,10 @@
       "scheduledSession": "24屆第8次常會"
     },
     {
+      "rowIndex": 199,
       "billNumber": "24屆北大峽議字第86號",
+      "term": 24,
+      "serialNumber": 86,
       "submittedAt": "2024/4/10 上午 12:15:21",
       "proposingEntity": "總會 秘書處",
       "proposerName": "徐鉉捷",
@@ -2988,7 +3582,10 @@
       "scheduledSession": "24屆第8次常會"
     },
     {
+      "rowIndex": 200,
       "billNumber": "24屆北大峽議字第87號",
+      "term": 24,
+      "serialNumber": 87,
       "submittedAt": "2024/4/18 下午 9:34:17",
       "proposingEntity": "三峽校區學生會  秘書處",
       "proposerName": "曾翊揚",
@@ -3003,7 +3600,10 @@
       "scheduledSession": "24屆第8次常會"
     },
     {
+      "rowIndex": 201,
       "billNumber": "24屆北大峽議字第88號",
+      "term": 24,
+      "serialNumber": 88,
       "submittedAt": "2024/4/24 下午 10:04:44",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -3018,7 +3618,10 @@
       "scheduledSession": "24屆第8次常會"
     },
     {
+      "rowIndex": 202,
       "billNumber": "24屆北大峽議字第89號",
+      "term": 24,
+      "serialNumber": 89,
       "submittedAt": "2024/4/25 上午 11:46:40",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -3033,7 +3636,10 @@
       "scheduledSession": "24屆第8次常會"
     },
     {
+      "rowIndex": 203,
       "billNumber": "24屆北大峽議字第90號",
+      "term": 24,
+      "serialNumber": 90,
       "submittedAt": "2024/5/4 下午 10:52:02",
       "proposingEntity": "學生法庭 書記處",
       "proposerName": "黃振",
@@ -3049,7 +3655,10 @@
       "scheduledSession": "24屆第9次常會"
     },
     {
+      "rowIndex": 204,
       "billNumber": "24屆北大峽議字第91號",
+      "term": 24,
+      "serialNumber": 91,
       "submittedAt": "2024/6/4 上午 12:33:04",
       "proposingEntity": "總會 秘書處",
       "proposerName": "徐鉉捷",
@@ -3064,7 +3673,10 @@
       "scheduledSession": "24屆第10次常會"
     },
     {
+      "rowIndex": 205,
       "billNumber": "24屆北大峽議字第92號",
+      "term": 24,
+      "serialNumber": 92,
       "submittedAt": "2024/6/5 下午 4:40:54",
       "proposingEntity": "本會議員",
       "proposerName": "曾宣凱",
@@ -3080,7 +3692,10 @@
       "scheduledSession": "24屆第10次常會"
     },
     {
+      "rowIndex": 206,
       "billNumber": "24屆北大峽議字第93號",
+      "term": 24,
+      "serialNumber": 93,
       "submittedAt": "2024/6/5 下午 4:50:58",
       "proposingEntity": "本會議員",
       "proposerName": "曾宣凱",
@@ -3096,7 +3711,10 @@
       "scheduledSession": "24屆第10次常會"
     },
     {
+      "rowIndex": 207,
       "billNumber": "24屆北大峽議字第94號",
+      "term": 24,
+      "serialNumber": 94,
       "submittedAt": "2024/6/10 下午 9:31:11",
       "proposingEntity": "本會秘書處",
       "proposerName": "徐鉉捷",
@@ -3111,7 +3729,10 @@
       "scheduledSession": "24屆第10次常會"
     },
     {
+      "rowIndex": 208,
       "billNumber": "24屆北大峽議字第95號",
+      "term": 24,
+      "serialNumber": 95,
       "submittedAt": "2024/6/11 下午 9:36:43",
       "proposingEntity": "學生法庭 書記處",
       "proposerName": "黃振",
@@ -3126,7 +3747,10 @@
       "scheduledSession": "24屆第10次常會"
     },
     {
+      "rowIndex": 209,
       "billNumber": "24屆北大峽議字第96號",
+      "term": 24,
+      "serialNumber": 96,
       "submittedAt": "2024/6/12 下午 11:08:30",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -3142,7 +3766,10 @@
       "scheduledSession": "24屆第10次常會"
     },
     {
+      "rowIndex": 210,
       "billNumber": "24屆北大峽議字第97號",
+      "term": 24,
+      "serialNumber": 97,
       "submittedAt": "2024/6/12 下午 11:38:03",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -3158,7 +3785,10 @@
       "scheduledSession": "24屆第10次常會"
     },
     {
+      "rowIndex": 211,
       "billNumber": "24屆北大峽議字第98號",
+      "term": 24,
+      "serialNumber": 98,
       "submittedAt": "2024/6/12 下午 11:59:16",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "邱奕翔",
@@ -3173,7 +3803,10 @@
       "scheduledSession": "24屆第10次常會"
     },
     {
+      "rowIndex": 212,
       "billNumber": "25屆北大峽議字第1號",
+      "term": 25,
+      "serialNumber": 1,
       "submittedAt": "2024/7/4 下午 11:36:13",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "曾宣凱",
@@ -3189,7 +3822,10 @@
       "scheduledSession": "第25屆第1次臨時會"
     },
     {
+      "rowIndex": 213,
       "billNumber": "25屆北大峽議字第2號",
+      "term": 25,
+      "serialNumber": 2,
       "submittedAt": "2024/7/4 下午 11:44:03",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "曾宣凱",
@@ -3205,7 +3841,10 @@
       "scheduledSession": "第25屆第1次臨時會"
     },
     {
+      "rowIndex": 214,
       "billNumber": "25屆北大峽議字第3號",
+      "term": 25,
+      "serialNumber": 3,
       "submittedAt": "2024/7/4 下午 11:48:14",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "曾宣凱",
@@ -3220,7 +3859,10 @@
       "scheduledSession": "第25屆第1次臨時會"
     },
     {
+      "rowIndex": 215,
       "billNumber": "25屆北大峽議字第4號",
+      "term": 25,
+      "serialNumber": 4,
       "submittedAt": "2024/7/4 下午 11:51:15",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "曾宣凱",
@@ -3235,7 +3877,10 @@
       "scheduledSession": "第25屆第1次臨時會"
     },
     {
+      "rowIndex": 216,
       "billNumber": "25屆北大峽議字第5號",
+      "term": 25,
+      "serialNumber": 5,
       "submittedAt": "2024/7/4 下午 11:52:42",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "曾宣凱",
@@ -3250,7 +3895,10 @@
       "scheduledSession": "第25屆第1次臨時會"
     },
     {
+      "rowIndex": 217,
       "billNumber": "25屆北大峽議字第6號",
+      "term": 25,
+      "serialNumber": 6,
       "submittedAt": "2024/7/10 下午 8:52:59",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "曾宣凱",
@@ -3266,7 +3914,10 @@
       "scheduledSession": "第25屆第2次臨時會"
     },
     {
+      "rowIndex": 218,
       "billNumber": "25屆北大峽議字第7號",
+      "term": 25,
+      "serialNumber": 7,
       "submittedAt": "2024/7/13 下午 11:51:56",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "曾宣凱",
@@ -3282,7 +3933,10 @@
       "scheduledSession": "第25屆第2次臨時會"
     },
     {
+      "rowIndex": 219,
       "billNumber": "25屆北大峽議字第8號",
+      "term": 25,
+      "serialNumber": 8,
       "submittedAt": "2024/7/13 下午 11:56:44",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "曾宣凱",
@@ -3298,7 +3952,10 @@
       "scheduledSession": "第25屆第2次臨時會"
     },
     {
+      "rowIndex": 220,
       "billNumber": "25屆北大峽議字第9號",
+      "term": 25,
+      "serialNumber": 9,
       "submittedAt": "2024/7/19 下午 4:54:25",
       "proposingEntity": "本會議員",
       "proposerName": "陳昱仁",
@@ -3314,7 +3971,10 @@
       "scheduledSession": "第25屆第2次臨時會"
     },
     {
+      "rowIndex": 221,
       "billNumber": "25屆北大峽議字第10號",
+      "term": 25,
+      "serialNumber": 10,
       "submittedAt": "2024/7/19 下午 9:49:10",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "曾宣凱",
@@ -3329,7 +3989,10 @@
       "scheduledSession": "第25屆第2次臨時會"
     },
     {
+      "rowIndex": 222,
       "billNumber": "25屆北大峽議字第11號",
+      "term": 25,
+      "serialNumber": 11,
       "submittedAt": "2024/7/20 下午 9:05:52",
       "proposingEntity": "三峽校區學生會 財務部",
       "proposerName": "曾宣凱",
@@ -3345,7 +4008,10 @@
       "scheduledSession": "第25屆第2次臨時會"
     },
     {
+      "rowIndex": 223,
       "billNumber": "25屆北大峽議字第12號",
+      "term": 25,
+      "serialNumber": 12,
       "submittedAt": "2024/7/31 下午 10:48:45",
       "proposingEntity": "學生法庭 書記處",
       "proposerName": "黃振",
@@ -3362,7 +4028,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 224,
       "billNumber": "25屆北大峽議字第13號",
+      "term": 25,
+      "serialNumber": 13,
       "submittedAt": "2024/8/3 下午 6:42:02",
       "proposingEntity": "總會 秘書處",
       "proposerName": "陳庭楚",
@@ -3378,7 +4047,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 225,
       "billNumber": "25屆北大峽議字第14號",
+      "term": 25,
+      "serialNumber": 14,
       "submittedAt": "2024/8/8 上午 10:48:04",
       "proposingEntity": "學生法庭 書記處",
       "proposerName": "黃振",
@@ -3395,7 +4067,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 226,
       "billNumber": "25屆北大峽議字第15號",
+      "term": 25,
+      "serialNumber": 15,
       "submittedAt": "2024/9/11 下午 8:58:10",
       "proposingEntity": "學生法庭 書記處",
       "proposerName": "黃振",
@@ -3410,7 +4085,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 227,
       "billNumber": "25屆北大峽議字第16號",
+      "term": 25,
+      "serialNumber": 16,
       "submittedAt": "2024/9/13 下午 6:56:52",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "曾宣凱",
@@ -3425,7 +4103,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 228,
       "billNumber": "25屆北大峽議字第17號",
+      "term": 25,
+      "serialNumber": 17,
       "submittedAt": "2024/9/13 下午 7:10:48",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "曾宣凱",
@@ -3441,7 +4122,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 229,
       "billNumber": "25屆北大峽議字第18號",
+      "term": 25,
+      "serialNumber": 18,
       "submittedAt": "2024/9/13 下午 7:35:50",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "曾宣凱",
@@ -3456,7 +4140,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 230,
       "billNumber": "25屆北大峽議字第19號",
+      "term": 25,
+      "serialNumber": 19,
       "submittedAt": "2024/9/13 下午 7:45:43",
       "proposingEntity": "三峽校區學生會 財務部",
       "proposerName": "曾宣凱",
@@ -3474,7 +4161,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 231,
       "billNumber": "25屆北大峽議字第20號",
+      "term": 25,
+      "serialNumber": 20,
       "submittedAt": "2024/9/23 上午 12:18:57",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "曾宣凱",
@@ -3489,7 +4179,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 232,
       "billNumber": "25屆北大峽議字第21號",
+      "term": 25,
+      "serialNumber": 21,
       "submittedAt": "2024/11/8 下午 5:55:27",
       "proposingEntity": "三峽校區學生會 學生權益部",
       "proposerName": "曾宣凱",
@@ -3504,7 +4197,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 233,
       "billNumber": "25屆北大峽議字第22號",
+      "term": 25,
+      "serialNumber": 22,
       "submittedAt": "2024/11/12 下午 5:19:39",
       "proposingEntity": "三峽校區學生會  秘書處",
       "proposerName": "曾宣凱",
@@ -3520,7 +4216,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 234,
       "billNumber": "25屆北大峽議字第23號",
+      "term": 25,
+      "serialNumber": 23,
       "submittedAt": "2024/11/12 下午 5:24:41",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "曾宣凱",
@@ -3536,7 +4235,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 235,
       "billNumber": "25屆北大峽議字第24號",
+      "term": 25,
+      "serialNumber": 24,
       "submittedAt": "2024/11/12 下午 5:27:38",
       "proposingEntity": "三峽校區學生會 學生權益部",
       "proposerName": "曾宣凱",
@@ -3552,7 +4254,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 236,
       "billNumber": "25屆北大峽議字第25號",
+      "term": 25,
+      "serialNumber": 25,
       "submittedAt": "2024/11/12 下午 5:43:02",
       "proposingEntity": "三峽校區學生會 學生權益部",
       "proposerName": "曾宣凱",
@@ -3568,7 +4273,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 237,
       "billNumber": "25屆北大峽議字第26號",
+      "term": 25,
+      "serialNumber": 26,
       "submittedAt": "2024/11/12 下午 5:45:59",
       "proposingEntity": "三峽校區學生會 學生權益部",
       "proposerName": "曾宣凱",
@@ -3584,7 +4292,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 238,
       "billNumber": "25屆北大峽議字第27號",
+      "term": 25,
+      "serialNumber": 27,
       "submittedAt": "2024/12/13 下午 4:30:32",
       "proposingEntity": "本會議長",
       "proposerName": "陳昱仁",
@@ -3600,7 +4311,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 239,
       "billNumber": "25屆北大峽議字第28號",
+      "term": 25,
+      "serialNumber": 28,
       "submittedAt": "2024/12/27 下午 11:26:31",
       "proposingEntity": "本會議員",
       "proposerName": "「童子庭、周昕妤」",
@@ -3613,7 +4327,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 240,
       "billNumber": "25屆北大峽議字第29號",
+      "term": 25,
+      "serialNumber": 29,
       "submittedAt": "2024/12/31 下午 8:34:47",
       "proposingEntity": "三峽校區學生會 學生權益部",
       "proposerName": "曾宣凱",
@@ -3629,7 +4346,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 241,
       "billNumber": "25屆北大峽議字第30號",
+      "term": 25,
+      "serialNumber": 30,
       "submittedAt": "2024/12/31 下午 10:05:39",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "曾宣凱",
@@ -3645,7 +4365,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 242,
       "billNumber": "25屆北大峽議字第31號",
+      "term": 25,
+      "serialNumber": 31,
       "submittedAt": "2024/12/31 下午 10:09:49",
       "proposingEntity": "三峽校區學生會 財務部",
       "proposerName": "曾宣凱",
@@ -3660,7 +4383,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 243,
       "billNumber": "25屆北大峽議字第32號",
+      "term": 25,
+      "serialNumber": 32,
       "submittedAt": "2025/1/1 上午 12:02:05",
       "proposingEntity": "學生法庭 書記處",
       "proposerName": "黃振",
@@ -3675,7 +4401,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 244,
       "billNumber": "25屆北大峽議字第33號",
+      "term": 25,
+      "serialNumber": 33,
       "submittedAt": "2025/1/4 下午 4:03:35",
       "proposingEntity": "本會秘書處",
       "proposerName": "粘子瑜",
@@ -3691,7 +4420,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 245,
       "billNumber": "25屆北大峽議字第34號",
+      "term": 25,
+      "serialNumber": 34,
       "submittedAt": "2025/1/4 下午 5:08:44",
       "proposingEntity": "本會議員",
       "proposerName": "「童子庭、周昕妤」",
@@ -3704,7 +4436,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 246,
       "billNumber": "25屆北大峽議字第35號",
+      "term": 25,
+      "serialNumber": 35,
       "submittedAt": "2025/1/6 上午 2:00:59",
       "proposingEntity": "本會秘書處",
       "proposerName": "粘子瑜",
@@ -3720,7 +4455,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 247,
       "billNumber": "25屆北大峽議字第36號",
+      "term": 25,
+      "serialNumber": 36,
       "submittedAt": "2025/2/18 下午 4:18:20",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "曾宣凱",
@@ -3735,7 +4473,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 248,
       "billNumber": "25屆北大峽議字第37號",
+      "term": 25,
+      "serialNumber": 37,
       "submittedAt": "2025/2/18 下午 4:27:27",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "曾宣凱",
@@ -3750,7 +4491,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 249,
       "billNumber": "25屆北大峽議字第38號",
+      "term": 25,
+      "serialNumber": 38,
       "submittedAt": "2025/2/18 下午 4:36:27",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "曾宣凱",
@@ -3765,7 +4509,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 250,
       "billNumber": "25屆北大峽議字第39號",
+      "term": 25,
+      "serialNumber": 39,
       "submittedAt": "2025/2/18 下午 4:44:33",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "曾宣凱",
@@ -3780,7 +4527,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 251,
       "billNumber": "25屆北大峽議字第40號",
+      "term": 25,
+      "serialNumber": 40,
       "submittedAt": "2025/2/18 下午 11:16:47",
       "proposingEntity": "三峽校區學生會 財務部",
       "proposerName": "曾宣凱",
@@ -3795,7 +4545,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 252,
       "billNumber": "25屆北大峽議字第41號",
+      "term": 25,
+      "serialNumber": 41,
       "submittedAt": "2025/2/22 下午 7:58:21",
       "proposingEntity": "學生法庭 書記處",
       "proposerName": "黃振",
@@ -3810,7 +4563,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 253,
       "billNumber": "25屆北大峽議字第42號",
+      "term": 25,
+      "serialNumber": 42,
       "submittedAt": "2025/3/9 下午 6:34:58",
       "proposingEntity": "本會議員",
       "proposerName": "周瑜芳",
@@ -3827,7 +4583,10 @@
       "scheduledSession": "25屆第7次常會"
     },
     {
+      "rowIndex": 254,
       "billNumber": "25屆北大峽議字第43號",
+      "term": 25,
+      "serialNumber": 43,
       "submittedAt": "2025/3/11 下午 1:32:44",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "曾宣凱",
@@ -3843,7 +4602,10 @@
       "scheduledSession": "25屆第7次常會"
     },
     {
+      "rowIndex": 255,
       "billNumber": "25屆北大峽議字第44號",
+      "term": 25,
+      "serialNumber": 44,
       "submittedAt": "2025/3/11 下午 1:41:08",
       "proposingEntity": "三峽校區學生會 財務部",
       "proposerName": "曾宣凱",
@@ -3859,7 +4621,10 @@
       "scheduledSession": "25屆第7次常會"
     },
     {
+      "rowIndex": 256,
       "billNumber": "25屆北大峽議字第45號",
+      "term": 25,
+      "serialNumber": 45,
       "submittedAt": "2025/3/11 下午 1:53:08",
       "proposingEntity": "本會議員",
       "proposerName": "陳昱仁",
@@ -3872,7 +4637,10 @@
       "scheduledSession": "25屆第7次常會"
     },
     {
+      "rowIndex": 257,
       "billNumber": "25屆北大峽議字第46號",
+      "term": 25,
+      "serialNumber": 46,
       "submittedAt": "2025/3/29 上午 12:32:07",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "曾宣凱",
@@ -3887,7 +4655,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 258,
       "billNumber": "25屆北大峽議字第47號",
+      "term": 25,
+      "serialNumber": 47,
       "submittedAt": "2025/3/29 上午 12:35:51",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "曾宣凱",
@@ -3902,7 +4673,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 259,
       "billNumber": "25屆北大峽議字第48號",
+      "term": 25,
+      "serialNumber": 48,
       "submittedAt": "2025/4/9 上午 9:23:51",
       "proposingEntity": "學生法庭 書記處",
       "proposerName": "黃振",
@@ -3919,7 +4693,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 260,
       "billNumber": "25屆北大峽議字第49號",
+      "term": 25,
+      "serialNumber": 49,
       "submittedAt": "2025/4/9 上午 9:41:02",
       "proposingEntity": "學生法庭 書記處",
       "proposerName": "黃振",
@@ -3934,7 +4711,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 261,
       "billNumber": "25屆北大峽議字第50號",
+      "term": 25,
+      "serialNumber": 50,
       "submittedAt": "2025/4/14 下午 10:12:44",
       "proposingEntity": "本會議員",
       "proposerName": "葉宗諭、李孟叡、周瑜芳、許育榤",
@@ -3950,7 +4730,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 262,
       "billNumber": "25屆北大峽議字第51號",
+      "term": 25,
+      "serialNumber": 51,
       "submittedAt": "2025/4/14 下午 10:25:02",
       "proposingEntity": "本會議員",
       "proposerName": "葉宗諭",
@@ -3966,7 +4749,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 263,
       "billNumber": "25屆北大峽議字第52號",
+      "term": 25,
+      "serialNumber": 52,
       "submittedAt": "2025/4/14 下午 10:33:10",
       "proposingEntity": "本會議員",
       "proposerName": "葉宗諭",
@@ -3982,7 +4768,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 264,
       "billNumber": "25屆北大峽議字第53號",
+      "term": 25,
+      "serialNumber": 53,
       "submittedAt": "2025/4/15 上午 3:45:57",
       "proposingEntity": "三峽校區學生會 活動部",
       "proposerName": "蔡其曄",
@@ -3998,7 +4787,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 265,
       "billNumber": "25屆北大峽議字第54號",
+      "term": 25,
+      "serialNumber": 54,
       "submittedAt": "2025/5/11 上午 12:53:36",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "蔡其曄",
@@ -4014,7 +4806,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 266,
       "billNumber": "25屆北大峽議字第55號",
+      "term": 25,
+      "serialNumber": 55,
       "submittedAt": "2025/5/11 下午 3:56:59",
       "proposingEntity": "總會 秘書處",
       "proposerName": "陳庭楚",
@@ -4029,7 +4824,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 267,
       "billNumber": "25屆北大峽議字第56號",
+      "term": 25,
+      "serialNumber": 56,
       "submittedAt": "2025/5/12 下午 11:36:41",
       "proposingEntity": "本會議員",
       "proposerName": "葉宗諭",
@@ -4045,7 +4843,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 268,
       "billNumber": "25屆北大峽議字第57號",
+      "term": 25,
+      "serialNumber": 57,
       "submittedAt": "2025/5/17 下午 2:11:06",
       "proposingEntity": "本會議員",
       "proposerName": "陳昱仁",
@@ -4061,7 +4862,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 269,
       "billNumber": "25屆北大峽議字第58號",
+      "term": 25,
+      "serialNumber": 58,
       "submittedAt": "2025/5/17 下午 8:32:42",
       "proposingEntity": "本會議員",
       "proposerName": "陳昱仁",
@@ -4077,7 +4881,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 270,
       "billNumber": "25屆北大峽議字第59號",
+      "term": 25,
+      "serialNumber": 59,
       "submittedAt": "2025/6/16 下午 11:00:43",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "蔡其曄",
@@ -4093,7 +4900,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 271,
       "billNumber": "25屆北大峽議字第60號",
+      "term": 25,
+      "serialNumber": 60,
       "submittedAt": "2025/6/16 下午 11:05:16",
       "proposingEntity": "三峽校區學生會 財務部",
       "proposerName": "蔡其曄",
@@ -4108,7 +4918,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 272,
       "billNumber": "25屆北大峽議字第61號",
+      "term": 25,
+      "serialNumber": 61,
       "submittedAt": "2025/6/19 下午 9:21:05",
       "proposingEntity": "本會秘書處",
       "proposerName": "粘子瑜",
@@ -4124,7 +4937,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 273,
       "billNumber": "25屆北大峽議字第62號",
+      "term": 25,
+      "serialNumber": 62,
       "submittedAt": "2025/6/20 下午 2:39:07",
       "proposingEntity": "學生法庭 書記處",
       "proposerName": "黃振",
@@ -4140,7 +4956,10 @@
       "scheduledSession": ""
     },
     {
+      "rowIndex": 274,
       "billNumber": "25屆北大峽議字第63號",
+      "term": 25,
+      "serialNumber": 63,
       "submittedAt": "2025/6/24 下午 4:46:47",
       "proposingEntity": "三峽校區學生會 選舉委員會",
       "proposerName": "蔡其曄",

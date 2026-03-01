@@ -1,8 +1,11 @@
 {
-  "cachedAt": "2026-02-28T14:44:40.895Z",
+  "cachedAt": "2026-03-01T12:32:50.202Z",
   "data": [
     {
+      "rowIndex": 275,
       "billNumber": "26屆北大峽議字第1號",
+      "term": 26,
+      "serialNumber": 1,
       "submittedAt": "2025/7/1 下午 11:07:25",
       "proposingEntity": "本會議長",
       "proposerName": "傅冠紘",
@@ -18,7 +21,10 @@
       "scheduledSession": "26屆第1次臨時會"
     },
     {
+      "rowIndex": 276,
       "billNumber": "26屆北大峽議字第2號",
+      "term": 26,
+      "serialNumber": 2,
       "submittedAt": "2025/7/2 下午 4:10:14",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -33,7 +39,10 @@
       "scheduledSession": "26屆第1次臨時會（蔡岳庭、黃寗珈擇期再審）；26屆第2次臨時會（蔡岳庭、黃寗珈）"
     },
     {
+      "rowIndex": 277,
       "billNumber": "26屆北大峽議字第3號",
+      "term": 26,
+      "serialNumber": 3,
       "submittedAt": "2025/7/4 下午 1:35:23",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -48,7 +57,10 @@
       "scheduledSession": "26屆第1次臨時會"
     },
     {
+      "rowIndex": 278,
       "billNumber": "26屆北大峽議字第4號",
+      "term": 26,
+      "serialNumber": 4,
       "submittedAt": "2025/7/4 下午 3:29:19",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -64,7 +76,10 @@
       "scheduledSession": "26屆第1次臨時會"
     },
     {
+      "rowIndex": 279,
       "billNumber": "26屆北大峽議字第5號",
+      "term": 26,
+      "serialNumber": 5,
       "submittedAt": "2025/7/4 下午 3:36:08",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -79,7 +94,10 @@
       "scheduledSession": "26屆第1次臨時會"
     },
     {
+      "rowIndex": 280,
       "billNumber": "26屆北大峽議字第6號",
+      "term": 26,
+      "serialNumber": 6,
       "submittedAt": "2025/7/5 上午 10:12:43",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -94,7 +112,10 @@
       "scheduledSession": "26屆第1次臨時會"
     },
     {
+      "rowIndex": 281,
       "billNumber": "26屆北大峽議字第7號",
+      "term": 26,
+      "serialNumber": 7,
       "submittedAt": "2025/7/5 上午 10:14:27",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -109,7 +130,10 @@
       "scheduledSession": "26屆第1次臨時會"
     },
     {
+      "rowIndex": 282,
       "billNumber": "26屆北大峽議字第8號",
+      "term": 26,
+      "serialNumber": 8,
       "submittedAt": "2025/7/6 下午 6:01:20",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -125,7 +149,10 @@
       "scheduledSession": "26屆第1次臨時會（擇期再審）；26屆第2次臨時會"
     },
     {
+      "rowIndex": 283,
       "billNumber": "26屆北大峽議字第9號",
+      "term": 26,
+      "serialNumber": 9,
       "submittedAt": "2025/7/6 下午 6:02:05",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -141,7 +168,10 @@
       "scheduledSession": "26屆第1次臨時會（擇期再審）；26屆第2次臨時會"
     },
     {
+      "rowIndex": 284,
       "billNumber": "26屆北大峽議字第10號",
+      "term": 26,
+      "serialNumber": 10,
       "submittedAt": "2025/7/9 下午 11:24:08",
       "proposingEntity": "本會議員",
       "proposerName": "傅冠紘",
@@ -159,7 +189,10 @@
       "scheduledSession": "26屆第2次臨時會（付委）；26屆第1次法規委員會（審查完畢）；26屆第1次常會（擇期再審）；26屆第2次常會"
     },
     {
+      "rowIndex": 285,
       "billNumber": "26屆北大峽議字第11號",
+      "term": 26,
+      "serialNumber": 11,
       "submittedAt": "2025/7/9 下午 11:33:55",
       "proposingEntity": "本會議員",
       "proposerName": "傅冠紘",
@@ -177,7 +210,10 @@
       "scheduledSession": "26屆第2次臨時會（付委）；26屆第1次法規委員會（審查完畢）；26屆第1次常會（擇期再審）；26屆第2次常會"
     },
     {
+      "rowIndex": 286,
       "billNumber": "26屆北大峽議字第12號",
+      "term": 26,
+      "serialNumber": 12,
       "submittedAt": "2025/7/9 下午 11:40:18",
       "proposingEntity": "本會議員",
       "proposerName": "傅冠紘",
@@ -193,7 +229,10 @@
       "scheduledSession": "26屆第2次臨時會"
     },
     {
+      "rowIndex": 287,
       "billNumber": "26屆北大峽議字第13號",
+      "term": 26,
+      "serialNumber": 13,
       "submittedAt": "2025/7/15 下午 11:39:01",
       "proposingEntity": "本會議長",
       "proposerName": "傅冠紘",
@@ -208,7 +247,10 @@
       "scheduledSession": "26屆第2次臨時會"
     },
     {
+      "rowIndex": 288,
       "billNumber": "26屆北大峽議字第14號",
+      "term": 26,
+      "serialNumber": 14,
       "submittedAt": "2025/7/15 下午 11:48:43",
       "proposingEntity": "本會議員",
       "proposerName": "傅冠紘",
@@ -226,7 +268,10 @@
       "scheduledSession": "26屆第2次臨時會（付委）；26屆第1次法規委員會（審查完畢）；26屆第1次常會（擇期再審）；26屆第2次常會"
     },
     {
+      "rowIndex": 289,
       "billNumber": "26屆北大峽議字第15號",
+      "term": 26,
+      "serialNumber": 15,
       "submittedAt": "2025/7/16 上午 5:08:48",
       "proposingEntity": "總會 秘書處",
       "proposerName": "陳庭楚",
@@ -241,7 +286,10 @@
       "scheduledSession": "26屆第2次臨時會"
     },
     {
+      "rowIndex": 290,
       "billNumber": "26屆北大峽議字第16號",
+      "term": 26,
+      "serialNumber": 16,
       "submittedAt": "2025/7/17 下午 9:16:25",
       "proposingEntity": "本會秘書處",
       "proposerName": "傅冠紘",
@@ -258,7 +306,10 @@
       "scheduledSession": "26屆第2次臨時會（付委）；26屆第1次法規委員會（審查完畢）；26屆第1次常會（擇期再審）；26屆第2次常會"
     },
     {
+      "rowIndex": 291,
       "billNumber": "26屆北大峽議字第17號",
+      "term": 26,
+      "serialNumber": 17,
       "submittedAt": "2025/7/23 下午 12:24:02",
       "proposingEntity": "三峽校區學生會 財務部",
       "proposerName": "陳昱仁",
@@ -274,7 +325,10 @@
       "scheduledSession": "26屆第2次臨時會"
     },
     {
+      "rowIndex": 292,
       "billNumber": "26屆北大峽議字第18號",
+      "term": 26,
+      "serialNumber": 18,
       "submittedAt": "2025/7/24 下午 4:36:27",
       "proposingEntity": "本會議員",
       "proposerName": "曾宣凱、蔡其曄",
@@ -292,7 +346,10 @@
       "scheduledSession": "26屆第2次臨時會"
     },
     {
+      "rowIndex": 293,
       "billNumber": "26屆北大峽議字第19號",
+      "term": 26,
+      "serialNumber": 19,
       "submittedAt": "2025/7/26 下午 12:38:27",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -307,7 +364,10 @@
       "scheduledSession": "26屆第2次臨時會"
     },
     {
+      "rowIndex": 294,
       "billNumber": "26屆北大峽議字第20號",
+      "term": 26,
+      "serialNumber": 20,
       "submittedAt": "2025/9/7 下午 8:13:49",
       "proposingEntity": "本會議員",
       "proposerName": "周瑜芳",
@@ -324,7 +384,10 @@
       "scheduledSession": "26屆第1次常會"
     },
     {
+      "rowIndex": 295,
       "billNumber": "26屆北大峽議字第21號",
+      "term": 26,
+      "serialNumber": 21,
       "submittedAt": "2025/9/8 下午 11:53:14",
       "proposingEntity": "本會議員",
       "proposerName": "陳駿毅",
@@ -340,7 +403,10 @@
       "scheduledSession": "26屆第1次常會"
     },
     {
+      "rowIndex": 296,
       "billNumber": "26屆北大峽議字第22號",
+      "term": 26,
+      "serialNumber": 22,
       "submittedAt": "2025/9/10 下午 3:02:50",
       "proposingEntity": "三峽校區學生會  秘書處",
       "proposerName": "陳昱仁",
@@ -356,7 +422,10 @@
       "scheduledSession": "26屆第1次常會"
     },
     {
+      "rowIndex": 297,
       "billNumber": "26屆北大峽議字第23號",
+      "term": 26,
+      "serialNumber": 23,
       "submittedAt": "2025/9/10 下午 3:07:58",
       "proposingEntity": "三峽校區學生會 財務部",
       "proposerName": "陳昱仁",
@@ -371,7 +440,10 @@
       "scheduledSession": "26屆第1次預決算委員會（逕付大會）；26屆第1次常會"
     },
     {
+      "rowIndex": 298,
       "billNumber": "26屆北大峽議字第24號",
+      "term": 26,
+      "serialNumber": 24,
       "submittedAt": "2025/9/10 下午 3:13:37",
       "proposingEntity": "三峽校區學生會  秘書處",
       "proposerName": "陳昱仁",
@@ -386,7 +458,10 @@
       "scheduledSession": "26屆第1次常會（擇期再審）；26屆第2次常會（擇期再審）"
     },
     {
+      "rowIndex": 299,
       "billNumber": "26屆北大峽議字第25號",
+      "term": 26,
+      "serialNumber": 25,
       "submittedAt": "2025/9/10 下午 5:26:07",
       "proposingEntity": "學生法院 書記處",
       "proposerName": "胡宗倫",
@@ -403,7 +478,10 @@
       "scheduledSession": "26屆第1次常會"
     },
     {
+      "rowIndex": 300,
       "billNumber": "26屆北大峽議字第26號",
+      "term": 26,
+      "serialNumber": 26,
       "submittedAt": "2025/9/23 下午 6:34:42",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -420,7 +498,10 @@
       "scheduledSession": "26屆第2次常會"
     },
     {
+      "rowIndex": 301,
       "billNumber": "26屆北大峽議字第27號",
+      "term": 26,
+      "serialNumber": 27,
       "submittedAt": "2025/10/7 下午 8:42:32",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -436,7 +517,10 @@
       "scheduledSession": "26屆第2次常會"
     },
     {
+      "rowIndex": 302,
       "billNumber": "26屆北大峽議字第28號",
+      "term": 26,
+      "serialNumber": 28,
       "submittedAt": "2025/10/7 下午 10:37:27",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -451,7 +535,10 @@
       "scheduledSession": "26屆第2次常會"
     },
     {
+      "rowIndex": 303,
       "billNumber": "26屆北大峽議字第29號",
+      "term": 26,
+      "serialNumber": 29,
       "submittedAt": "2025/10/8 下午 2:33:38",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -468,7 +555,10 @@
       "scheduledSession": "26屆第2次常會"
     },
     {
+      "rowIndex": 304,
       "billNumber": "26屆北大峽議字第30號",
+      "term": 26,
+      "serialNumber": 30,
       "submittedAt": "2025/10/8 下午 2:40:24",
       "proposingEntity": "三峽校區學生會 活動部",
       "proposerName": "陳昱仁",
@@ -483,7 +573,10 @@
       "scheduledSession": "26屆第2次常會"
     },
     {
+      "rowIndex": 305,
       "billNumber": "26屆北大峽議字第31號",
+      "term": 26,
+      "serialNumber": 31,
       "submittedAt": "2025/10/8 下午 2:47:45",
       "proposingEntity": "三峽校區學生會 學術部",
       "proposerName": "陳昱仁",
@@ -498,7 +591,10 @@
       "scheduledSession": "（撤案）"
     },
     {
+      "rowIndex": 306,
       "billNumber": "26屆北大峽議字第32號",
+      "term": 26,
+      "serialNumber": 32,
       "submittedAt": "2025/10/8 下午 2:53:40",
       "proposingEntity": "三峽校區學生會  秘書處",
       "proposerName": "陳昱仁",
@@ -513,7 +609,10 @@
       "scheduledSession": "26屆第2次常會"
     },
     {
+      "rowIndex": 307,
       "billNumber": "26屆北大峽議字第33號",
+      "term": 26,
+      "serialNumber": 33,
       "submittedAt": "2025/10/8 下午 3:25:06",
       "proposingEntity": "三峽校區學生會 學生權益部",
       "proposerName": "陳昱仁",
@@ -528,7 +627,10 @@
       "scheduledSession": "26屆第2次常會"
     },
     {
+      "rowIndex": 308,
       "billNumber": "26屆北大峽議字第34號",
+      "term": 26,
+      "serialNumber": 34,
       "submittedAt": "2025/10/8 下午 3:53:47",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -544,7 +646,10 @@
       "scheduledSession": "26屆第2次常會"
     },
     {
+      "rowIndex": 309,
       "billNumber": "26屆北大峽議字第35號",
+      "term": 26,
+      "serialNumber": 35,
       "submittedAt": "2025/10/8 下午 4:15:13",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -560,7 +665,10 @@
       "scheduledSession": "26屆第2次常會"
     },
     {
+      "rowIndex": 310,
       "billNumber": "26屆北大峽議字第36號",
+      "term": 26,
+      "serialNumber": 36,
       "submittedAt": "2025/10/8 下午 5:20:25",
       "proposingEntity": "三峽校區學生會 學生權益部",
       "proposerName": "陳昱仁",
@@ -575,7 +683,10 @@
       "scheduledSession": "26屆第2次常會"
     },
     {
+      "rowIndex": 311,
       "billNumber": "26屆北大峽議字第37號",
+      "term": 26,
+      "serialNumber": 37,
       "submittedAt": "2025/10/8 下午 5:35:59",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -593,7 +704,10 @@
       "scheduledSession": "26屆第2次常會"
     },
     {
+      "rowIndex": 312,
       "billNumber": "26屆北大峽議字第38號",
+      "term": 26,
+      "serialNumber": 38,
       "submittedAt": "2025/10/8 下午 5:46:20",
       "proposingEntity": "三峽校區學生會 學生權益部",
       "proposerName": "陳昱仁",
@@ -609,7 +723,10 @@
       "scheduledSession": "（撤案）"
     },
     {
+      "rowIndex": 313,
       "billNumber": "26屆北大峽議字第39號",
+      "term": 26,
+      "serialNumber": 39,
       "submittedAt": "2025/10/8 下午 9:44:16",
       "proposingEntity": "本會 秘書處",
       "proposerName": "傅冠紘",
@@ -627,7 +744,10 @@
       "scheduledSession": "26屆法規/預決算聯席；26屆第3次常會"
     },
     {
+      "rowIndex": 314,
       "billNumber": "26屆北大峽議字第40號",
+      "term": 26,
+      "serialNumber": 40,
       "submittedAt": "2025/10/8 下午 9:47:02",
       "proposingEntity": "本會 秘書處",
       "proposerName": "傅冠紘",
@@ -645,7 +765,10 @@
       "scheduledSession": "26屆法規/預決算聯席；26屆第3次常會"
     },
     {
+      "rowIndex": 315,
       "billNumber": "26屆北大峽議字第41號",
+      "term": 26,
+      "serialNumber": 41,
       "submittedAt": "2025/10/8 下午 9:50:44",
       "proposingEntity": "本會 秘書處",
       "proposerName": "傅冠紘",
@@ -663,7 +786,10 @@
       "scheduledSession": "26屆法規/預決算聯席；26屆第3次常會"
     },
     {
+      "rowIndex": 316,
       "billNumber": "26屆北大峽議字第42號",
+      "term": 26,
+      "serialNumber": 42,
       "submittedAt": "2025/10/14 下午 7:05:55",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -679,7 +805,10 @@
       "scheduledSession": "26屆第2次常會"
     },
     {
+      "rowIndex": 317,
       "billNumber": "26屆北大峽議字第43號",
+      "term": 26,
+      "serialNumber": 43,
       "submittedAt": "2025/10/18 下午 7:45:27",
       "proposingEntity": "本會議員",
       "proposerName": "塗祉涵、謝明勳",
@@ -692,7 +821,10 @@
       "scheduledSession": "26屆第3次臨時會"
     },
     {
+      "rowIndex": 318,
       "billNumber": "26屆北大峽議字第44號",
+      "term": 26,
+      "serialNumber": 44,
       "submittedAt": "2025/10/18 下午 7:46:47",
       "proposingEntity": "本會議員",
       "proposerName": "塗祉涵、謝明勳",
@@ -705,7 +837,10 @@
       "scheduledSession": "26屆第3次臨時會"
     },
     {
+      "rowIndex": 319,
       "billNumber": "26屆北大峽議字第45號",
+      "term": 26,
+      "serialNumber": 45,
       "submittedAt": "2025/10/18 下午 7:47:58",
       "proposingEntity": "本會議員",
       "proposerName": "塗祉涵、謝明勳",
@@ -718,7 +853,10 @@
       "scheduledSession": "26屆第3次臨時會"
     },
     {
+      "rowIndex": 320,
       "billNumber": "26屆北大峽議字第46號",
+      "term": 26,
+      "serialNumber": 46,
       "submittedAt": "2025/10/18 下午 7:49:10",
       "proposingEntity": "本會議員",
       "proposerName": "塗祉涵、謝明勳",
@@ -731,7 +869,10 @@
       "scheduledSession": "26屆第3次臨時會"
     },
     {
+      "rowIndex": 321,
       "billNumber": "26屆北大峽議字第47號",
+      "term": 26,
+      "serialNumber": 47,
       "submittedAt": "2025/10/18 下午 7:50:05",
       "proposingEntity": "本會議員",
       "proposerName": "塗祉涵、謝明勳",
@@ -744,7 +885,10 @@
       "scheduledSession": "26屆第3次臨時會"
     },
     {
+      "rowIndex": 322,
       "billNumber": "26屆北大峽議字第48號",
+      "term": 26,
+      "serialNumber": 48,
       "submittedAt": "2025/10/21 下午 4:10:39",
       "proposingEntity": "本會議員",
       "proposerName": "傅冠紘、謝明勳",
@@ -760,7 +904,10 @@
       "scheduledSession": "26屆第3次臨時會"
     },
     {
+      "rowIndex": 323,
       "billNumber": "26屆北大峽議字第49號",
+      "term": 26,
+      "serialNumber": 49,
       "submittedAt": "2025/10/22 下午 10:25:42",
       "proposingEntity": "本會 秘書處",
       "proposerName": "傅冠紘",
@@ -776,7 +923,10 @@
       "scheduledSession": "26屆第3次臨時會"
     },
     {
+      "rowIndex": 324,
       "billNumber": "26屆北大峽議字第50號",
+      "term": 26,
+      "serialNumber": 50,
       "submittedAt": "2025/11/1 下午 9:53:05",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -791,7 +941,10 @@
       "scheduledSession": "26屆第3次臨時會"
     },
     {
+      "rowIndex": 325,
       "billNumber": "26屆北大峽議字第51號",
+      "term": 26,
+      "serialNumber": 51,
       "submittedAt": "2025/11/3 下午 10:01:59",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -806,7 +959,10 @@
       "scheduledSession": "26屆第3次常會"
     },
     {
+      "rowIndex": 326,
       "billNumber": "26屆北大峽議字第52號",
+      "term": 26,
+      "serialNumber": 52,
       "submittedAt": "2025/11/3 下午 10:04:51",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -822,7 +978,10 @@
       "scheduledSession": "26屆第3次常會"
     },
     {
+      "rowIndex": 327,
       "billNumber": "26屆北大峽議字第53號",
+      "term": 26,
+      "serialNumber": 53,
       "submittedAt": "2025/11/3 下午 10:10:20",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -838,7 +997,10 @@
       "scheduledSession": "26屆第3次常會"
     },
     {
+      "rowIndex": 328,
       "billNumber": "26屆北大峽議字第54號",
+      "term": 26,
+      "serialNumber": 54,
       "submittedAt": "2025/11/3 下午 10:13:35",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -854,7 +1016,10 @@
       "scheduledSession": "26屆第3次常會"
     },
     {
+      "rowIndex": 329,
       "billNumber": "26屆北大峽議字第55號",
+      "term": 26,
+      "serialNumber": 55,
       "submittedAt": "2025/11/3 下午 10:17:05",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -870,7 +1035,10 @@
       "scheduledSession": "26屆第3次常會"
     },
     {
+      "rowIndex": 330,
       "billNumber": "26屆北大峽議字第56號",
+      "term": 26,
+      "serialNumber": 56,
       "submittedAt": "2025/11/5 下午 8:47:37",
       "proposingEntity": "本會 秘書處",
       "proposerName": "傅冠紘",
@@ -885,7 +1053,10 @@
       "scheduledSession": "26屆第3次常會"
     },
     {
+      "rowIndex": 331,
       "billNumber": "26屆北大峽議字第57號",
+      "term": 26,
+      "serialNumber": 57,
       "submittedAt": "2025/11/12 下午 12:46:46",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -900,7 +1071,10 @@
       "scheduledSession": "26屆第3次常會"
     },
     {
+      "rowIndex": 332,
       "billNumber": "26屆北大峽議字第58號",
+      "term": 26,
+      "serialNumber": 58,
       "submittedAt": "2025/11/14 下午 3:39:02",
       "proposingEntity": "本會議長",
       "proposerName": "傅冠紘",
@@ -913,7 +1087,10 @@
       "scheduledSession": "26屆第3次常會（通過）"
     },
     {
+      "rowIndex": 333,
       "billNumber": "26屆北大峽議字第59號",
+      "term": 26,
+      "serialNumber": 59,
       "submittedAt": "2025/11/14 下午 9:29:49",
       "proposingEntity": "總會 秘書處",
       "proposerName": "曾宣凱",
@@ -929,7 +1106,10 @@
       "scheduledSession": "26屆第3次常會（通過，移臺北）"
     },
     {
+      "rowIndex": 334,
       "billNumber": "26屆北大峽議字第60號",
+      "term": 26,
+      "serialNumber": 60,
       "submittedAt": "2025/12/3 下午 1:53:44",
       "proposingEntity": "本會議員",
       "proposerName": "謝明勳",
@@ -945,7 +1125,10 @@
       "scheduledSession": "26屆第4次常會"
     },
     {
+      "rowIndex": 335,
       "billNumber": "26屆北大峽議字第61號",
+      "term": 26,
+      "serialNumber": 61,
       "submittedAt": "2025/12/3 下午 1:56:04",
       "proposingEntity": "本會議員",
       "proposerName": "謝明勳",
@@ -961,7 +1144,10 @@
       "scheduledSession": "26屆第4次常會"
     },
     {
+      "rowIndex": 336,
       "billNumber": "26屆北大峽議字第62號",
+      "term": 26,
+      "serialNumber": 62,
       "submittedAt": "2025/12/3 下午 10:31:58",
       "proposingEntity": "本會議員",
       "proposerName": "傅冠紘",
@@ -977,7 +1163,10 @@
       "scheduledSession": "26屆第4次常會"
     },
     {
+      "rowIndex": 337,
       "billNumber": "26屆北大峽議字第63號",
+      "term": 26,
+      "serialNumber": 63,
       "submittedAt": "2025/12/3 下午 10:41:24",
       "proposingEntity": "本會議員",
       "proposerName": "傅冠紘",
@@ -990,7 +1179,10 @@
       "scheduledSession": "26屆第4次常會"
     },
     {
+      "rowIndex": 338,
       "billNumber": "26屆北大峽議字第64號",
+      "term": 26,
+      "serialNumber": 64,
       "submittedAt": "2025/12/4 上午 12:20:38",
       "proposingEntity": "三峽校區學生會 學生權益部",
       "proposerName": "陳昱仁",
@@ -1005,7 +1197,10 @@
       "scheduledSession": "26屆第4次常會"
     },
     {
+      "rowIndex": 339,
       "billNumber": "26屆北大峽議字第65號",
+      "term": 26,
+      "serialNumber": 65,
       "submittedAt": "2025/12/4 上午 12:31:39",
       "proposingEntity": "三峽校區學生會 學生權益部",
       "proposerName": "陳昱仁",
@@ -1020,7 +1215,10 @@
       "scheduledSession": "26屆第4次常會"
     },
     {
+      "rowIndex": 340,
       "billNumber": "26屆北大峽議字第66號",
+      "term": 26,
+      "serialNumber": 66,
       "submittedAt": "2025/12/4 上午 10:42:41",
       "proposingEntity": "三峽校區學生會 公關部",
       "proposerName": "陳昱仁",
@@ -1035,7 +1233,10 @@
       "scheduledSession": "26屆第1次文務委員會"
     },
     {
+      "rowIndex": 341,
       "billNumber": "26屆北大峽議字第67號",
+      "term": 26,
+      "serialNumber": 67,
       "submittedAt": "2025/12/4 上午 10:43:59",
       "proposingEntity": "總會 秘書處",
       "proposerName": "曾宣凱",
@@ -1051,7 +1252,10 @@
       "scheduledSession": "26屆第4次常會（通過，移臺北）"
     },
     {
+      "rowIndex": 342,
       "billNumber": "26屆北大峽議字第68號",
+      "term": 26,
+      "serialNumber": 68,
       "submittedAt": "2025/12/9 下午 9:23:23",
       "proposingEntity": "三峽校區學生會 新聞部",
       "proposerName": "陳昱仁",
@@ -1066,7 +1270,10 @@
       "scheduledSession": "26屆第4次常會"
     },
     {
+      "rowIndex": 343,
       "billNumber": "26屆北大峽議字第69號",
+      "term": 26,
+      "serialNumber": 69,
       "submittedAt": "2025/12/27 下午 12:00:32",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -1081,7 +1288,10 @@
       "scheduledSession": "26屆第5次常會"
     },
     {
+      "rowIndex": 344,
       "billNumber": "26屆北大峽議字第70號",
+      "term": 26,
+      "serialNumber": 70,
       "submittedAt": "2026/1/7 上午 11:19:11",
       "proposingEntity": "三峽校區學生會 財務部",
       "proposerName": "陳昱仁",
@@ -1097,7 +1307,10 @@
       "scheduledSession": "26屆第2次財務委員會（擇期續審）；26屆第3次財務委員會（審查通過）；26屆第5次常會（二讀通過）"
     },
     {
+      "rowIndex": 345,
       "billNumber": "26屆北大峽議字第71號",
+      "term": 26,
+      "serialNumber": 71,
       "submittedAt": "2026/1/7 下午 3:53:52",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -1113,7 +1326,10 @@
       "scheduledSession": "26屆第5次常會"
     },
     {
+      "rowIndex": 346,
       "billNumber": "26屆北大峽議字第72號",
+      "term": 26,
+      "serialNumber": 72,
       "submittedAt": "2026/1/7 下午 6:47:55",
       "proposingEntity": "本會 秘書處",
       "proposerName": "傅冠紘",
@@ -1129,7 +1345,10 @@
       "scheduledSession": "26屆第5次常會"
     },
     {
+      "rowIndex": 347,
       "billNumber": "26屆北大峽議字第73號",
+      "term": 26,
+      "serialNumber": 73,
       "submittedAt": "2026/1/10 下午 9:11:01",
       "proposingEntity": "三峽校區學生會 財務部",
       "proposerName": "學生會長",
@@ -1144,7 +1363,10 @@
       "scheduledSession": "26屆第5次常會"
     },
     {
+      "rowIndex": 348,
       "billNumber": "26屆北大峽議字第74號",
+      "term": 26,
+      "serialNumber": 74,
       "submittedAt": "2026/2/23 下午 11:26:28",
       "proposingEntity": "本會議員",
       "proposerName": "傅冠紘",
@@ -1156,10 +1378,13 @@
       "attachments": [
         "https://drive.google.com/open?id=1lgtyc7W1lUOvKWDobSModQ3rDzVr48pT"
       ],
-      "scheduledSession": "26屆第5次常會"
+      "scheduledSession": "26屆第6次常會"
     },
     {
+      "rowIndex": 349,
       "billNumber": "26屆北大峽議字第75號",
+      "term": 26,
+      "serialNumber": 75,
       "submittedAt": "2026/2/24 下午 10:36:45",
       "proposingEntity": "三峽校區學生會 選舉委員會",
       "proposerName": "陳暘潪",
@@ -1173,10 +1398,13 @@
         "https://drive.google.com/open?id=1HA-qHfJNTRSycIATChF7McGjKeE7_ddV",
         "https://drive.google.com/open?id=1dXwmVEPFZz7GAU3DYnjHV57fGXUmrFTz"
       ],
-      "scheduledSession": "26屆第5次常會"
+      "scheduledSession": "26屆第6次常會"
     },
     {
+      "rowIndex": 350,
       "billNumber": "26屆北大峽議字第76號",
+      "term": 26,
+      "serialNumber": 76,
       "submittedAt": "2026/2/25 上午 1:35:44",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -1188,10 +1416,13 @@
       "attachments": [
         "https://drive.google.com/open?id=1C5exAGAuvEGZLSIkN8kdN6QRz9fahIQl"
       ],
-      "scheduledSession": "26屆第4次財務委員會"
+      "scheduledSession": "26屆第4次財務委員會（審查完竣）；26屆第6次常會"
     },
     {
+      "rowIndex": 351,
       "billNumber": "26屆北大峽議字第77號",
+      "term": 26,
+      "serialNumber": 77,
       "submittedAt": "2026/2/25 下午 3:23:25",
       "proposingEntity": "三峽校區學生會 會長副會長",
       "proposerName": "陳昱仁",
@@ -1204,7 +1435,25 @@
         "https://drive.google.com/open?id=1ccA1u_EWD4g_4NiO-NBmepemm6kYE0zQRK8nbQJFOC8",
         "https://drive.google.com/open?id=1reS-0r04LOrqe6sLPF2LYXOeYEu1tsf5"
       ],
-      "scheduledSession": "26屆第5次常會"
+      "scheduledSession": "26屆第6次常會"
+    },
+    {
+      "rowIndex": 352,
+      "billNumber": "",
+      "term": 26,
+      "serialNumber": null,
+      "submittedAt": "2026/3/1 下午 6:03:45",
+      "proposingEntity": "本會學生自治低落對策委員會",
+      "proposerName": "傅冠紘",
+      "contactName": "陳先懷",
+      "billType": "報告案",
+      "subject": "學生自治低落對策委員會提出終結報告，敬請大會聽取",
+      "description": "一、依本委員會組織規程第7條規定：「委員會應在114學年第2學期第1次常會前提出終結報告。」\n二、終結報告 PDF 檔如附件。",
+      "proposedAction": "大會聽取後，函送學生會參考，並公告之",
+      "attachments": [
+        "https://drive.google.com/open?id=1c4pbzRpHBgF5_-Fzp-m-4l67oxxNvOUJ"
+      ],
+      "scheduledSession": ""
     }
   ]
 }

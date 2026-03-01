@@ -1,6 +1,7 @@
 // shared/types/bill.ts
 
 export interface Bill {
+  rowIndex: number;
   billNumber: string;
   term: number | null;
   serialNumber: number | null;

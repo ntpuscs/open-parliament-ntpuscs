@@ -129,14 +129,17 @@ async function main() {
     const newTermData = [];
     const oldTermsData = [];
 
-    for (const row of data) {
+    for (const [dataIndex, row] of data.entries()) {
       const idStr = row['編號']?.trim() || '';
       const submittedAt = row['時間戳記']?.trim() || '';
 
       // 無效列跳過
       if (!submittedAt) continue; 
 
-      // 1. 附件欄位整合與優化
+      // 1. 計算 CSV 原始列號（第 1 列為標題列，資料從第 2 列起，故 +2）
+      const rowIndex = dataIndex + 2;
+
+      // 2. 附件欄位整合與優化
       const attachments = [];
       for (let i = 1; i <= 5; i++) {
         const url = row[`附件${i}`]?.trim();
@@ -145,11 +148,12 @@ async function main() {
         }
       }
 
-      // 2. 解析 billNumber 取得 term 與 serialNumber
+      // 3. 解析 billNumber 取得 term 與 serialNumber
       const { term, serialNumber } = parseBillNumber(idStr, currentTerm);
 
-      // 3. 欄位重新映射與隱私資料排除 (白名單機制)
+      // 4. 欄位重新映射與隱私資料排除 (白名單機制)
       const transformedRow = {
+        rowIndex,
         billNumber: idStr,
         term,
         serialNumber,
@@ -165,7 +169,7 @@ async function main() {
         scheduledSession: row['排入會議']?.trim() || ''
       };
 
-      // 4. 判斷屆次並分流
+      // 5. 判斷屆次並分流
       if (term === currentTerm) {
         newTermData.push(transformedRow);
       } else {

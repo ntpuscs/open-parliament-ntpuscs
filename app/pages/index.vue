@@ -71,10 +71,10 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
               </svg>
             </div>
-            <h2 class="text-xl font-semibold text-gray-900 dark:text-white">草擬系統</h2>
+            <h2 class="text-xl font-semibold text-gray-900 dark:text-white">文件草擬輔助</h2>
           </div>
           <p class="text-gray-600 dark:text-gray-400 mb-4">
-            秘書處內部使用。
+            供秘書處內部用以輔助草擬議事文件。
           </p>
           <NuxtLink to="/secretariat" class="btn btn-primary">
             進入系統
@@ -127,7 +127,7 @@
           <div class="text-gray-600 dark:text-gray-400">總議案數</div>
         </div>
         <div class="text-center">
-          <div class="text-3xl font-bold text-secondary mb-2">{{ currentTerm }}</div>
+          <div class="text-3xl font-bold text-secondary mb-2">{{ getCurrentTerm() }}</div>
           <div class="text-gray-600 dark:text-gray-400">目前屆次</div>
         </div>
         <div class="text-center">
@@ -144,7 +144,7 @@ const config = useRuntimeConfig()
 
 // 設定頁面 meta 標籤
 useHead({
-  title: '三峽校區議事服務 - 國立臺北大學學生自治會',
+  title: SITE_CONFIG.name,
   meta: [
     { name: 'description', content: '國立臺北大學學生自治會三峽校區學生議會議事服務系統首頁' }
   ]
@@ -168,8 +168,7 @@ onMounted(async () => {
   }
 })
 
-import { useCurrentTerm } from '~/composables/useCurrentTerm'
-const { currentTerm, availableTermsRange } = useCurrentTerm()
+import { getCurrentTerm } from '../../shared/utils/term.js'
 
-import { EXTERNAL_LINKS } from '~/utils/constants.js'
+import { EXTERNAL_LINKS, SITE_CONFIG } from '~/utils/constants.js'
 </script>

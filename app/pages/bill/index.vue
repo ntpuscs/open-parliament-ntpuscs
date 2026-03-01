@@ -7,7 +7,7 @@
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       <NuxtLink 
-        v-for="term in availableTermsRange" 
+        v-for="term in getValidTerms()" 
         :key="term" 
         :to="`/bill/${term}`"
         class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
@@ -18,7 +18,7 @@
           <p class="text-gray-600 dark:text-gray-400 text-sm mt-2">點擊查看本屆議案</p>
         </div>
         <div 
-          v-if="term === currentTerm" 
+          v-if="term === getCurrentTerm()" 
           class="bg-primary-500 dark:bg-primary-400 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg absolute top-0 right-0"
         >
           當前屆次
@@ -27,7 +27,7 @@
     </div>
 
     <div class="mt-12 text-center text-gray-500 dark:text-gray-400">
-      <p>資料範圍：第 {{ STARTING_TERM }} 屆起</p>
+      <p>資料範圍：第 {{ getEarliestTerm() }} 屆起</p>
     </div>
 
     <!-- 舊版查詢系統連結 -->
@@ -42,24 +42,50 @@
         </svg>
       </NuxtLink>
     </div>
+      
+    <div v-if="error" class="mb-6 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
+        <div class="flex items-center">
+          <ExclamationTriangleIcon class="h-5 w-5 text-red-500 mr-2" />
+          <p class="text-red-700 dark:text-red-300">{{ error.message || '載入資料失敗' }}</p>
+        </div>
+      </div>
+
+      <div v-if="pending" class="flex justify-center items-center py-12">
+        <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+        <span class="ml-2 text-gray-600 dark:text-gray-300">載入中...</span>
+      </div>
+
+      <div v-if="!pending && !error" class="mb-8">
+      </div>
+
+      <div v-if="!pending && !error" class="space-y-6">
+        <div class="text-sm text-gray-600 dark:text-gray-400">
+          最新 10 筆議案
+        </div>
+
+        <div class="grid gap-4">
+          <BillCardSimple
+            v-for="bill in newestBills"
+            :key="bill.rowIndex"
+            :bill="bill"
+          />
+        </div>
+      </div>
+
   </div>
 </template>
 
 <script setup>
 import { computed } from 'vue' // 確保引入 computed
-import { useCurrentTerm } from '~/composables/useCurrentTerm'
+import { getCurrentTerm, getValidTerms, getEarliestTerm } from '../../../shared/utils/term'
+
+const { data: newestBills, pending, error,  } = await useFetch(`/api/bills?limit=10`);
 
 // SEO 設定
 definePageMeta({
   title: '議案查詢',
   description: '查看國立臺北大學三峽校區學生議會歷屆議案資料。'
 })
-
-// 使用新的 Composables 獲取當前屆次和屆次範圍
-const { currentTerm, availableTermsRange } = useCurrentTerm()
-
-// 設定起始屆次
-const STARTING_TERM = 23;
 
 </script>
 

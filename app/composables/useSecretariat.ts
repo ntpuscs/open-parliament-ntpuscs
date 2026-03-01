@@ -2,7 +2,7 @@
 import { ref, watch } from 'vue'
 import { useAsyncData } from '#app'
 import { getCurrentTerm } from '../../shared/utils/term'
-import type { Bill, BillApiResponse } from '../../shared/types/bill'
+import type { Bill } from '../../shared/types/bill'
 
 /**
  * 將阿拉伯數字轉換為中文數字
@@ -28,22 +28,20 @@ export function useSecretariat() {
     error: asyncError,
     refresh: fetchBills,
   } = useAsyncData<Bill[]>(
-    
     `bills-term-${currentTerm}`,
     async () => {
       if (!currentTerm) {
         throw new Error('無法獲取當前屆期，請稍後再試。');
       }
-      
-      const data = await $fetch<BillApiResponse>(`/api/bills/?term=${currentTerm}`);
 
-      if (!data?.bills) {
+      
+      const data = await $fetch<Bill[]>(`/api/bills/?term=${currentTerm}`);
+
+      if (!Array.isArray(data) || data.length === 0) {
         throw new Error('API 回應資料格式不正確或無議案資料。');
       }
 
-      return data.bills
-        .filter(bill => bill.billNumber)
-        .map(bill => ({ ...bill, term: bill.term, number: bill.serialNumber }));
+      return data.filter(bill => bill.billNumber);
     }
   );
 

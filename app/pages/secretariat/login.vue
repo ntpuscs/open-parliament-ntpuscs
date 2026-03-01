@@ -48,15 +48,15 @@ const handleLogin = async () => {
 <template>
   <div class="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4 font-inter">
     <div class="bg-white p-8 rounded-lg shadow-xl w-full max-w-md text-center">
-      <h1 class="text-3xl font-bold text-gray-800 mb-6">秘書處登入</h1>
-      <p class="text-gray-600 mb-8">請輸入秘書處密碼以繼續：</p>
+      <h1 class="text-3xl font-bold text-gray-800 mb-6">系統登入</h1>
+      <p class="text-gray-600 mb-8">請輸入秘書處授權碼以繼續：</p>
 
       <form @submit.prevent="handleLogin" class="space-y-6">
         <div>
-          <label for="password" class="sr-only">密碼</label>
+          <label for="password" class="sr-only">授權碼</label>
           <input type="password" id="password" v-model="password" required
             class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            placeholder="請輸入密碼" :disabled="isLoading" />
+            placeholder="請輸入授權碼(密碼)" :disabled="isLoading" />
         </div>
 
         <button type="submit" :disabled="isLoading"
@@ -78,12 +78,8 @@ const handleLogin = async () => {
       </form>
 
       <p class="mt-8 text-sm text-gray-500">
-        <NuxtLink to="/" class="text-blue-500 hover:underline">返回主系統</NuxtLink>
+        <NuxtLink to="/" class="text-blue-500 hover:underline">返回首頁</NuxtLink>
       </p>
     </div>
   </div>
 </template>
-
-<style scoped>
-/* 可以根據需要添加額外的樣式 */
-</style>

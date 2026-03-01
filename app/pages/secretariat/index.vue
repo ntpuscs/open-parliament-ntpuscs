@@ -10,7 +10,7 @@ definePageMeta({
 <template>
   <div class="min-h-screen bg-gray-100 dark:bg-gray-700 flex flex-col items-center justify-center p-4 font-inter">
     <div class="bg-white dark:bg-gray-100 p-8 rounded-lg shadow-xl w-full max-w-md text-center">
-      <h1 class="text-3xl font-bold text-gray-800 mb-6">秘書處排案系統</h1>
+      <h1 class="text-3xl font-bold text-gray-800 mb-6">議事文件草擬輔助系統</h1>
       <p class="text-gray-600 mb-8">請選擇您要執行的功能：</p>
 
       <div class="grid grid-cols-1 gap-6">
@@ -23,7 +23,7 @@ definePageMeta({
                 d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
               </path>
             </svg>
-            <span>安排議程</span>
+            <span>草擬議程</span>
           </div>
         </NuxtLink>
 
@@ -42,12 +42,8 @@ definePageMeta({
       </div>
 
       <p class="mt-8 text-sm text-gray-500">
-        <NuxtLink to="/" class="text-blue-500 hover:underline">網站首頁</NuxtLink>、<NuxtLink to="/more-service" class="text-blue-500 hover:underline">議事專區</NuxtLink>
+        <NuxtLink to="/" class="text-blue-500 hover:underline">網站首頁</NuxtLink>
       </p>
     </div>
   </div>
 </template>
-
-<style scoped>
-/* 可以根據需要添加額外的樣式 */
-</style>

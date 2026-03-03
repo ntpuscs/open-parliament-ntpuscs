@@ -1,5 +1,5 @@
 {
-  "cachedAt": "2026-03-01T12:32:50.202Z",
+  "cachedAt": "2026-03-03T08:52:43.406Z",
   "data": [
     {
       "rowIndex": 275,
@@ -1411,10 +1411,11 @@
       "contactName": "邱正安",
       "billType": "預算案",
       "subject": "有關三峽校區學生會114學年度第2期間總預算案，敬請貴會審議",
-      "description": "一、依《預算暨決算辦法》規定辦理。\n二、114學年度第2期間總預算書如附件一。",
+      "description": "一、依《預算暨決算辦法》規定辦理。\n二、114學年度第2期間總預算書如附件一。\n三、財務委員會後，提案機關自行修正版本，如附件二。",
       "proposedAction": "提送貴會審議通過後，由會長公布之。",
       "attachments": [
-        "https://drive.google.com/open?id=1C5exAGAuvEGZLSIkN8kdN6QRz9fahIQl"
+        "https://drive.google.com/open?id=1C5exAGAuvEGZLSIkN8kdN6QRz9fahIQl",
+        "https://docs.google.com/spreadsheets/d/11J3o1TYt328qT2TP9dCyTNNln6pPR6Fe/edit?usp=sharing&ouid=111956381691113417844&rtpof=true&sd=true"
       ],
       "scheduledSession": "26屆第4次財務委員會（審查完竣）；26屆第6次常會"
     },
@@ -1429,19 +1430,19 @@
       "contactName": "黃庭暘",
       "billType": "施政報告",
       "subject": "有關本會114學年度第2期間施政方針，敬請貴會聽取報告。",
-      "description": "一、依《學生議會組織職權行使法》第21條第1款規定辦理：「學生會會長應於各學期第一次常會召開七日前，將施政方針送交秘書處。」\n二、檢附施政方針如附件一（.docx）、附件二（.pdf）。",
+      "description": "一、依《學生議會組織職權行使法》第21條第1款規定辦理：「學生會會長應於各學期第一次常會召開七日前，將施政方針送交秘書處。」\n二、檢附施政方針如附件一（.pdf）、附件二（.docx）。",
       "proposedAction": "提送貴會報告並公布之。",
       "attachments": [
-        "https://drive.google.com/open?id=1ccA1u_EWD4g_4NiO-NBmepemm6kYE0zQRK8nbQJFOC8",
-        "https://drive.google.com/open?id=1reS-0r04LOrqe6sLPF2LYXOeYEu1tsf5"
+        "https://drive.google.com/open?id=1reS-0r04LOrqe6sLPF2LYXOeYEu1tsf5",
+        "https://drive.google.com/open?id=1ccA1u_EWD4g_4NiO-NBmepemm6kYE0zQRK8nbQJFOC8"
       ],
       "scheduledSession": "26屆第6次常會"
     },
     {
       "rowIndex": 352,
-      "billNumber": "",
+      "billNumber": "26屆北大峽議字第78號",
       "term": 26,
-      "serialNumber": null,
+      "serialNumber": 78,
       "submittedAt": "2026/3/1 下午 6:03:45",
       "proposingEntity": "本會學生自治低落對策委員會",
       "proposerName": "傅冠紘",
@@ -1453,7 +1454,7 @@
       "attachments": [
         "https://drive.google.com/open?id=1c4pbzRpHBgF5_-Fzp-m-4l67oxxNvOUJ"
       ],
-      "scheduledSession": ""
+      "scheduledSession": "26屆第6次常會"
     }
   ]
 }

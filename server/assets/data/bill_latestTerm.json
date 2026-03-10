@@ -1,5 +1,5 @@
 {
-  "cachedAt": "2026-03-09T21:29:44.526Z",
+  "cachedAt": "2026-03-10T04:45:33.977Z",
   "data": [
     {
       "rowIndex": 275,
@@ -1490,9 +1490,9 @@
     },
     {
       "rowIndex": 355,
-      "billNumber": "",
+      "billNumber": "26屆北大峽議字第81號",
       "term": 26,
-      "serialNumber": null,
+      "serialNumber": 81,
       "submittedAt": "2026/3/9 下午 10:21:37",
       "proposingEntity": "本會議員",
       "proposerName": "傅冠紘、謝明勳",
@@ -1506,9 +1506,9 @@
     },
     {
       "rowIndex": 356,
-      "billNumber": "",
+      "billNumber": "26屆北大峽議字第82號",
       "term": 26,
-      "serialNumber": null,
+      "serialNumber": 82,
       "submittedAt": "2026/3/9 下午 10:30:04",
       "proposingEntity": "本會議員",
       "proposerName": "傅冠紘、謝明勳",

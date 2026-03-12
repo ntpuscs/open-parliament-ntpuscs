@@ -1,5 +1,5 @@
 {
-  "cachedAt": "2026-03-10T04:45:33.977Z",
+  "cachedAt": "2026-03-12T21:29:30.067Z",
   "data": [
     {
       "rowIndex": 275,
@@ -1521,6 +1521,22 @@
         "https://drive.google.com/open?id=1UHXYbD1MO1khEXyWUwF1BmY7CUMBSf9Y",
         "https://drive.google.com/open?id=1_tpbZt1EBdHy4RfaHBffDd7hffgLJFD7"
       ],
+      "scheduledSession": ""
+    },
+    {
+      "rowIndex": 357,
+      "billNumber": "",
+      "term": 26,
+      "serialNumber": null,
+      "submittedAt": "2026/3/12 下午 4:10:35",
+      "proposingEntity": "本會議長",
+      "proposerName": "傅冠紘",
+      "contactName": "傅冠紘",
+      "billType": "報告案",
+      "subject": "有關3/9於校版之兩會說明，敬請大會聽取。",
+      "description": "有關3/9日對於本校結核病個案與學生會共同發布之說明，尚未經大會知悉，雖組織章程48條第二項規定「各校區學生議會議長......對外代表各校區學生議會。」為尊重大會與各位同僚，爰於大會進行說明。",
+      "proposedAction": "敬請大會聽取。",
+      "attachments": [],
       "scheduledSession": ""
     }
   ]

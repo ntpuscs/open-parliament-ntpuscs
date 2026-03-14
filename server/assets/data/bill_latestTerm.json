@@ -1,5 +1,5 @@
 {
-  "cachedAt": "2026-03-12T21:29:30.067Z",
+  "cachedAt": "2026-03-14T21:23:19.829Z",
   "data": [
     {
       "rowIndex": 275,
@@ -1525,9 +1525,9 @@
     },
     {
       "rowIndex": 357,
-      "billNumber": "",
+      "billNumber": "26屆北大峽議字第83號",
       "term": 26,
-      "serialNumber": null,
+      "serialNumber": 83,
       "submittedAt": "2026/3/12 下午 4:10:35",
       "proposingEntity": "本會議長",
       "proposerName": "傅冠紘",
@@ -1537,6 +1537,24 @@
       "description": "有關3/9日對於本校結核病個案與學生會共同發布之說明，尚未經大會知悉，雖組織章程48條第二項規定「各校區學生議會議長......對外代表各校區學生議會。」為尊重大會與各位同僚，爰於大會進行說明。",
       "proposedAction": "敬請大會聽取。",
       "attachments": [],
+      "scheduledSession": ""
+    },
+    {
+      "rowIndex": 358,
+      "billNumber": "",
+      "term": 26,
+      "serialNumber": null,
+      "submittedAt": "2026/3/14 下午 11:05:08",
+      "proposingEntity": "三峽校區學生會 財務部",
+      "proposerName": "陳昱仁",
+      "contactName": "邱正安",
+      "billType": "預算案",
+      "subject": "有關三峽校區學生會114學年度第二期間追加預算案，敬請貴會審議。",
+      "description": "一、依《預算暨決算法》規定辦理。\n二、114學年度第2期間追加預算書如附件一。\n三、因追加預算皆為經常事務費用（總預算案時未羅列）遂未變更施政方針。",
+      "proposedAction": "敬請貴會審議後，由會長公布之。",
+      "attachments": [
+        "https://drive.google.com/open?id=1peU0RH7exbQhN0A_VPVJsg9BHxtBlyTB"
+      ],
       "scheduledSession": ""
     }
   ]

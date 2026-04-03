@@ -1,5 +1,5 @@
 {
-  "cachedAt": "2026-03-01T21:41:41.249Z",
+  "cachedAt": "2026-04-03T07:49:43.236Z",
   "count": 2,
   "data": [
     {
@@ -16,14 +16,14 @@
       "committeeReport": {
         "serialNumber": "法26/1",
         "scheduledMeeting": "26屆第1次法制委員會",
-        "committeeResolution": "照案通過。",
+        "committeeResolution": "一、照案通過。\n二、臨時動議：重新設計選舉公報貼文排版，提升可讀性；審慎評估設立新社群帳號的必要性；請擬定選舉罷免法修正原則。",
         "reportLink": "https://ntpusu.org/wp-content/uploads/2026/02/1150226_法制委員會建議報告.pdf",
         "hasReport": true
       },
       "governmentResponse": {
-        "text": "",
+        "text": "詳見： https://ntpusu.org/wp-content/uploads/2026/04/1150325_選委會復法制委回覆報告.pdf",
         "refNumber": "",
-        "hasResponse": false
+        "hasResponse": true
       }
     },
     {
@@ -40,14 +40,14 @@
       "committeeReport": {
         "serialNumber": "法26/2",
         "scheduledMeeting": "26屆第1次法制委員會",
-        "committeeResolution": "1. 建議學生會委請各系所協助調查所屬學生對資料庫的購買需求，進行排序。排序方式例如提供前數項常用資料庫選項供選填；\n2. 圖書館委員會兩位學生代表，分別各自負責代表大學部與研究所以上學制進行表意；\n3. 待學生會完成學生資料庫使用需求調查以後，再召開共識會議，以平衡人數、比例與需求等，進行適當加權評估。",
+        "committeeResolution": "(一)就本案：\n1. 建議學生會委請各系所協助調查所屬學生對資料庫的購買需求，進行排序。排序方式例如提供前數項常用資料庫選項供選填；\n2. 圖書館委員會兩位學生代表，分別各自負責代表大學部與研究所以上學制進行表意；\n3. 待學生會完成學生資料庫使用需求調查以後，再召開共識會議，以平衡人數、比例與需求等，進行適當加權評估。\n(二)臨時動議：請檢討學生代表推派法制。",
         "reportLink": "https://ntpusu.org/wp-content/uploads/2026/02/1150226_法制委員會建議報告.pdf",
         "hasReport": true
       },
       "governmentResponse": {
-        "text": "",
+        "text": "有關貴會所寄達之建議報告，經部內討論後，僅依現有量能恐難以負擔資料庫意向調查事宜，至於學生代表推派辦法行之有年，目前尚未有新共識進行調整，綜上所述對於貴會建議不予採納，對於延誤回復深感抱歉\n        敬祝    平安順心\n\n國立臺北大學三峽校區學生會學生權益部  敬上",
         "refNumber": "",
-        "hasResponse": false
+        "hasResponse": true
       }
     }
   ]

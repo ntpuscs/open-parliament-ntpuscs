@@ -374,8 +374,8 @@ const ModalSection = defineComponent({
   }
 })
 
-// ─── 資料（直接讀取 /data/committeeReports.json） ──────────────────
-const { data: fetchedData, pending, error } = await useFetch('/data/committeeReports.json')
+// ─── 資料（透過 server API route 讀取） ────────────────────────
+const { data: fetchedData, pending, error } = await useFetch('/api/committee-reports')
 
 // 透過 computed 取出原 composable 提供給 template 的屬性，以維持畫面與狀態正常運作
 const reports = computed(() => fetchedData.value?.data || [])

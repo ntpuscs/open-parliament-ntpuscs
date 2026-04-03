@@ -309,9 +309,11 @@
                     </svg>
                     學生會回覆
                   </p>
-                  <p v-if="selectedReport.governmentResponse?.text" class="text-sm text-gray-800 dark:text-gray-200 whitespace-pre-line leading-relaxed">
-                    {{ selectedReport.governmentResponse.text }}
-                  </p>
+                  <LinkedText
+                    v-if="selectedReport.governmentResponse?.text"
+                    :text="selectedReport.governmentResponse.text"
+                    class="text-sm text-gray-800 dark:text-gray-200 whitespace-pre-line leading-relaxed"
+                  />
                   <p v-if="selectedReport.governmentResponse?.refNumber" class="text-xs text-emerald-700 dark:text-emerald-400 mt-2">
                     請參閱「{{ selectedReport.governmentResponse.refNumber }}」提案。
                   </p>
@@ -341,6 +343,84 @@
 
 <script setup>
 import { h } from 'vue'
+
+// ─── 工具函式：將文字依 https:// 連結切割為片段陣列 ────────────
+/**
+ * 將純文字切分為「純文字」與「URL」交錯的片段陣列。
+ * 例如：
+ *   "請參考 https://example.com 以了解詳情"
+ *   → [
+ *       { type: 'text', value: '請參考 ' },
+ *       { type: 'url',  value: 'https://example.com' },
+ *       { type: 'text', value: ' 以了解詳情' },
+ *     ]
+ */
+function parseTextWithLinks(text) {
+  if (!text) return []
+  // 匹配 https:// 開頭的 URL，允許常見路徑字元，排除末尾標點
+  const urlRegex = /(https:\/\/[^\s\u3000\u3001\u3002\uff01\uff0c\uff1a\uff1b\uff1f\u300a\u300b\u3008\u3009\u300c\u300d\u300e\u300f\u3010\u3011\u3014\u3015（）「」『』【】〔〕〖〗]+)/g
+  const parts = []
+  let lastIndex = 0
+  let match
+
+  while ((match = urlRegex.exec(text)) !== null) {
+    // 連結前的純文字
+    if (match.index > lastIndex) {
+      parts.push({ type: 'text', value: text.slice(lastIndex, match.index) })
+    }
+    // URL 片段
+    parts.push({ type: 'url', value: match[1] })
+    lastIndex = match.index + match[1].length
+  }
+
+  // 最後剩餘的純文字
+  if (lastIndex < text.length) {
+    parts.push({ type: 'text', value: text.slice(lastIndex) })
+  }
+
+  return parts
+}
+
+// ─── 子元件：LinkedText ──────────────────────────────────────
+/**
+ * 渲染含有可點擊超連結的文字段落。
+ * 自動偵測 https:// 連結並包裝為 <a> 標籤（外部連結，新分頁開啟）。
+ * Props:
+ *   text  : String  — 要渲染的文字內容
+ *   class : String  — 傳入的 CSS class（由父層控制）
+ */
+const LinkedText = defineComponent({
+  props: {
+    text:  { type: String, default: '' },
+    class: { type: String, default: '' },
+  },
+  setup(props) {
+    return () => {
+      const parts = parseTextWithLinks(props.text)
+
+      const children = parts.map(part => {
+        if (part.type === 'url') {
+          return h(
+            'a',
+            {
+              href:   part.value,
+              target: '_blank',
+              rel:    'noopener noreferrer',
+              class:  'text-primary-600 dark:text-primary-400 underline underline-offset-2 ' +
+                      'hover:text-primary-700 dark:hover:text-primary-300 ' +
+                      'break-all transition-colors',
+            },
+            part.value
+          )
+        }
+        // 純文字節點
+        return part.value
+      })
+
+      return h('p', { class: props.class }, children)
+    }
+  },
+})
 
 // ─── 子元件：InfoField ───────────────────────────────────────
 const InfoField = defineComponent({

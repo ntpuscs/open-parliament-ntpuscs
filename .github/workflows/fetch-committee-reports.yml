@@ -49,11 +49,11 @@ jobs:
         id: diff
         run: |
           # 檢查檔案是否已存在於 git 紀錄中
-          if git ls-files --error-unmatch public/data/committeeReports.json > /dev/null 2>&1; then
+          if git ls-files --error-unmatch server/assets/data/committeeReports.json > /dev/null 2>&1; then
             # 取出前一版的 JSON 並剔除 cachedAt 欄位
-            git show HEAD:public/data/committeeReports.json | jq -S 'walk(if type == "object" then del(.cachedAt) else . end)' > old_clean.json
+            git show HEAD:server/assets/data/committeeReports.json | jq -S 'walk(if type == "object" then del(.cachedAt) else . end)' > old_clean.json
             # 將新抓取的 JSON 也剔除 cachedAt 欄位
-            jq -S 'walk(if type == "object" then del(.cachedAt) else . end)' public/data/committeeReports.json > new_clean.json
+            jq -S 'walk(if type == "object" then del(.cachedAt) else . end)' server/assets/data/committeeReports.json > new_clean.json
             
             # 比對兩者差異
             if cmp -s old_clean.json new_clean.json; then
@@ -71,7 +71,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/committeeReports.json
+          git add server/assets/data/committeeReports.json
           git commit -m "chore(data): 自動同步委員會報告資料"
           git push
 

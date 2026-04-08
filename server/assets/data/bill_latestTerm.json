@@ -1,5 +1,5 @@
 {
-  "cachedAt": "2026-04-03T21:30:43.874Z",
+  "cachedAt": "2026-04-08T21:38:35.258Z",
   "data": [
     {
       "rowIndex": 275,
@@ -1592,6 +1592,26 @@
         "https://drive.google.com/open?id=1oRRy9xV0irUc9eRqRJvzD-W9nNUej3xe"
       ],
       "scheduledSession": "26屆第6次財務委員會【預定，尚未召集】"
+    },
+    {
+      "rowIndex": 361,
+      "billNumber": "",
+      "term": 26,
+      "serialNumber": null,
+      "submittedAt": "2026/4/9 上午 12:45:06",
+      "proposingEntity": "本會議員",
+      "proposerName": "傅冠紘",
+      "contactName": "傅冠紘",
+      "billType": "法律案",
+      "subject": "本會議員傅冠紘擬具「國立臺北大學學生自治會學生議員計畫執行款設置法草案」是否有當？請公決案。",
+      "description": "一、為使本會學生議員主體性提升，完善學生議員作為各院民意代表之身分，使學生議員擁有足夠資源推動議題，爰提出本草案。\n二、本草案旨在促使學生議會發揮「競爭性議題中心」之身分，並為此提供制度性支持。（詳細論述請看附件三）\n二、條文對照表如附件（附件一PDF、附件二DOCX）。",
+      "proposedAction": "大會通過後，咨請會長公布",
+      "attachments": [
+        "https://drive.google.com/open?id=14L12wcZAyoywxi6ydZ95oyHjD7RM8gov",
+        "https://drive.google.com/open?id=1z7UKLtS1rIJQTIKvZ_c0C2vPX353nfbE",
+        "https://drive.google.com/open?id=1ODmzsGGRvx9XwN31-xDVUTNmcpAI-oel"
+      ],
+      "scheduledSession": ""
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "cachedAt": "2026-04-08T21:38:35.258Z",
+  "cachedAt": "2026-04-15T21:48:48.574Z",
   "data": [
     {
       "rowIndex": 275,
@@ -1610,6 +1610,24 @@
         "https://drive.google.com/open?id=14L12wcZAyoywxi6ydZ95oyHjD7RM8gov",
         "https://drive.google.com/open?id=1z7UKLtS1rIJQTIKvZ_c0C2vPX353nfbE",
         "https://drive.google.com/open?id=1ODmzsGGRvx9XwN31-xDVUTNmcpAI-oel"
+      ],
+      "scheduledSession": ""
+    },
+    {
+      "rowIndex": 362,
+      "billNumber": "",
+      "term": 26,
+      "serialNumber": null,
+      "submittedAt": "2026/4/15 下午 3:45:39",
+      "proposingEntity": "學生法院 書記處",
+      "proposerName": "周俊良",
+      "contactName": "俞建佑",
+      "billType": "決算案",
+      "subject": "學生法院114學年度第1期間決算案",
+      "description": "決算案如附件一",
+      "proposedAction": "大會通過後，依職權送臺北校區議會審理",
+      "attachments": [
+        "https://drive.google.com/open?id=19X6mvE1zs8hUpk5qsUGb87GQOSUrS_p4"
       ],
       "scheduledSession": ""
     }

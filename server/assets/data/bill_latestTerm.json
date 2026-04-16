@@ -1,5 +1,5 @@
 {
-  "cachedAt": "2026-04-16T03:56:10.694Z",
+  "cachedAt": "2026-04-16T13:50:35.529Z",
   "data": [
     {
       "rowIndex": 275,
@@ -1398,7 +1398,7 @@
         "https://drive.google.com/open?id=1HA-qHfJNTRSycIATChF7McGjKeE7_ddV",
         "https://drive.google.com/open?id=1dXwmVEPFZz7GAU3DYnjHV57fGXUmrFTz"
       ],
-      "scheduledSession": "26屆第6次常會"
+      "scheduledSession": "26屆第6次常會（付委）；法規委員會未審查；26屆第7次常會"
     },
     {
       "rowIndex": 350,
@@ -1595,9 +1595,9 @@
     },
     {
       "rowIndex": 361,
-      "billNumber": "",
+      "billNumber": "26屆北大峽議字第87號",
       "term": 26,
-      "serialNumber": null,
+      "serialNumber": 87,
       "submittedAt": "2026/4/9 上午 12:45:06",
       "proposingEntity": "本會議員",
       "proposerName": "傅冠紘",
@@ -1611,13 +1611,13 @@
         "https://drive.google.com/open?id=1z7UKLtS1rIJQTIKvZ_c0C2vPX353nfbE",
         "https://drive.google.com/open?id=1ODmzsGGRvx9XwN31-xDVUTNmcpAI-oel"
       ],
-      "scheduledSession": ""
+      "scheduledSession": "26屆第7次常會"
     },
     {
       "rowIndex": 362,
-      "billNumber": "",
+      "billNumber": "26屆北大峽議字第88號",
       "term": 26,
-      "serialNumber": null,
+      "serialNumber": 88,
       "submittedAt": "2026/4/15 下午 3:45:39",
       "proposingEntity": "學生法院 書記處",
       "proposerName": "周俊良",
@@ -1629,13 +1629,13 @@
       "attachments": [
         "https://drive.google.com/open?id=19X6mvE1zs8hUpk5qsUGb87GQOSUrS_p4"
       ],
-      "scheduledSession": ""
+      "scheduledSession": "26屆第7次常會"
     },
     {
       "rowIndex": 363,
-      "billNumber": "",
+      "billNumber": "26屆北大峽議字第89號",
       "term": 26,
-      "serialNumber": null,
+      "serialNumber": 89,
       "submittedAt": "2026/4/16 上午 11:51:18",
       "proposingEntity": "本會 秘書處",
       "proposerName": "傅冠紘",
@@ -1649,13 +1649,13 @@
         "https://drive.google.com/open?id=1D8tpBEeMt-W9sYp725TnjECbD2C9oQic",
         "https://drive.google.com/open?id=1bCpgkALF7GmAqVAonOog-7g4_f1KK0U9"
       ],
-      "scheduledSession": ""
+      "scheduledSession": "26屆第7次常會"
     },
     {
       "rowIndex": 364,
-      "billNumber": "",
+      "billNumber": "26屆北大峽議字第90號",
       "term": 26,
-      "serialNumber": null,
+      "serialNumber": 90,
       "submittedAt": "2026/4/16 上午 11:54:55",
       "proposingEntity": "本會 秘書處",
       "proposerName": "傅冠紘",
@@ -1668,7 +1668,7 @@
         "https://drive.google.com/open?id=1bbP3Se_tSeKgjNOfCkPr0bLU4s9T3Am1",
         "https://drive.google.com/open?id=1Zc0fBDSGQ_nrctNzwXCcGxW5SNm7Bvgr"
       ],
-      "scheduledSession": ""
+      "scheduledSession": "26屆第7次常會"
     }
   ]
 }

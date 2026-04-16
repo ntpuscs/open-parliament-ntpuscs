@@ -1,5 +1,5 @@
 {
-  "cachedAt": "2026-04-15T21:48:48.574Z",
+  "cachedAt": "2026-04-16T03:56:10.694Z",
   "data": [
     {
       "rowIndex": 275,
@@ -1628,6 +1628,45 @@
       "proposedAction": "大會通過後，依職權送臺北校區議會審理",
       "attachments": [
         "https://drive.google.com/open?id=19X6mvE1zs8hUpk5qsUGb87GQOSUrS_p4"
+      ],
+      "scheduledSession": ""
+    },
+    {
+      "rowIndex": 363,
+      "billNumber": "",
+      "term": 26,
+      "serialNumber": null,
+      "submittedAt": "2026/4/16 上午 11:51:18",
+      "proposingEntity": "本會 秘書處",
+      "proposerName": "傅冠紘",
+      "contactName": "黃振",
+      "billType": "法律案",
+      "subject": "本會秘書處提出「國立臺北大學學生自治會三峽校區學生議會議事規則」修正第二章章名，增訂第二章第一節、第二節節名及第7條之1至第7條之2條文草案，敬請審議。",
+      "description": "一、為明文規定議長制式服裝，修正本規則。\n二、附件一是修正條文 PDF 檔，附件二是修正條文 DOCX 檔，附件三是修正前的全文。",
+      "proposedAction": "大會通過後，公告施行",
+      "attachments": [
+        "https://drive.google.com/open?id=15gHCOt7Um5CgqCs-dT16jwGLuqebS9V1",
+        "https://drive.google.com/open?id=1D8tpBEeMt-W9sYp725TnjECbD2C9oQic",
+        "https://drive.google.com/open?id=1bCpgkALF7GmAqVAonOog-7g4_f1KK0U9"
+      ],
+      "scheduledSession": ""
+    },
+    {
+      "rowIndex": 364,
+      "billNumber": "",
+      "term": 26,
+      "serialNumber": null,
+      "submittedAt": "2026/4/16 上午 11:54:55",
+      "proposingEntity": "本會 秘書處",
+      "proposerName": "傅冠紘",
+      "contactName": "黃振",
+      "billType": "法律案",
+      "subject": "本會秘書處提出「國立臺北大學學生自治會三峽校區學生議會旁聽規則」草案，敬請審議。",
+      "description": "一、為落實議事規則第66條的委託，訂定本規則。\n二、附件一是修正條文 PDF 檔，附件二是修正條文 ODT 檔。",
+      "proposedAction": "大會通過後，公告施行",
+      "attachments": [
+        "https://drive.google.com/open?id=1bbP3Se_tSeKgjNOfCkPr0bLU4s9T3Am1",
+        "https://drive.google.com/open?id=1Zc0fBDSGQ_nrctNzwXCcGxW5SNm7Bvgr"
       ],
       "scheduledSession": ""
     }

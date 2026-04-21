@@ -1,5 +1,5 @@
 {
-  "cachedAt": "2026-04-20T21:42:53.011Z",
+  "cachedAt": "2026-04-21T09:45:05.427Z",
   "data": [
     {
       "rowIndex": 275,
@@ -1669,6 +1669,25 @@
         "https://drive.google.com/open?id=1Zc0fBDSGQ_nrctNzwXCcGxW5SNm7Bvgr"
       ],
       "scheduledSession": "26屆第7次常會"
+    },
+    {
+      "rowIndex": 365,
+      "billNumber": "26屆北大峽議字第91號",
+      "term": 26,
+      "serialNumber": 91,
+      "submittedAt": "2026/4/21 下午 5:40:54",
+      "proposingEntity": "本會 秘書處",
+      "proposerName": "傅冠紘",
+      "contactName": "黃振",
+      "billType": "一般提案",
+      "subject": "本會秘書處就「本會商標註冊事項更正」擬定方案，敬請審議。",
+      "description": "一、經濟部智慧財產局來電通知本會商標之商標權人資格有疑義，請本會研擬是否更正。\n二、秘書處擬定三個方案：(1)更正為學生自治會、(2)不更正但申請統編、(3)不更正也不申請統編，一切照原樣來。本處建議採取第一方案較簡便。\n三、詳細研究意見如附件 1 PDF 檔，本會商標之現行註冊事項可點選附件 2 連結到智慧局網站查看。",
+      "proposedAction": "大會通過後，如採方案一，提案至總會；如採方案二、三，由秘書處辦理後續行政程序。",
+      "attachments": [
+        "https://drive.google.com/open?id=1WdfkTgX5Ni-rFWN_aGt_BifIAHf_LPab",
+        "https://cloud.tipo.gov.tw/S282/S282WV1/#/tmark-detailed-report?docid=dYJUK%2BGmAc8UpP19to6MpphpCduZ0LSp%2BJzd"
+      ],
+      "scheduledSession": ""
     }
   ]
 }

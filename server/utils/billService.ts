@@ -3,17 +3,32 @@ import type { Bill, BillResponse } from '../../shared/types/bill';
 import { getCurrentTerm } from '../../shared/utils/term';
 
 export const useBillService = () => {
-  // 以 Nitro 內建的 Virtual Storage API 讀檔
+  const CDN_BASE_URL = 'https://cdn.jsdelivr.net/gh/ntpusu/legislative-data@main/data';
+
+  // 以 Nitro 內建的 $fetch 存取遠端資料
   const readJsonFile = async (filename: string): Promise<BillResponse> => {
-    // 讀取 server/assets/data/ 下的檔案，格式為 'assets:server:目錄:檔名'
-    const data = await useStorage('assets:server').getItem(`data:${filename}`);
+    try {
+      // 透過 CDN 讀取資料，並加入超時與重試機制確保在 Cloudflare Pages 等環境穩定執行
+      const data = await $fetch<BillResponse>(`${CDN_BASE_URL}/${filename}`, {
+        retry: 3,
+        retryDelay: 1000,
+        timeout: 5000,
+      });
 
-    if (!data) {
-      throw createError({ statusCode: 500, statusMessage: `無法讀取議案資料檔案 ${filename} !` });
+      if (!data) {
+        throw new Error('Empty data received from CDN');
+      }
+
+      // $fetch 讀取 JSON 會自動 parse，直接斷言型別即可
+      return data as BillResponse;
+    } catch (error) {
+      // 錯誤拋出，並額外紀錄錯誤原因方便維護
+      console.error(`[CDN Fetch Error] ${filename}:`, error);
+      throw createError({ 
+        statusCode: 500, 
+        statusMessage: `無法從遠端取得議案資料檔案 ${filename} !` 
+      });
     }
-
-    // useStorage 讀取 JSON 會自動 parse，直接斷言型別即可
-    return data as BillResponse;
   };
 
   const getLatestTermBills = async (): Promise<Bill[]> => {

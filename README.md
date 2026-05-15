@@ -19,10 +19,8 @@
 * **議案查詢系統**  (`/bill`)
     * 屆次議案列表：可顯示特定屆次的所有議案。
     * 單一議案顯示 (`/bill/:term/:number`)：提供單一議案的完整資訊、附件連結，並支援列印排版。
-    * 資料介接：系統每日讀取 Google Sheets 資料，分別存入本地兩個 json 檔案（先前屆次／本屆），避免先前屆次檔案變動。
 * **委員會建議事項提案查詢**  (`/committee-reports`)
     * 委員提案後，即可於本頁查得提案資料。秘書處亦透過 Google Sheets 維護委員會審查結論、建議報告全文及學生會之回覆。
-    * 系統每隔7天自動到後台抓取一次資料，秘書處可於 GitHub 後台手動觸發工作流。
     * 惟114學年度第1學期已完稿之建議報告，為避免表單後台錯誤，維持於會網查詢。
 * **秘書處文件草擬系統**
     * 提供秘書處人員草擬議程與撰寫會議紀錄之輔助介面。
@@ -32,9 +30,6 @@
 * **進階議案查詢 (開發完善中)**
     * 提供多維度篩選條件（例如：依提案類型、提案機關、提案議員、案由進行交叉篩選）。
     * 支援精確的日期範圍篩選功能。
-* **基礎架構升級 (規劃中)**
-    * 結合 Nuxt Content 作為內容管理系統 (CMS)，進一步降低對外部 API 即時連線的依賴。
-    * 統一建議報告及議案之儲存位置
 * **草擬系統部分**
     * 允許秘書透過此處安排建議事項。
 
@@ -45,7 +40,7 @@
 * **框架**：Nuxt 4
 * **樣式**：Tailwind CSS
 * **圖示庫**：Heroicons
-* **資料來源**：直接 fetch Google Sheets API、本地 JSON
+* **資料來源**：另於 [ntpusu/legislative-data](https://github.com/ntpusu/legislative-data) 儲存之
 * **部署環境**：Cloudflare Pages [![Powered by Cloudflare Pages](https://img.shields.io/badge/Cloudflare-Pages-orange?logo=cloudflare)](https://pages.cloudflare.com/)
 
 * **套件管理**：pnpm (Node.js 環境)
